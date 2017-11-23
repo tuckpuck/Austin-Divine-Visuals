@@ -1,0 +1,13 @@
+.navbar-brand, .nav-link {
+  color: whitesmoke !important;
+}
+
+.nav-link {
+  letter-spacing: .8px;
+}
+
+.nav-link:hover {
+  color: #ggg;
+  letter-spacing: none;
+  background-color: darkslategray;
+}
