@@ -26,6 +26,10 @@
 @media (max-width: 575px) {
   .nav-item {
     border: none !important;
+    margin: auto;
+  }
+  .navbar-nav {
+    align-items: center;
   }
 }
 

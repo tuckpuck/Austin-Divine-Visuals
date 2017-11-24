@@ -1,13 +1,33 @@
-.navbar-brand, .nav-link {
-  color: whitesmoke !important;
+a:hover {
+  color: lightsteelblue;
+}
+
+.navbar-brand {
+  color: whitesmoke;
 }
 
 .nav-link {
   letter-spacing: .8px;
+  color: whitesmoke;
 }
 
-.nav-link:hover {
-  color: #ggg;
+.navlink:hover {
+  color: lightsteelblue !important;
+}
+
+.nav-item {
+  border-top: 1px solid #353A3F !important;
+  border-bottom: 1px solid #353A3F !important;
+  transition: border .5s, background-color .2s;
+}
+
+.nav-item:hover {
   letter-spacing: none;
-  background-color: darkslategray;
+  background-color: #2a2e33;
+  border-top: 1px solid lightsteelblue !important;
+  /*border-top: 1px solid #e9ecef !important;*/
+  border-bottom: 1px solid lightsteelblue !important;
+  /*border-bottom: 1px solid #e9ecef !important;*/
+  border-right: none !important;
+  border-left: none !important;
 }
