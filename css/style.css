@@ -32,3 +32,16 @@ a:hover {
   border-right: none !important;
   border-left: none !important;
 }
+
+#home-heading {
+    position: relative;
+    min-height: 200px;
+    margin-top: 800px;
+    margin-bottom: 400px;
+    background: url(../img/denver.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
