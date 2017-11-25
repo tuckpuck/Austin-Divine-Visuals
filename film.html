@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-sm bg-dark mb-3">
@@ -41,16 +44,50 @@
   </div>
 </nav>
 
-<!-- subscribe button -->
-<script src="https://apis.google.com/js/platform.js"></script>
-<div class="g-ytsubscribe" data-channelid="UCtbZgA54pP_ZrJwPCoFiy0A" data-layout="default" data-theme="dark" data-count="default"></div>
+<div class="container"><div class="owl-carousel owl-theme">
+    <div class="item-video" data-merge="1"><iframe height="200px" width="356px" src="https://www.youtube.com/embed/fp28n1ZKzCY?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe></div>
+    <div class="item-video" data-merge="2"><iframe height="200px" width="356px" src="https://www.youtube.com/embed/U-EmB_qYAE4?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe></div>
+    <div class="item-video" data-merge="3"><iframe height="200px" width="356px" src="https://www.youtube.com/embed/2beCpTYzqSk?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe></div>
+    <div class="item-video" data-merge="4"><iframe height="200px" width="356px" src="https://www.youtube.com/embed/5jYzzgdSNMU?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe></div>
+    <div class="item-video" data-merge="5"><iframe height="200px" width="356px" src="https://www.youtube.com/embed/Go47S3TTcQg?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe></div>
+</div></div>
 
 
 
 <!-- javascript -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
+<!-- owl carousel -->
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+<script>
+$(document).ready(function() {
+             $('.owl-carousel').owlCarousel({
+               items: 3,
+               merge: false,
+               loop: true,
+               margin: 11,
+               autoWidth: true,
+               lazyLoad: true,
+               center: true,
+               mouseDrag: true,
+               responsive: {
+                 480: {
+                   items: 2
+                 },
+                 600: {
+                   items: 4
+                 }
+               }
+             });
+           });
+</script>
+
 </body>
 </html>
