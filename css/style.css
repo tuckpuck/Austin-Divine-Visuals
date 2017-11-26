@@ -8,7 +8,8 @@ a:hover {
 }
 
 .navbar {
-border-bottom:#008ed6 3px solid;
+border-bottom:#008ed6 4px solid;
+    padding: 0rem 1rem;
 }
 
 .navbar-toggler-icon {
@@ -57,4 +58,8 @@ border-bottom:#008ed6 3px solid;
     background-repeat: no-repeat;
     text-align: center;
     color: #fff;
+}
+
+.btn-primary {
+  background-color: #008ed6;
 }
