@@ -39,10 +39,10 @@ border-bottom:#008ed6 4px solid;
 .nav-item:hover {
   letter-spacing: none;
   background-color: #2a2e33;
-  /*border-top: 1px solid lightsteelblue !important;*/
-  /*border-top: 1px solid #e9ecef !important;*/
-  /*border-bottom: 1px solid lightsteelblue !important;*/
-  /*border-bottom: 1px solid #e9ecef !important;*/
+  padding-top: 5px !important;
+  margin-top: -5px !important;
+  padding-bottom: 5px !important;
+  margin-bottom: -5px !important;
   border-right: none !important;
   border-left: none !important;
 }
@@ -54,6 +54,7 @@ background-image:url("https://images.unsplash.com/photo-1488263590619-bc1fff43b6
 background-size: cover;
 background-position: center;
 padding: 9rem 0;
+border-radius: 0rem;
 }
 
 #home-heading {
