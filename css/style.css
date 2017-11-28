@@ -47,10 +47,14 @@ border-bottom:#008ed6 4px solid;
   border-left: none !important;
 }
 
+.footer {
+  background-color: #353A3F;
+}
+
 /* index */
 
 .homejumbo {
-background-image:url("https://images.unsplash.com/photo-1488263590619-bc1fff43b6c1?auto=format&fit=crop&w=2767&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+background-image:url(../img/beach.jpg);
 background-size: cover;
 background-position: center;
 padding: 9rem 0;
@@ -60,8 +64,8 @@ border-radius: 0rem;
 #home-heading {
     position: relative;
     min-height: 200px;
-    margin-top: 800px;
-    margin-bottom: 400px;
+    margin-top: 2rem;
+    /*margin-bottom: 400px;*/
     background: url(../img/denver.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -73,3 +77,5 @@ border-radius: 0rem;
 .btn-primary {
   background-color: #008ed6;
 }
+
+.card-img-top {}
