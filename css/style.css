@@ -1,5 +1,12 @@
+:root {
+  --main-color: #008ed6;
+  --font-family-sans-serif: 'Open Sans', -apple-system,
+system-ui, BlinkMacSystemFont,  "Segoe UI",  "Roboto",  "Helvetica Neue", Arial, sans-serif;
+}
+
 body {
-  background: url(../img/whitediamond.png)
+  background: url(../img/whitediamond.png);
+  font-family: var(--font-family-sans-serif);
 }
 
 a:hover {
@@ -8,7 +15,7 @@ a:hover {
 }
 
 .navbar {
-border-bottom:#008ed6 4px solid;
+border-bottom:var(--main-color) 4px solid;
     /*padding: 0rem 1rem;*/
 }
 
@@ -20,9 +27,9 @@ border-bottom:#008ed6 4px solid;
   color: whitesmoke;
   font-weight: 500;
   font-size: 29px;
-  font-family: 'Spectral SC', serif;
-  /*background-color: #353A3F;*/
-  text-shadow: 5px 5px 3px rgba(0,0,0,0.2);
+  font-family: 'Spectral SC', -apple-system,
+system-ui, BlinkMacSystemFont,  "Segoe UI",  "Roboto",  "Helvetica Neue", Arial, sans-serif;
+  text-shadow: 5px 5px 3px rgba(0,0,0,0.3);
 }
 
 .nav-link {
@@ -34,19 +41,18 @@ border-bottom:#008ed6 4px solid;
   border-top: 1px solid #353A3F !important;
   border-bottom: 1px solid #353A3F !important;
   transition: border .5s, background-color .2s;
+    text-shadow: 5px 5px 3px rgba(0,0,0,0.3);
 }
 
 .nav-item:hover {
   letter-spacing: none;
   background-color: #2a2e33;
-  padding-top: 5px !important;
-  margin-top: -5px !important;
-  padding-bottom: 5px !important;
-  margin-bottom: -5px !important;
   border-right: none !important;
   border-left: none !important;
+  text-shadow: none;
 }
 
+/* footer */
 .footer {
   background-color: #353A3F;
 }
@@ -65,7 +71,6 @@ border-radius: 0rem;
     position: relative;
     min-height: 200px;
     margin-top: 2rem;
-    /*margin-bottom: 400px;*/
     background: url(../img/denver.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -75,7 +80,9 @@ border-radius: 0rem;
 }
 
 .btn-primary {
-  background-color: #008ed6;
+  background-color: var(--main-color);
 }
 
-.card-img-top {}
+.card {
+  /*width: 200px;*/
+}
