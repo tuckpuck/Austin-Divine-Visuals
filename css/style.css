@@ -90,7 +90,7 @@ border-radius: 0rem;
 
 
 
-#browsework {
+.buttoneffect {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -98,7 +98,7 @@ border-radius: 0rem;
   box-shadow: 0 0 1px transparent;
   position: relative;
 }
-#browsework:before {
+.buttoneffect:before {
   content: '';
   position: absolute;
   border: var(--main-color) solid 4px;
@@ -111,11 +111,15 @@ border-radius: 0rem;
   -webkit-transition-property: top, right, bottom, left;
   transition-property: top, right, bottom, left;
 }
-#browsework:hover:before, #browsework:focus:before, #browsework:active:before {
+.buttoneffect:hover:before, .buttoneffect:focus:before, .buttoneffect:active:before {
   top: -8px;
   right: -8px;
   bottom: -8px;
   left: -8px;
     border: #0062cc solid 4px;
         /*border-radius: .3rem;*/
+}
+
+.carousel-item {
+  height: 90vh;
 }
