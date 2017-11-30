@@ -7,7 +7,8 @@ a:hover {
   color: whitesmoke; }
 
 .navbar {
-  border-bottom: #008ed6 4px solid; }
+  border-bottom: #008ed6 4px solid;
+  background-image: linear-gradient(#262a2e, black); }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='whitesmoke' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
@@ -24,8 +25,6 @@ a:hover {
   color: whitesmoke; }
 
 .nav-item {
-  border-top: 1px solid #353A3F !important;
-  border-bottom: 1px solid #353A3F !important;
   transition: border .5s, background-color .2s;
   text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3); }
   .nav-item:hover {
@@ -36,8 +35,15 @@ a:hover {
     text-shadow: none; }
 
 /* footer */
+.footer-card {
+  border-radius: 0px !important;
+  border: none !important; }
+
 .footer {
-  background-color: #353A3F; }
+  background-image: linear-gradient(black, #262a2e);
+  height: 50px;
+  color: whitesmoke;
+  border-radius: 0px; }
 
 /* index */
 .homejumbo {

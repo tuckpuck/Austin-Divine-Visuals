@@ -1,5 +1,7 @@
 // sass --watch scss/style.scss:css/style.css
 $primary-color: #008ed6;
+$secondary-color: #262a2e;
+$text-color: whitesmoke;
 $font-family-sans-serif: 'Open Sans', -apple-system,
 system-ui, BlinkMacSystemFont,  "Segoe UI",  "Roboto",  "Helvetica Neue", Arial, sans-serif;
 
@@ -10,11 +12,12 @@ body {
 
 a:hover {
   color: lightsteelblue;
-  color: whitesmoke;
+  color: $text-color;
 }
 
 .navbar {
   border-bottom:$primary-color 4px solid;
+    background-image: linear-gradient($secondary-color, black);
 }
 
 .navbar-toggler-icon {
@@ -22,7 +25,7 @@ a:hover {
 }
 
 .navbar-brand {
-  color: whitesmoke;
+  color: $text-color;
   font-weight: 500;
   font-size: 29px;
   font-family: 'Spectral SC', -apple-system, system-ui, BlinkMacSystemFont,  "Segoe UI",  "Roboto",  "Helvetica Neue", Arial, sans-serif;
@@ -31,12 +34,10 @@ a:hover {
 
 .nav-link {
   letter-spacing: .8px;
-  color: whitesmoke;
+  color: $text-color;
 }
 
 .nav-item {
-  border-top: 1px solid #353A3F !important;
-  border-bottom: 1px solid #353A3F !important;
   transition: border .5s, background-color .2s;
   text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
   &:hover {
@@ -49,9 +50,16 @@ a:hover {
 }
 
 /* footer */
+.footer-card{
+border-radius: 0px !important;
+border: none !important;
+}
 
 .footer {
-  background-color: #353A3F;
+      background-image: linear-gradient(black, $secondary-color);
+      height: 50px;
+      color: $text-color;
+      border-radius: 0px;
 }
 
 /* index */
@@ -116,4 +124,17 @@ a:hover {
 
 .carousel-item {
   height: 90vh;
+}
+
+// mixins
+@mixin linear-gradient($direction, $color-stops...) {
+  // Direction has been omitted and happens to be a color-stop
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
+  }
+
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
 }
