@@ -1,94 +1,68 @@
-:root {
-  --main-color: #008ed6;
-  --font-family-sans-serif: 'Open Sans', -apple-system,
-system-ui, BlinkMacSystemFont,  "Segoe UI",  "Roboto",  "Helvetica Neue", Arial, sans-serif;
-}
-
 body {
   background: url(../img/whitediamond.png);
-  font-family: var(--font-family-sans-serif);
-}
+  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
 a:hover {
   color: lightsteelblue;
-  color: whitesmoke;
-}
+  color: whitesmoke; }
 
 .navbar {
-border-bottom:var(--main-color) 4px solid;
-    /*padding: 0rem 1rem;*/
-}
+  border-bottom: #008ed6 4px solid; }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='whitesmoke' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='whitesmoke' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
 .navbar-brand {
   color: whitesmoke;
   font-weight: 500;
   font-size: 29px;
-  font-family: 'Spectral SC', -apple-system,
-system-ui, BlinkMacSystemFont,  "Segoe UI",  "Roboto",  "Helvetica Neue", Arial, sans-serif;
-  text-shadow: 5px 5px 3px rgba(0,0,0,0.3);
-}
+  font-family: 'Spectral SC', -apple-system, system-ui, BlinkMacSystemFont,  "Segoe UI",  "Roboto",  "Helvetica Neue", Arial, sans-serif;
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3); }
 
 .nav-link {
   letter-spacing: .8px;
-  color: whitesmoke;
-}
+  color: whitesmoke; }
 
 .nav-item {
   border-top: 1px solid #353A3F !important;
   border-bottom: 1px solid #353A3F !important;
   transition: border .5s, background-color .2s;
-    text-shadow: 5px 5px 3px rgba(0,0,0,0.3);
-}
-
-.nav-item:hover {
-  letter-spacing: none;
-  background-color: #2a2e33;
-  border-right: none !important;
-  border-left: none !important;
-  text-shadow: none;
-}
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3); }
+  .nav-item:hover {
+    letter-spacing: none;
+    background-color: #2a2e33;
+    border-right: none !important;
+    border-left: none !important;
+    text-shadow: none; }
 
 /* footer */
 .footer {
-  background-color: #353A3F;
-}
+  background-color: #353A3F; }
 
 /* index */
-
 .homejumbo {
-background-image:url(../img/beach.jpg);
-background-size: cover;
-background-position: center;
-padding: 9rem 0;
-border-radius: 0rem;
-}
+  background-image: url(../img/beach.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 9rem 0;
+  border-radius: 0rem; }
 
 #home-heading {
-    position: relative;
-    min-height: 200px;
-    margin-top: 2rem;
-    background: url(../img/denver.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    color: #fff;
-}
+  position: relative;
+  min-height: 200px;
+  margin-top: 2rem;
+  background: url(../img/denver.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff; }
 
 .btn-primary {
-  background-color: var(--main-color);
-}
+  background-color: #008ed6; }
 
 .card {
-  /*width: 200px;*/
-}
-
-
-
+  /*width: 200px;*/ }
 
 .buttoneffect {
   display: inline-block;
@@ -96,30 +70,28 @@ border-radius: 0rem;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
-  position: relative;
-}
-.buttoneffect:before {
-  content: '';
-  position: absolute;
-  border: var(--main-color) solid 4px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: top, right, bottom, left;
-  transition-property: top, right, bottom, left;
-}
-.buttoneffect:hover:before, .buttoneffect:focus:before, .buttoneffect:active:before {
-  top: -8px;
-  right: -8px;
-  bottom: -8px;
-  left: -8px;
+  position: relative; }
+  .buttoneffect:before {
+    content: '';
+    position: absolute;
+    border: #008ed6 solid 4px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: top, right, bottom, left;
+    transition-property: top, right, bottom, left; }
+  .buttoneffect:hover:before, .buttoneffect:focus:before, .buttoneffect:active:before {
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
     border: #0062cc solid 4px;
-        /*border-radius: .3rem;*/
-}
+    /*border-radius: .3rem;*/ }
 
 .carousel-item {
-  height: 90vh;
-}
+  height: 90vh; }
+
+/*# sourceMappingURL=style.css.map */
