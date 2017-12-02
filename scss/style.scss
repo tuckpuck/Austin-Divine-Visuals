@@ -16,7 +16,7 @@ a:hover {
 }
 
 .navbar {
-  border-bottom:$primary-color 4px solid;
+  border-bottom:$primary-color 3px solid;
     background-image: linear-gradient($secondary-color, black);
 }
 
@@ -70,12 +70,12 @@ border: none !important;
   background-position: center;
   padding: 9rem 0;
   border-radius: 0rem;
+  margin-bottom: 0rem;
 }
 
 #home-heading {
   position: relative;
   min-height: 200px;
-  margin-top: 2rem;
   background: url(../img/denver.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -90,6 +90,24 @@ border: none !important;
 
 .card {
   /*width: 200px;*/
+}
+
+.img-thumbnail {
+  padding: 0px;
+  border: none;
+}
+
+.card-img {
+max-height: 500px;
+max-width: none;
+}
+
+.card-img-overlay {
+    top: auto;
+}
+
+.stage {
+  background-color: $secondary-color;
 }
 
 .buttoneffect {
