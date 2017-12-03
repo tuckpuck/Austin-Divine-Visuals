@@ -17,7 +17,7 @@ a:hover {
 
 .navbar {
   border-bottom:$primary-color 3px solid;
-    background-image: linear-gradient($secondary-color, black);
+  background-image: linear-gradient($secondary-color, black);
 }
 
 .navbar-toggler-icon {
@@ -107,7 +107,8 @@ max-width: none;
 }
 
 .stage {
-  background-color: $secondary-color;
+  // background-color: $secondary-color;
+  background-image: linear-gradient($secondary-color, black);
 }
 
 .buttoneffect {
