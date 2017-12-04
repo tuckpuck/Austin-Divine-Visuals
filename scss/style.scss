@@ -56,7 +56,8 @@ border: none !important;
 }
 
 .footer {
-      background-image: linear-gradient(black, $secondary-color);
+      // background-image: linear-gradient(black, $secondary-color);
+      background-color: black;
       height: 50px;
       color: $text-color;
       border-radius: 0px;
@@ -82,6 +83,40 @@ border: none !important;
   background-repeat: no-repeat;
   text-align: center;
   color: #fff;
+}
+
+.home-img {
+  width: 100%;
+  height: 200px;
+  // overflow: hidden;
+  background-size: cover;
+}
+
+.home-img h4 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#img-1 {
+  background: url("../img/cbtrees.jpg");
+  background-position: top;
+  background-size: cover;
+
+}
+
+#img-2 {
+  background: url("../img/boatinmexico.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+#img-3 {
+  background: url("../img/denver2.JPG");
+  background-position: center;
+  background-size: cover;
+
 }
 
 .btn-primary {
