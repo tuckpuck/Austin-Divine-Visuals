@@ -64,6 +64,9 @@ a:hover {
   text-align: center;
   color: #fff; }
 
+.home-info {
+  background-image: linear-gradient(black, #262a2e); }
+
 .home-img {
   width: 100%;
   height: 200px;
@@ -75,8 +78,8 @@ a:hover {
   transform: translateY(-50%); }
 
 #img-1 {
-  background: url("../img/cbtrees.jpg");
-  background-position: top;
+  background: url("../img/coliseum.jpg");
+  background-position: center;
   background-size: cover; }
 
 #img-2 {

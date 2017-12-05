@@ -85,6 +85,12 @@ border: none !important;
   color: #fff;
 }
 
+.home-info {
+  // height: 400px;
+
+  background-image: linear-gradient(black, $secondary-color);
+}
+
 .home-img {
   width: 100%;
   height: 200px;
@@ -99,8 +105,8 @@ border: none !important;
 }
 
 #img-1 {
-  background: url("../img/cbtrees.jpg");
-  background-position: top;
+  background: url("../img/coliseum.jpg");
+  background-position: center;
   background-size: cover;
 
 }
