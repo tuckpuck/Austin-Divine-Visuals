@@ -92,7 +92,7 @@ a:hover {
 
   &:hover {
     letter-spacing: none;
-    background-color: #2a2e33;
+    background-color: darken($secondary-color, 20%);
     border-right: none !important;
     border-left: none !important;
     text-shadow: none;
@@ -105,7 +105,7 @@ a:hover {
 }
 
 .footer {
-  background-image: linear-gradient(black, $secondary-color);
+  // background-image: linear-gradient(black, $secondary-color);
   background-color: black;
   height: 50px;
   color: $text-color;
@@ -164,7 +164,7 @@ a:hover {
 #img-2 {
   background: url("../img/boatinmexico.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 #img-3 {
