@@ -1,5 +1,5 @@
 // sass --watch scss/style.scss:css/style.css
-$primary-color: #008ed6;
+$primary-color: #006ea4;
 $secondary-color: #262a2e;
 $text-color: whitesmoke;
 $font-family-sans-serif: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
@@ -54,6 +54,12 @@ $font-family-sans-serif: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFo
   }
 }
 
+@mixin base-shadow {
+  -webkit-box-shadow: 0 0 18px 3px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 18px 3px rgba(0,0,0,0.5);
+  box-shadow: 0 0 18px 3px rgba(0,0,0,0.5);
+}
+
 body {
   background: url("../img/whitediamond.png");
   font-family: $font-family-sans-serif;
@@ -98,6 +104,7 @@ a:hover {
     text-shadow: none;
   }
 }
+
 /* footer */
 .footer-card {
   border-radius: 0 !important;
@@ -119,9 +126,7 @@ a:hover {
   padding: 9rem 0;
   border-radius: 0;
   margin-bottom: 0;
-  -webkit-box-shadow: 0 0 18px -1px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0 0 18px -1px rgba(0,0,0,0.5);
-  box-shadow: 0 0 18px -1px rgba(0,0,0,0.5);
+@include base-shadow;
 }
 
 #home-heading {
@@ -137,16 +142,15 @@ a:hover {
 
 .home-info {
   // height: 400px;
-  background-image: linear-gradient(black, $secondary-color);
+  // background-image: linear-gradient(black, $secondary-color);
+  background-image: url(../img/micro_carbon.png);
 }
 
 .home-img {
   width: 100%;
   height: 200px;
   background-size: cover;
-  -webkit-box-shadow: 0 0 18px -1px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0 0 18px -1px rgba(0,0,0,0.5);
-  box-shadow: 0 0 18px -1px rgba(0,0,0,0.5);
+  @include base-shadow;
 }
 
 .home-img h4 {
@@ -174,7 +178,8 @@ a:hover {
 }
 
 .btn-primary {
-  background-color: $primary-color;
+background-color: $primary-color;
+border-color: $primary-color;
 }
 
 .img-thumbnail {
@@ -192,7 +197,6 @@ a:hover {
 }
 
 .stage {
-  // background-color: $secondary-color;
   background-image: linear-gradient($secondary-color, black);
 }
 
@@ -236,25 +240,10 @@ a:hover {
 
 //photo effect
 .photo-button {
-  // width: 94%;
-  box-shadow: 0 0 146px 21px rgba(0, 0, 0, 0.75);
   background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
-  // background-position: center center;
   position: relative;
-  // overflow: hidden;
-  // width: 100%;
-  // margin: 0 auto;
-}
-
-.photo-button h4 {
-  // text-transform: uppercase;
-  // text-align: center;
-  // text-decoration: none;
-  // font-size: 4.875em;
-  // font-weight: 900;
-  // color: #fff;
 }
 
 section h4:after,

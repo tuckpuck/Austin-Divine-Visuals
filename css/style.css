@@ -7,7 +7,7 @@ a:hover {
   color: whitesmoke; }
 
 .navbar {
-  border-bottom: #008ed6 3px solid;
+  border-bottom: #006ea4 3px solid;
   background-image: linear-gradient(#262a2e, black); }
 
 .navbar-toggler-icon {
@@ -53,9 +53,9 @@ a:hover {
   padding: 9rem 0;
   border-radius: 0;
   margin-bottom: 0;
-  -webkit-box-shadow: 0 0 18px -1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 18px -1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 18px -1px rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: 0 0 18px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 18px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 18px 3px rgba(0, 0, 0, 0.5); }
 
 #home-heading {
   position: relative;
@@ -68,15 +68,15 @@ a:hover {
   color: #fff; }
 
 .home-info {
-  background-image: linear-gradient(black, #262a2e); }
+  background-image: url(../img/micro_carbon.png); }
 
 .home-img {
   width: 100%;
   height: 200px;
   background-size: cover;
-  -webkit-box-shadow: 0 0 18px -1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 18px -1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 18px -1px rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: 0 0 18px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 18px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 18px 3px rgba(0, 0, 0, 0.5); }
 
 .home-img h4 {
   position: relative;
@@ -99,7 +99,8 @@ a:hover {
   background-size: cover; }
 
 .btn-primary {
-  background-color: #008ed6; }
+  background-color: #006ea4;
+  border-color: #006ea4; }
 
 .img-thumbnail {
   padding: 0;
@@ -125,7 +126,7 @@ a:hover {
   .buttoneffect:before {
     content: '';
     position: absolute;
-    border: #008ed6 solid 4px;
+    border: #006ea4 solid 4px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -146,7 +147,6 @@ a:hover {
   height: 90vh; }
 
 .photo-button {
-  box-shadow: 0 0 146px 21px rgba(0, 0, 0, 0.75);
   background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
