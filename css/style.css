@@ -29,7 +29,7 @@ a:hover {
   text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3); }
   .nav-item:hover {
     letter-spacing: none;
-    background-color: #2a2e33;
+    background-color: black;
     border-right: none !important;
     border-left: none !important;
     text-shadow: none; }
@@ -40,7 +40,6 @@ a:hover {
   border: none !important; }
 
 .footer {
-  background-image: linear-gradient(black, #262a2e);
   background-color: black;
   height: 50px;
   color: whitesmoke;
@@ -92,7 +91,7 @@ a:hover {
 #img-2 {
   background: url("../img/boatinmexico.jpg");
   background-position: center;
-  background-size: cover; }
+  background-size: contain; }
 
 #img-3 {
   background: url("../img/denver2.JPG");
