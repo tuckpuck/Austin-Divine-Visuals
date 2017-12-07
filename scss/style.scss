@@ -2,11 +2,60 @@
 $primary-color: #008ed6;
 $secondary-color: #262a2e;
 $text-color: whitesmoke;
-$font-family-sans-serif: 'Open Sans', -apple-system,
-system-ui, BlinkMacSystemFont,  "Segoe UI",  "Roboto",  "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+// mixins
+@mixin linear-gradient($direction, $color-stops...) {
+  // Direction has been omitted and happens to be a color-stop
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
+  }
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+@mixin abstlycenter($w,$h) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -($w*0.5);
+  margin-top: -($h*0.5);
+}
+@mixin a($width, $height) {
+  width: $width;
+  height: $height;
+  line-height: $height;
+  @include abstlycenter($width, 0px);
+}
+@mixin clip($string) {
+  -webkit-clip-path: $string;
+  clip-path: $string;
+}
+@mixin grab {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+// keyframes mixin
+@mixin keyframe($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
 
 body {
-  background: url(../img/whitediamond.png);
+  background: url("../img/whitediamond.png");
   font-family: $font-family-sans-serif;
 }
 
@@ -16,7 +65,7 @@ a:hover {
 }
 
 .navbar {
-  border-bottom:$primary-color 3px solid;
+  border-bottom: $primary-color 3px solid;
   background-image: linear-gradient($secondary-color, black);
 }
 
@@ -28,18 +77,19 @@ a:hover {
   color: $text-color;
   font-weight: 500;
   font-size: 29px;
-  font-family: 'Spectral SC', -apple-system, system-ui, BlinkMacSystemFont,  "Segoe UI",  "Roboto",  "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Spectral SC', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
 }
 
 .nav-link {
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   color: $text-color;
 }
 
 .nav-item {
-  transition: border .5s, background-color .2s;
+  transition: border 0.5s, background-color 0.2s;
   text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+
   &:hover {
     letter-spacing: none;
     background-color: #2a2e33;
@@ -48,39 +98,36 @@ a:hover {
     text-shadow: none;
   }
 }
-
 /* footer */
-.footer-card{
-border-radius: 0px !important;
-border: none !important;
+.footer-card {
+  border-radius: 0 !important;
+  border: none !important;
 }
 
 .footer {
-      // background-image: linear-gradient(black, $secondary-color);
-      background-color: black;
-      height: 50px;
-      color: $text-color;
-      border-radius: 0px;
+  background-image: linear-gradient(black, $secondary-color);
+  background-color: black;
+  height: 50px;
+  color: $text-color;
+  border-radius: 0;
 }
-
 /* index */
-
 .homejumbo {
-  background-image: url(../img/beach.jpg);
+  background-image: url("../img/beach.jpg");
   background-size: cover;
   background-position: center;
   padding: 9rem 0;
-  border-radius: 0rem;
-  margin-bottom: 0rem;
-  -webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.5);
--moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.5);
-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.5);
+  border-radius: 0;
+  margin-bottom: 0;
+  -webkit-box-shadow: 0 0 18px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 18px -1px rgba(0,0,0,0.5);
+  box-shadow: 0 0 18px -1px rgba(0,0,0,0.5);
 }
 
 #home-heading {
   position: relative;
   min-height: 200px;
-  background: url(../img/denver.jpg);
+  background: url("../img/denver.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -96,11 +143,10 @@ box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.5);
 .home-img {
   width: 100%;
   height: 200px;
-  // overflow: hidden;
   background-size: cover;
-  -webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.5);
--moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.5);
-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 0 18px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 18px -1px rgba(0,0,0,0.5);
+  box-shadow: 0 0 18px -1px rgba(0,0,0,0.5);
 }
 
 .home-img h4 {
@@ -113,43 +159,36 @@ box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.5);
   background: url("../img/coliseum.jpg");
   background-position: center;
   background-size: cover;
-
 }
 
 #img-2 {
   background: url("../img/boatinmexico.jpg");
   background-position: center;
   background-size: cover;
-
 }
 
 #img-3 {
   background: url("../img/denver2.JPG");
   background-position: center;
   background-size: cover;
-
 }
 
 .btn-primary {
   background-color: $primary-color;
 }
 
-.card {
-  /*width: 200px;*/
-}
-
 .img-thumbnail {
-  padding: 0px;
+  padding: 0;
   border: none;
 }
 
 .card-img {
-max-height: 500px;
-max-width: none;
+  max-height: 500px;
+  max-width: none;
 }
 
 .card-img-overlay {
-    top: auto;
+  top: auto;
 }
 
 .stage {
@@ -164,6 +203,7 @@ max-width: none;
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   position: relative;
+
   &:before {
     content: '';
     position: absolute;
@@ -177,7 +217,10 @@ max-width: none;
     -webkit-transition-property: top, right, bottom, left;
     transition-property: top, right, bottom, left;
   }
-  &:hover:before, &:focus:before, &:active:before {
+
+  &:active:before,
+  &:focus:before,
+  &:hover:before {
     top: -8px;
     right: -8px;
     bottom: -8px;
@@ -191,15 +234,100 @@ max-width: none;
   height: 90vh;
 }
 
-// mixins
-@mixin linear-gradient($direction, $color-stops...) {
-  // Direction has been omitted and happens to be a color-stop
-  @if is-direction($direction) == false {
-    $color-stops: $direction, $color-stops;
-    $direction: 180deg;
-  }
+//photo effect
+.photo-button {
+  // width: 94%;
+  box-shadow: 0 0 146px 21px rgba(0, 0, 0, 0.75);
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-position: center center;
+  position: relative;
+  // overflow: hidden;
+  // width: 100%;
+  // margin: 0 auto;
+}
 
-  background: nth(nth($color-stops, 1), 1);
-  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
-  background: linear-gradient($direction, $color-stops);
+.photo-button h4 {
+  // text-transform: uppercase;
+  // text-align: center;
+  // text-decoration: none;
+  // font-size: 4.875em;
+  // font-weight: 900;
+  // color: #fff;
+}
+
+section h4:after,
+section h4:before {
+  content: '';
+}
+
+.photo-effect {
+  h4 {
+    @include a(250px, 100px);
+
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-color: #FF0000;
+      border-style: solid;
+      border-width: 0;
+      -webkit-transition: all 0.5s cubic-bezier(1, 0.2, 0.26, 0.7);
+      -moz-transition: all 0.5s cubic-bezier(1, 0.2, 0.26, 0.7);
+      transition: all 0.5s cubic-bezier(1, 0.2, 0.26, 0.7);
+      -webkit-transform: translate(0px, 0px) scale(0.8);
+      -moz-transform: translate(0px, 0px) scale(0.8);
+      -ms-transform: translate(0px, 0px) scale(0.8);
+      -o-transform: translate(0px, 0px) scale(0.8);
+      transform: translate(0px, 0px) scale(0.8);
+      opacity: 0;
+    }
+
+    &:before {
+      left: 0;
+      bottom: 0;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+    }
+
+    &:after {
+      top: 0;
+      right: 0;
+      border-top-width: 1px;
+      border-right-width: 1px;
+    }
+
+    &:hover {
+      &:after,
+      &:before {
+        -webkit-transition: all 2s cubic-bezier(0.14, 1.13, 0, 0.91);
+        -moz-transition: all 2s cubic-bezier(0.14, 1.13, 0, 0.91);
+        transition: all 2s cubic-bezier(0.14, 1.13, 0, 0.91);
+        opacity: 1;
+      }
+
+      &:before {
+        -webkit-transform: translate(-30px, 20px) scale(1);
+        -moz-transform: translate(-30px, 20px) scale(1);
+        -ms-transform: translate(-30px, 20px) scale(1);
+        -o-transform: translate(-30px, 20px) scale(1);
+        transform: translate(-30px, 20px) scale(1);
+        border-bottom-width: 12px;
+        border-left-width: 12px;
+      }
+
+      &:after {
+        -webkit-transform: translate(30px, -20px) scale(1);
+        -moz-transform: translate(30px, -20px) scale(1);
+        -ms-transform: translate(30px, -20h4x) scale(1);
+        -o-transform: translate(30px, -20px) scale(1);
+        transform: translate(30px, -20px) scale(1);
+        border-top-width: 12px;
+        border-right-width: 12px;
+      }
+    }
+  }
 }

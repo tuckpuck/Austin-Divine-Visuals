@@ -1,5 +1,5 @@
 body {
-  background: url(../img/whitediamond.png);
+  background: url("../img/whitediamond.png");
   font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
 a:hover {
@@ -17,15 +17,15 @@ a:hover {
   color: whitesmoke;
   font-weight: 500;
   font-size: 29px;
-  font-family: 'Spectral SC', -apple-system, system-ui, BlinkMacSystemFont,  "Segoe UI",  "Roboto",  "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Spectral SC', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3); }
 
 .nav-link {
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   color: whitesmoke; }
 
 .nav-item {
-  transition: border .5s, background-color .2s;
+  transition: border 0.5s, background-color 0.2s;
   text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3); }
   .nav-item:hover {
     letter-spacing: none;
@@ -36,31 +36,32 @@ a:hover {
 
 /* footer */
 .footer-card {
-  border-radius: 0px !important;
+  border-radius: 0 !important;
   border: none !important; }
 
 .footer {
+  background-image: linear-gradient(black, #262a2e);
   background-color: black;
   height: 50px;
   color: whitesmoke;
-  border-radius: 0px; }
+  border-radius: 0; }
 
 /* index */
 .homejumbo {
-  background-image: url(../img/beach.jpg);
+  background-image: url("../img/beach.jpg");
   background-size: cover;
   background-position: center;
   padding: 9rem 0;
-  border-radius: 0rem;
-  margin-bottom: 0rem;
-  -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.5); }
+  border-radius: 0;
+  margin-bottom: 0;
+  -webkit-box-shadow: 0 0 18px -1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 18px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 18px -1px rgba(0, 0, 0, 0.5); }
 
 #home-heading {
   position: relative;
   min-height: 200px;
-  background: url(../img/denver.jpg);
+  background: url("../img/denver.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -74,9 +75,9 @@ a:hover {
   width: 100%;
   height: 200px;
   background-size: cover;
-  -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: 0 0 18px -1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 18px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 18px -1px rgba(0, 0, 0, 0.5); }
 
 .home-img h4 {
   position: relative;
@@ -101,11 +102,8 @@ a:hover {
 .btn-primary {
   background-color: #008ed6; }
 
-.card {
-  /*width: 200px;*/ }
-
 .img-thumbnail {
-  padding: 0px;
+  padding: 0;
   border: none; }
 
 .card-img {
@@ -137,7 +135,7 @@ a:hover {
     transition-duration: 0.3s;
     -webkit-transition-property: top, right, bottom, left;
     transition-property: top, right, bottom, left; }
-  .buttoneffect:hover:before, .buttoneffect:focus:before, .buttoneffect:active:before {
+  .buttoneffect:active:before, .buttoneffect:focus:before, .buttoneffect:hover:before {
     top: -8px;
     right: -8px;
     bottom: -8px;
@@ -147,5 +145,74 @@ a:hover {
 
 .carousel-item {
   height: 90vh; }
+
+.photo-button {
+  box-shadow: 0 0 146px 21px rgba(0, 0, 0, 0.75);
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+section h4:after,
+section h4:before {
+  content: ''; }
+
+.photo-effect h4 {
+  width: 250px;
+  height: 100px;
+  line-height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -125px;
+  margin-top: 0px; }
+  .photo-effect h4:after, .photo-effect h4:before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-color: #FF0000;
+    border-style: solid;
+    border-width: 0;
+    -webkit-transition: all 0.5s cubic-bezier(1, 0.2, 0.26, 0.7);
+    -moz-transition: all 0.5s cubic-bezier(1, 0.2, 0.26, 0.7);
+    transition: all 0.5s cubic-bezier(1, 0.2, 0.26, 0.7);
+    -webkit-transform: translate(0px, 0px) scale(0.8);
+    -moz-transform: translate(0px, 0px) scale(0.8);
+    -ms-transform: translate(0px, 0px) scale(0.8);
+    -o-transform: translate(0px, 0px) scale(0.8);
+    transform: translate(0px, 0px) scale(0.8);
+    opacity: 0; }
+  .photo-effect h4:before {
+    left: 0;
+    bottom: 0;
+    border-bottom-width: 1px;
+    border-left-width: 1px; }
+  .photo-effect h4:after {
+    top: 0;
+    right: 0;
+    border-top-width: 1px;
+    border-right-width: 1px; }
+  .photo-effect h4:hover:after, .photo-effect h4:hover:before {
+    -webkit-transition: all 2s cubic-bezier(0.14, 1.13, 0, 0.91);
+    -moz-transition: all 2s cubic-bezier(0.14, 1.13, 0, 0.91);
+    transition: all 2s cubic-bezier(0.14, 1.13, 0, 0.91);
+    opacity: 1; }
+  .photo-effect h4:hover:before {
+    -webkit-transform: translate(-30px, 20px) scale(1);
+    -moz-transform: translate(-30px, 20px) scale(1);
+    -ms-transform: translate(-30px, 20px) scale(1);
+    -o-transform: translate(-30px, 20px) scale(1);
+    transform: translate(-30px, 20px) scale(1);
+    border-bottom-width: 12px;
+    border-left-width: 12px; }
+  .photo-effect h4:hover:after {
+    -webkit-transform: translate(30px, -20px) scale(1);
+    -moz-transform: translate(30px, -20px) scale(1);
+    -ms-transform: translate(30px, -20h4x) scale(1);
+    -o-transform: translate(30px, -20px) scale(1);
+    transform: translate(30px, -20px) scale(1);
+    border-top-width: 12px;
+    border-right-width: 12px; }
 
 /*# sourceMappingURL=style.css.map */
