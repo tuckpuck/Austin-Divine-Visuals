@@ -7,8 +7,9 @@ a:hover {
   color: whitesmoke; }
 
 .navbar {
-  border-bottom: #006ea4 3px solid;
-  background-image: linear-gradient(#262a2e, black); }
+  border-bottom: #023a55 2px solid;
+  height: 9vh;
+  background-image: url(../img/micro_carbon.png); }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='whitesmoke' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
@@ -48,6 +49,7 @@ a:hover {
 /* index */
 .homejumbo {
   background-image: url("../img/beach.jpg");
+  height: 91vh;
   background-size: cover;
   background-position: center;
   padding: 9rem 0;
@@ -114,7 +116,7 @@ a:hover {
   top: auto; }
 
 .stage {
-  background-image: linear-gradient(#262a2e, black); }
+  background-image: linear-gradient(#0c0f13, black); }
 
 .buttoneffect {
   display: inline-block;
