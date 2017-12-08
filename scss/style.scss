@@ -1,6 +1,7 @@
 // sass --watch scss/style.scss:css/style.css
 $primary-color: #006ea4;
-$secondary-color: #262a2e;
+$primary-dark: #023a55;
+$secondary-color: #0c0f13;
 $text-color: whitesmoke;
 $font-family-sans-serif: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
 // mixins
@@ -71,8 +72,11 @@ a:hover {
 }
 
 .navbar {
-  border-bottom: $primary-color 3px solid;
-  background-image: linear-gradient($secondary-color, black);
+  border-bottom: $primary-dark 2px solid;
+  // background-image: linear-gradient($secondary-color, black);
+  // background-color: $secondary-color;
+  height: 9vh;
+  background-image: url(../img/micro_carbon.png);
 }
 
 .navbar-toggler-icon {
@@ -121,6 +125,7 @@ a:hover {
 /* index */
 .homejumbo {
   background-image: url("../img/beach.jpg");
+  height: 91vh;
   background-size: cover;
   background-position: center;
   padding: 9rem 0;
