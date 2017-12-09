@@ -117,7 +117,7 @@ a:hover {
 
 .footer {
   // background-image: linear-gradient(black, $secondary-color);
-  background-color: black;
+  background-image: url(../img/micro_carbon.png);
   height: 50px;
   color: $text-color;
   border-radius: 0;
@@ -202,7 +202,7 @@ border-color: $primary-color;
 }
 
 .stage {
-  background-image: linear-gradient($secondary-color, black);
+    background-image: url(../img/micro_carbon.png);
 }
 
 .buttoneffect {
