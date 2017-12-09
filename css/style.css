@@ -41,7 +41,7 @@ a:hover {
   border: none !important; }
 
 .footer {
-  background-color: black;
+  background-image: url(../img/micro_carbon.png);
   height: 50px;
   color: whitesmoke;
   border-radius: 0; }
@@ -116,7 +116,7 @@ a:hover {
   top: auto; }
 
 .stage {
-  background-image: linear-gradient(#0c0f13, black); }
+  background-image: url(../img/micro_carbon.png); }
 
 .buttoneffect {
   display: inline-block;
