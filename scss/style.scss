@@ -2,7 +2,7 @@
 $primary-color: #006ea4;
 $primary-dark: #023a55;
 $secondary-color: #0c0f13;
-$text-color: whitesmoke;
+$text-color: rgb(230, 230, 230);
 $font-family-sans-serif: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
 // mixins
 @mixin linear-gradient($direction, $color-stops...) {
@@ -151,6 +151,22 @@ a:hover {
   background-image: url(../img/micro_carbon.png);
 }
 
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
 .home-img {
   width: 100%;
   height: 200px;
@@ -241,6 +257,10 @@ border-color: $primary-color;
 
 .carousel-item {
   height: 90vh;
+}
+
+.text-light {
+  color: $text-color !important;
 }
 
 //photo effect
