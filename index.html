@@ -49,38 +49,40 @@
     <div class="py-5">
       <h1 class="display-3 py-2">Divine Visual</h1>
       <br class="my-5">
-      <p class="lead block">photographer, visual artist, explorer
+      <p class="lead block pb-1">photographer, visual artist, explorer
       </p>
       <a class="btn btn-primary btn-lg buttoneffect" href="#" role="button">browse my work</a>
     </div>
   </div>
 
   <div class="container-fluid home-info text-center py-5">
-    <div class="row">
-      <div class="col-lg"></div>
-    <div class="py-4 col-lg">
-      <p class="lead block text-light">Latest Video</p>
+    <div class="row py-3">
+    <div class="py-5 col-lg-6 offset-lg-3">
+      <h3 class="block text-light mb-3">Latest Video:</h3>
 
       <div class="video-container">
         <iframe id="youtube_video" width="600" height="340" frameborder="0" allowfullscreen></iframe>
       </div>
-      <div id="yt-video-name" class="text-light"></div>
+      <div id="yt-video-name" class="text-light mt-3"></div>
     </div>
-    <div class="col-lg"></div>
     </div>
   </div>
 
   <div class="container-fluid">
     <div class="row text-center stage">
       <div class="home-img mb-2 photo-effect photo-button" id="img-1" alt="">
+        <a href="./photo.html">
         <h4 class="display-4 text-light">photo</h4>
+        </a>
       </div>
 
       <div class="home-img my-2 photo-effect photo-button" id="img-2" alt="">
+        <a href="./film.html">
         <h4 class="display-4 text-dark">film</h4>
+      </a>
       </div>
       <div class="home-img mt-2 photo-effect photo-button" id="img-3" alt="">
-        <h4 class="display-4 text-light">contact</h4>
+        <a href="./contact.html"><h4 class="display-4 text-light">contact</h4></a>
       </div>
     </div>
 
@@ -109,7 +111,7 @@
       var title = data.items[0].title;
       console.log(title);
       $("#yt-video-name").text('"' + title + '"');
-      $("#youtube_video").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
+      $("#youtube_video").attr("src", "https://youtube.com/embed/" + id + "?controls=1&modestbranding=0&showinfo=0&rel=0");
     });
   </script>
 </body>

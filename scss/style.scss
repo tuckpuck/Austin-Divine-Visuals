@@ -72,9 +72,6 @@ a:hover {
 }
 
 .navbar {
-  border-bottom: $primary-dark 2px solid;
-  // background-image: linear-gradient($secondary-color, black);
-  // background-color: $secondary-color;
   height: 9vh;
   background-image: url(../img/micro_carbon.png);
 }
@@ -94,6 +91,7 @@ a:hover {
 .nav-link {
   letter-spacing: 0.8px;
   color: $text-color;
+  padding: 23px 0px;
 }
 
 .nav-item {
@@ -116,11 +114,11 @@ a:hover {
 }
 
 .footer {
-  // background-image: linear-gradient(black, $secondary-color);
   background-image: url(../img/micro_carbon.png);
-  height: 50px;
+  height: 65px;
   color: $text-color;
   border-radius: 0;
+  line-height: 2.4;
 }
 /* index */
 .homejumbo {
@@ -181,7 +179,7 @@ height: 100%;
 }
 
 #img-1 {
-  background: url("../img/coliseum.jpg");
+  background: url("../img/coliseum.JPG");
   background-position: center;
   background-size: cover;
 }
@@ -194,13 +192,18 @@ height: 100%;
 
 #img-3 {
   background: url("../img/denver2.JPG");
-  background-position: center;
+  background-position: 50% 70%;
   background-size: cover;
 }
 
 .btn-primary {
 background-color: $primary-color;
 border-color: $primary-color;
+}
+
+.btn-primary:hover {
+  background-color: darken($primary-color, 10%);
+  border: none;
 }
 
 .img-thumbnail {
@@ -250,8 +253,8 @@ border-color: $primary-color;
     right: -8px;
     bottom: -8px;
     left: -8px;
-    border: #0062cc solid 4px;
-    /*border-radius: .3rem;*/
+    border: darken($primary-color, 10%) solid 4px;
+    border-radius: .3rem;
   }
 }
 

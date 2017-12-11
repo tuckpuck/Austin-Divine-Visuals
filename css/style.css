@@ -7,7 +7,6 @@ a:hover {
   color: #e6e6e6; }
 
 .navbar {
-  border-bottom: #023a55 2px solid;
   height: 9vh;
   background-image: url(../img/micro_carbon.png); }
 
@@ -23,7 +22,8 @@ a:hover {
 
 .nav-link {
   letter-spacing: 0.8px;
-  color: #e6e6e6; }
+  color: #e6e6e6;
+  padding: 23px 0px; }
 
 .nav-item {
   transition: border 0.5s, background-color 0.2s;
@@ -42,9 +42,10 @@ a:hover {
 
 .footer {
   background-image: url(../img/micro_carbon.png);
-  height: 50px;
+  height: 65px;
   color: #e6e6e6;
-  border-radius: 0; }
+  border-radius: 0;
+  line-height: 2.4; }
 
 /* index */
 .homejumbo {
@@ -102,7 +103,7 @@ a:hover {
   transform: translateY(-50%); }
 
 #img-1 {
-  background: url("../img/coliseum.jpg");
+  background: url("../img/coliseum.JPG");
   background-position: center;
   background-size: cover; }
 
@@ -113,12 +114,16 @@ a:hover {
 
 #img-3 {
   background: url("../img/denver2.JPG");
-  background-position: center;
+  background-position: 50% 70%;
   background-size: cover; }
 
 .btn-primary {
   background-color: #006ea4;
   border-color: #006ea4; }
+
+.btn-primary:hover {
+  background-color: #004c71;
+  border: none; }
 
 .img-thumbnail {
   padding: 0;
@@ -158,8 +163,8 @@ a:hover {
     right: -8px;
     bottom: -8px;
     left: -8px;
-    border: #0062cc solid 4px;
-    /*border-radius: .3rem;*/ }
+    border: #004c71 solid 4px;
+    border-radius: .3rem; }
 
 .carousel-item {
   height: 90vh; }
