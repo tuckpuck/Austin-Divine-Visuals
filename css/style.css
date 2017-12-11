@@ -120,10 +120,12 @@ a:hover {
 .btn-primary {
   background-color: #006ea4;
   border-color: #006ea4; }
-
-.btn-primary:hover {
-  background-color: #004c71;
-  border: none; }
+  .btn-primary:hover {
+    background-color: #004c71;
+    border: none; }
+  .btn-primary:active {
+    background-color: #004c71 !important;
+    border: none; }
 
 .img-thumbnail {
   padding: 0;

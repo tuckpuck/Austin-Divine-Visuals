@@ -28,8 +28,15 @@
     border: none !important;
     margin: auto;
   }
+  .nav-link {
+    padding: 3px !important;
+  }
   .navbar-nav {
     align-items: center;
+    flex-direction: row;
+  }
+  .navbar {
+    height: 11vh;
   }
 }
 
