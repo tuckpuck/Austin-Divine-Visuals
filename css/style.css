@@ -49,7 +49,7 @@ a:hover {
 
 /* index */
 .homejumbo {
-  background-image: url("../img/beach.jpg");
+  background-image: url("../img/explorewithme.jpg");
   height: 91vh;
   background-size: cover;
   background-position: center;
@@ -88,6 +88,9 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%; }
+
+.video-text {
+  margin-top: 200px !important; }
 
 .home-img {
   width: 100%;
@@ -140,6 +143,9 @@ a:hover {
 
 .stage {
   background-image: url(../img/micro_carbon.png); }
+
+.homebutton {
+  margin-top: 350px; }
 
 .buttoneffect {
   display: inline-block;
