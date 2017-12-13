@@ -104,7 +104,6 @@
       var link = data.items[0].link;
       var id = link.substr(link.indexOf("=") + 1);
       var title = data.items[0].title;
-      console.log(title);
       $("#yt-video-name").text('"' + title + '"');
       $("#youtube_video").attr("src", "https://youtube.com/embed/" + id + "?controls=1&modestbranding=0&showinfo=0&rel=0");
     });

@@ -1,5 +1,4 @@
 body {
-  background: url("../img/whitediamond.png");
   font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
 a:hover {
@@ -8,7 +7,7 @@ a:hover {
 
 .navbar {
   height: 9vh;
-  background-image: url(../img/micro_carbon.png); }
+  background-image: url(../img/pattern/micro_carbon.png); }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='whitesmoke' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
@@ -41,7 +40,7 @@ a:hover {
   border: none !important; }
 
 .footer {
-  background-image: url(../img/micro_carbon.png);
+  background-image: url(../img/pattern/micro_carbon.png);
   height: 65px;
   color: #e6e6e6;
   border-radius: 0;
@@ -71,7 +70,7 @@ a:hover {
   color: #fff; }
 
 .home-info {
-  background-image: url(../img/micro_carbon.png); }
+  background-image: url(../img/pattern/micro_carbon.png); }
 
 .video-container {
   position: relative;
@@ -90,7 +89,7 @@ a:hover {
   height: 100%; }
 
 .video-text {
-  margin-top: 200px !important; }
+  margin-top: 190px !important; }
 
 .home-img {
   width: 100%;
@@ -142,7 +141,7 @@ a:hover {
   top: auto; }
 
 .stage {
-  background-image: url(../img/micro_carbon.png); }
+  background-image: url(../img/pattern/micro_carbon.png); }
 
 .homebutton {
   margin-top: 350px; }
@@ -247,5 +246,8 @@ section h4:before {
     transform: translate(30px, -20px) scale(1);
     border-top-width: 12px;
     border-right-width: 12px; }
+
+.contact-picture {
+  height: 400px; }
 
 /*# sourceMappingURL=style.css.map */
