@@ -62,7 +62,7 @@ $font-family-sans-serif: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFo
 }
 
 body {
-  background: url("../img/whitediamond.png");
+  // background: url("../img/pattern/whitediamond.png");
   font-family: $font-family-sans-serif;
 }
 
@@ -73,7 +73,7 @@ a:hover {
 
 .navbar {
   height: 9vh;
-  background-image: url(../img/micro_carbon.png);
+  background-image: url(../img/pattern/micro_carbon.png);
 }
 
 .navbar-toggler-icon {
@@ -114,7 +114,7 @@ a:hover {
 }
 
 .footer {
-  background-image: url(../img/micro_carbon.png);
+  background-image: url(../img/pattern/micro_carbon.png);
   height: 65px;
   color: $text-color;
   border-radius: 0;
@@ -129,7 +129,7 @@ a:hover {
   padding: 9rem 0;
   border-radius: 0;
   margin-bottom: 0;
-@include base-shadow;
+  @include base-shadow;
 }
 
 #home-heading {
@@ -146,7 +146,7 @@ a:hover {
 .home-info {
   // height: 400px;
   // background-image: linear-gradient(black, $secondary-color);
-  background-image: url(../img/micro_carbon.png);
+  background-image: url(../img/pattern/micro_carbon.png);
 }
 
 .video-container {
@@ -166,7 +166,7 @@ height: 100%;
 }
 
 .video-text {
-  margin-top: 200px !important;
+  margin-top: 190px !important;
 }
 
 .home-img {
@@ -229,7 +229,7 @@ border-color: $primary-color;
 }
 
 .stage {
-    background-image: url(../img/micro_carbon.png);
+    background-image: url(../img/pattern/micro_carbon.png);
 }
 
 .homebutton {
@@ -359,4 +359,13 @@ section h4:before {
       }
     }
   }
+}
+
+// contact
+.contact-picture {
+  height: 400px;
+}
+
+.container {
+
 }
