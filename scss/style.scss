@@ -2,9 +2,9 @@
 $primary-color: #006ea4;
 $primary-dark: #023a55;
 $secondary-color: #0c0f13;
-$color-gray-light-1: f7f7f7;
-$color-gray-dark: #777;
 $color-gray-darker: #333;
+$color-gray-dark: #777;
+$color-gray-light-1: #f7f7f7;
 $text-color: rgb(230, 230, 230);
 $font-family-sans-serif: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
 // mixins
@@ -163,6 +163,10 @@ a:hover {
 
 .home-info {
 background-color: $color-gray-darker;
+background: -moz-linear-gradient(left, $color-gray-darker 0%, #45484d 40%, #45484d 60%, $color-gray-darker 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, $color-gray-darker 0%,#45484d 40%,#45484d 60%,$color-gray-darker 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, $color-gray-darker 0%,#45484d 40%,#45484d 60%,$color-gray-darker 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-gray-darker', endColorstr='$color-gray-darker',GradientType=1 ); /* IE6-9 */
 }
 
 .video-latest {

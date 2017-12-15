@@ -69,17 +69,17 @@
     <div class="row text-center stage">
       <div class="home-img mb-2 photo-effect photo-button" id="img-1" alt="">
         <a href="./photo.html">
-        <h4 class="display-4 text-light">Photo</h4>
+        <h4 class="display-4 text-light pic-effect-text">Photo</h4>
         </a>
       </div>
 
       <div class="home-img my-2 photo-effect photo-button" id="img-2" alt="">
         <a href="./film.html">
-        <h4 class="display-4 text-dark">Film</h4>
+        <h4 class="display-4 text-dark pic-effect-text">Film</h4>
       </a>
       </div>
       <div class="home-img mt-2 photo-effect photo-button" id="img-3" alt="">
-        <a href="./contact.html"><h4 class="display-4 text-light">Contact</h4></a>
+        <a href="./contact.html"><h4 class="display-4 text-light pic-effect-text">Contact</h4></a>
       </div>
     </div>
 
@@ -110,6 +110,14 @@
       $("#youtube_video").attr("src", "https://youtube.com/embed/" + id + "?controls=1&modestbranding=0&showinfo=0&rel=0");
     });
   </script>
+
+  <script>
+
+  $('.photo-button').on('mousenter mouseleave', function(e) {
+    console.log(e.type);
+    $('.pic-effect-text').hover();
+  });
+</script>
 </body>
 
 </html>
