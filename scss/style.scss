@@ -226,7 +226,7 @@ height: 100%;
 }
 
 #img-2 {
-  background: url("../img/boatinmexico.jpg");
+  background: url("../img/boats2.jpg");
   background-position: center;
   background-size: contain;
 }
@@ -309,6 +309,47 @@ border-color: $primary-color;
     left: -.8rem;
     border: darken($primary-color, 10%) solid .4rem;
     border-radius: .3rem;
+  }
+}
+
+// home photo
+.composition {
+  position: relative;
+  margin-top: -5rem;
+
+  &__photo {
+    width: 22rem;
+    height: 14.6rem;
+    box-shadow: 0 1.5rem 4rem rgba(black, .4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem;
+    outline: $primary-dark;
+
+      &--p1 {
+        left: 0;
+        top: -5rem;
+      }
+      &--p2 {
+        left: -7rem;
+        top: 9rem;
+      }
+      &--p3 {
+        left: 12rem;
+        top: 3rem;
+      }
+
+      &:hover {
+        outline: 1.5rem solid $primary-dark;
+        transform: scale(1.05) translateY(-.5rem);
+        box-shadow: 0 2.5rem 4rem rgba(black, .5);
+        z-index: 20;
+      }
+  }
+  &:hover &__photo:not(:hover){
+    transform: scale(.95);
   }
 }
 
