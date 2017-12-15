@@ -64,6 +64,12 @@ $font-family-sans-serif: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFo
   box-shadow: 0 0 1.8rem .3rem rgba(0,0,0,0.5);
 }
 
+@mixin less-shadow {
+  -webkit-box-shadow: 0 0 .8rem .1rem rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 .8rem .1rem rgba(0,0,0,0.5);
+  box-shadow: 0 0 .8rem .1rem rgba(0,0,0,0.5);
+}
+
 html {
   font-size: 62.5% !important;
 }
@@ -157,13 +163,20 @@ a:hover {
 
 .home-info {
 background-color: $color-gray-darker;
-  // background-image: url(../img/pattern/micro_carbon.png);
+}
+
+.video-latest {
+  margin-bottom: 2rem;
 }
 
 .video-container {
 position: relative;
 padding-bottom: 56.25%;
 padding-top: 3rem; height: 0; overflow: hidden;
+}
+
+#player {
+  @include less-shadow;
 }
 
 .video-container iframe,
@@ -174,6 +187,10 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
+}
+
+.video-stage {
+  padding: 10rem 0;
 }
 
 .video-text {
@@ -253,7 +270,8 @@ border-color: $primary-color;
 }
 
 .homebutton {
-  margin-top: 35rem;
+  margin-top: 40rem;
+  padding: 1.2rem;
 }
 
 .buttoneffect {
