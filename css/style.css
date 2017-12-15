@@ -141,7 +141,7 @@ a:hover {
   background-size: cover; }
 
 #img-2 {
-  background: url("../img/boats2.jpg");
+  background: url("../img/filmstrip.png"), url("../img/boats2.jpg");
   background-position: center;
   background-size: contain; }
 
