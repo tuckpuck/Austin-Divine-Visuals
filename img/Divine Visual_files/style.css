@@ -80,20 +80,12 @@ a:hover {
 .home-info {
   background-color: #333; }
 
-.video-latest {
-  margin-bottom: 2rem; }
-
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 3rem;
   height: 0;
   overflow: hidden; }
-
-#player {
-  -webkit-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5); }
 
 .video-container iframe,
 .video-container object,
@@ -103,9 +95,6 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%; }
-
-.video-stage {
-  padding: 10rem 0; }
 
 .video-text {
   margin-top: 19rem !important;
