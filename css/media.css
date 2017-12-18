@@ -44,7 +44,11 @@
 @media (max-width: 767px) {}
 
 /*Medium devices (tablets, below 992px)*/
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+  .comp-display {
+    display: none;
+  }
+}
 
 /*Large devices (desktops, below 1200px)*/
 @media (max-width: 1199px) {}
