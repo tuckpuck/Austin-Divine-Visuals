@@ -7,6 +7,9 @@ body {
 .main-area {
   height: 84vh; }
 
+a {
+  color: #e6e6e6 !important; }
+
 a:hover {
   color: lightsteelblue;
   color: #e6e6e6; }
@@ -14,6 +17,10 @@ a:hover {
 .navbar {
   height: 9vh;
   background-image: url(../img/pattern/micro_carbon.png); }
+
+.navbar-toggler {
+  padding: .25rem .75rem;
+  font-size: 2rem; }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='whitesmoke' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
@@ -52,7 +59,8 @@ a:hover {
   color: #e6e6e6;
   border-radius: 0;
   line-height: inherit;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  line-height: 2.4; }
 
 /* index */
 .homejumbo {
@@ -147,7 +155,7 @@ a:hover {
 
 #img-3 {
   background: url("../img/denver2.JPG");
-  background-position: 50% 70%;
+  background-position: 50% 55%;
   background-size: cover; }
 
 .btn {
@@ -210,7 +218,8 @@ a:hover {
 
 .composition {
   position: relative;
-  margin-top: -5rem; }
+  margin-top: -4.95rem;
+  height: 40rem; }
   .composition__photo {
     width: 22rem;
     height: 14.6rem;
@@ -220,23 +229,32 @@ a:hover {
     z-index: 10;
     transition: all .2s;
     outline-offset: 2rem;
-    outline: #023a55; }
+    outline: #006ea4; }
     .composition__photo--p1 {
+      left: 5rem;
+      top: 16rem; }
+    .composition__photo--p2 {
+      left: 13rem;
+      top: 5rem; }
+    .composition__photo--p3 {
+      left: -8rem;
+      top: 9rem; }
+    .composition__photo--p4 {
       left: 0;
       top: -5rem; }
-    .composition__photo--p2 {
-      left: -7rem;
-      top: 9rem; }
-    .composition__photo--p3 {
-      left: 12rem;
-      top: 3rem; }
     .composition__photo:hover {
-      outline: 1.5rem solid #023a55;
+      outline: 1.5rem solid #006ea4;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
+
+.photo-link {
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%); }
 
 .carousel-item {
   height: 90vh; }

@@ -1,4 +1,5 @@
 // sass --watch scss/style.scss:css/style.css
+$primary-light: #81C6E8;
 $primary-color: #006ea4;
 $primary-dark: #023a55;
 $secondary-color: #0c0f13;
@@ -82,6 +83,10 @@ body {
   height: 84vh;
 }
 
+a {
+  color: $text-color !important;
+}
+
 a:hover {
   color: lightsteelblue;
   color: $text-color;
@@ -90,6 +95,11 @@ a:hover {
 .navbar {
   height: 9vh;
   background-image: url(../img/pattern/micro_carbon.png);
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 2rem;
 }
 
 .navbar-toggler-icon {
@@ -136,7 +146,8 @@ a:hover {
   color: $text-color;
   border-radius: 0;
   line-height: inherit;
-    font-size: 1.4rem;
+  font-size: 1.4rem;
+  line-height: 2.4;
 }
 /* index */
 .homejumbo {
@@ -233,7 +244,7 @@ height: 100%;
 
 #img-3 {
   background: url("../img/denver2.JPG");
-  background-position: 50% 70%;
+  background-position: 50% 55%;
   background-size: cover;
 }
 
@@ -315,7 +326,8 @@ border-color: $primary-color;
 // home photo
 .composition {
   position: relative;
-  margin-top: -5rem;
+  margin-top: -4.95rem;
+  height: 40rem;
 
   &__photo {
     width: 22rem;
@@ -326,23 +338,27 @@ border-color: $primary-color;
     z-index: 10;
     transition: all .2s;
     outline-offset: 2rem;
-    outline: $primary-dark;
+    outline: $primary-color;
 
-      &--p1 {
-        left: 0;
-        top: -5rem;
-      }
-      &--p2 {
-        left: -7rem;
-        top: 9rem;
-      }
-      &--p3 {
-        left: 12rem;
-        top: 3rem;
-      }
+    &--p1 {
+      left: 5rem;
+      top: 16rem;
+    }
+    &--p2 {
+      left: 13rem;
+      top: 5rem;
+    }
+    &--p3 {
+      left: -8rem;
+      top: 9rem;
+    }
+    &--p4 {
+      left: 0;
+      top: -5rem;
+    }
 
       &:hover {
-        outline: 1.5rem solid $primary-dark;
+        outline: 1.5rem solid $primary-color;
         transform: scale(1.05) translateY(-.5rem);
         box-shadow: 0 2.5rem 4rem rgba(black, .5);
         z-index: 20;
@@ -351,6 +367,13 @@ border-color: $primary-color;
   &:hover &__photo:not(:hover){
     transform: scale(.95);
   }
+}
+
+.photo-link {
+  position: absolute;
+bottom: 0rem;
+ left: 50%;
+ transform: translateX(-50%);
 }
 
 .carousel-item {
