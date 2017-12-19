@@ -48,6 +48,9 @@
   .comp-display {
     display: none;
   }
+  .video-stage {
+    padding: 2rem 0;
+  }
 }
 
 /*Large devices (desktops, below 1200px)*/

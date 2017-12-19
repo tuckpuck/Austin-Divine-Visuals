@@ -205,7 +205,7 @@ height: 100%;
 }
 
 .video-stage {
-  padding: 10rem 0;
+  padding: 6rem 0;
 }
 
 .video-text {
@@ -327,7 +327,6 @@ border-color: $primary-color;
 .composition {
   position: relative;
   margin-top: -4.95rem;
-  height: 40rem;
 
   &__photo {
     width: 22rem;
@@ -342,7 +341,7 @@ border-color: $primary-color;
 
     &--p1 {
       left: 5rem;
-      top: 16rem;
+      top: 18rem;
     }
     &--p2 {
       left: 13rem;
@@ -377,7 +376,7 @@ bottom: 0rem;
 }
 
 .carousel-item {
-  height: 90vh;
+  height: 55vh !important;
 }
 
 .text-light {

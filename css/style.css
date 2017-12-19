@@ -121,7 +121,7 @@ a:hover {
   height: 100%; }
 
 .video-stage {
-  padding: 10rem 0; }
+  padding: 6rem 0; }
 
 .video-text {
   margin-top: 19rem !important;
@@ -218,8 +218,7 @@ a:hover {
 
 .composition {
   position: relative;
-  margin-top: -4.95rem;
-  height: 40rem; }
+  margin-top: -4.95rem; }
   .composition__photo {
     width: 22rem;
     height: 14.6rem;
@@ -232,7 +231,7 @@ a:hover {
     outline: #006ea4; }
     .composition__photo--p1 {
       left: 5rem;
-      top: 16rem; }
+      top: 18rem; }
     .composition__photo--p2 {
       left: 13rem;
       top: 5rem; }
@@ -257,7 +256,7 @@ a:hover {
   transform: translateX(-50%); }
 
 .carousel-item {
-  height: 90vh; }
+  height: 55vh !important; }
 
 .text-light {
   color: #e6e6e6 !important; }
