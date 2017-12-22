@@ -256,7 +256,27 @@ a:hover {
   transform: translateX(-50%); }
 
 .carousel-item {
-  height: 55vh !important; }
+  height: 60vh !important; }
+
+#carousel-1 {
+  background-image: url(../img/lady.jpeg);
+  background-size: cover;
+  background-position: 50% 35%; }
+
+#carousel-2 {
+  background-image: url(../img/beachlife.jpg);
+  background-size: cover;
+  background-position: 50% 27%; }
+
+#carousel-3 {
+  background-image: url(../img/buddhist.jpg);
+  background-size: cover;
+  background-position: 50% 75%; }
+
+#carousel-4 {
+  background-image: url(../img/kid1.jpg);
+  background-size: cover;
+  background-position: 50% 50%; }
 
 .text-light {
   color: #e6e6e6 !important; }
