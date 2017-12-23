@@ -181,7 +181,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-gray-d
 }
 
 .video-latest {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 
 .video-container {
@@ -250,6 +251,8 @@ height: 100%;
 
 .btn {
   font-size: 1.9rem;
+    padding: 1.2rem;
+    border: none !important;
 }
 
 .btn-primary {
@@ -286,7 +289,6 @@ border-color: $primary-color;
 
 .homebutton {
   margin-top: 40rem;
-  padding: 1.2rem;
 }
 
 .buttoneffect {
