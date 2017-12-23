@@ -97,7 +97,8 @@ a:hover {
   /* IE6-9 */ }
 
 .video-latest {
-  margin-bottom: 2rem; }
+  margin-bottom: 3rem;
+  margin-top: 1rem; }
 
 .video-container {
   position: relative;
@@ -159,7 +160,9 @@ a:hover {
   background-size: cover; }
 
 .btn {
-  font-size: 1.9rem; }
+  font-size: 1.9rem;
+  padding: 1.2rem;
+  border: none !important; }
 
 .btn-primary {
   background-color: #006ea4;
@@ -186,8 +189,7 @@ a:hover {
   background-image: url(../img/pattern/micro_carbon.png); }
 
 .homebutton {
-  margin-top: 40rem;
-  padding: 1.2rem; }
+  margin-top: 40rem; }
 
 .buttoneffect {
   display: inline-block;
