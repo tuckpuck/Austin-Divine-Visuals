@@ -369,6 +369,10 @@ section h4:before {
 .contact-text {
   font-size: 1.6rem; }
 
+.contact-text-placer {
+  margin-top: 6rem;
+  line-height: 1.8; }
+
 .contact-picture {
   height: 40rem; }
 
