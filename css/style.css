@@ -16,11 +16,36 @@ a:hover {
 
 .navbar {
   height: 9vh;
-  background-image: url(../img/pattern/micro_carbon.png); }
+  background: radial-gradient(#363636, #303030, #242424); }
 
 .navbar-toggler {
   padding: .25rem .75rem;
   font-size: 2rem; }
+
+li a.effect-underline {
+  text-decoration: none;
+  display: inline-block;
+  position: relative; }
+
+a.effect-underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 1.2rem;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1); }
+
+a.effect-underline:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='whitesmoke' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
@@ -39,14 +64,15 @@ a:hover {
   font-size: 1.6rem; }
 
 .nav-item {
-  transition: border 0.5s, background-color 0.2s;
+  transition: border 0.5s, background-color 0.4s, margin 0.4s;
   text-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.3); }
   .nav-item:hover {
     letter-spacing: none;
-    background-color: black;
+    background-color: #004262;
     border-right: none !important;
     border-left: none !important;
-    text-shadow: none; }
+    text-shadow: none;
+    margin: 0rem .3rem; }
 
 /* footer */
 .footer-card {
@@ -374,7 +400,7 @@ section h4:before {
   line-height: 1.8; }
 
 .contact-picture {
-  height: 40rem; }
+  height: 38rem; }
 
 .box {
   position: relative;
