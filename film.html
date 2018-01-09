@@ -84,9 +84,9 @@ $.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtub
 
   console.log(videoURLs);
 
-for(let i = 0; i < data.items.length; i++) {
+for(let i = 0; i < 10; i++) {
 var i_frame = $('<iframe />', {
-  class: 'thumbnail',
+  class: 'iframe-vid',
   width: '560',
   height: '315',
   src: videoURLs[i],
