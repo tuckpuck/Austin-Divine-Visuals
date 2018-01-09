@@ -47,30 +47,10 @@
   </div>
 </nav>
 
-<div class="container text-center">
-  <div class="row text-dark py-5">
-  <div class="col-md-4">
-    <h1> <span class="ion-camera"></span></h1>
-    <p>Photography </p>
-  </div>
-  <div class="col-md-4">
-    <h1><span class="ion-videocamera"></span></h1>
-    <p>Drone Work </p>
-  </div>
-  <div class="col-md-4">
-    <h1><span class="ion-ios-color-filter-outline"></span></h1>
-    <p>Photo Editing </p>
-  </div>
-</div></div>
-
-<!-- <div class="container"><div class="owl-carousel owl-theme">
-    <div class="item-video" data-merge="1"><iframe height="200px" width="356px" src="https://www.youtube.com/embed/fp28n1ZKzCY?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe></div>
-    <div class="item-video" data-merge="2"><iframe height="200px" width="356px" src="https://www.youtube.com/embed/U-EmB_qYAE4?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe></div>
-    <div class="item-video" data-merge="3"><iframe height="200px" width="356px" src="https://www.youtube.com/embed/2beCpTYzqSk?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe></div>
-    <div class="item-video" data-merge="4"><iframe height="200px" width="356px" src="https://www.youtube.com/embed/5jYzzgdSNMU?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe></div>
-    <div class="item-video" data-merge="5"><iframe height="200px" width="356px" src="https://www.youtube.com/embed/Go47S3TTcQg?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe></div>
-</div></div> -->
-
+<div class="container-fluid text-center py-5 background">
+  <h1 class="block text-light latest-title">Latest on Youtube:</h1>
+  <div id="iframe"></div>
+</div>
 
 
 <!-- javascript -->
@@ -82,43 +62,35 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
-<!-- owl carousel -->
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-
 <script>
-$(document).ready(function() {
-             $('.owl-carousel').owlCarousel({
-               items: 3,
-               merge: false,
-               loop: true,
-               margin: 11,
-               autoWidth: true,
-               lazyLoad: true,
-               center: true,
-               mouseDrag: true,
-               responsive: {
-                 480: {
-                   items: 2
-                 },
-                 600: {
-                   items: 4
-                 }
-               }
-             });
-           });
-</script>
+var channelID = "UCtbZgA54pP_ZrJwPCoFiy0A";
+$.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D'+channelID, function(data) {
+  console.log(data);
+ var link = data.items[0].link;
+ var id = link.substr(link.indexOf("=")+1);
+ var title = data.items[0].title;
+ var videoURLs = [];
+ for(let i = 0; i < data.items.length; i++) {
+   var replaced = data.items[i].link.replace("watch?v=","embed/");
+   videoURLs.push(replaced);
+ };
 
-<!-- youtube channel embed script -->
-<script>
-var id = $('.ytce').data();
-          var url = 'http://ytchannelembed.com/jsonfr.php?';
-          $.each(id, function(k, v) {
-              url = url + k + "=" + v + "&";
-          });
-          url = url + "jsoncallback=?";
-          $.getJSON(url, function(data) {
-              $(data.gallery).appendTo('.ytce');
-          });
+  console.log(videoURLs);
+
+for(let i = 0; i < data.items.length; i++) {
+var i_frame = $('<iframe />', {
+  class: 'thumbnail',
+  width: '560',
+  height: '315',
+  src: videoURLs[i],
+  frameborder: '0',
+  gesture:'media',
+  allow: 'encrypted-media',
+  allowfullscreen: ''
+});
+i_frame.appendTo($('#iframe'));
+}
+});
 </script>
 
 </body>
