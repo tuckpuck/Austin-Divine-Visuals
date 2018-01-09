@@ -389,16 +389,8 @@ section h4:before {
     border-top-width: 1.2rem;
     border-right-width: 1.2rem; }
 
-.film-container {
-  background-color: #333;
-  background: -moz-linear-gradient(left, #333 0%, #45484d 40%, #45484d 60%, #333 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #333 0%, #45484d 40%, #45484d 60%, #333 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #333 0%, #45484d 40%, #45484d 60%, #333 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-gray-darker', endColorstr='$color-gray-darker',GradientType=1 );
-  /* IE6-9 */ }
+.iframe-vid {
+  margin: 15px; }
 
 .contact-page {
   background-color: #333; }
