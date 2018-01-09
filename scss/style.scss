@@ -298,7 +298,6 @@ border-color: $primary-color;
   }
 }
 
-
 .img-thumbnail {
   padding: 0;
   border: none;
@@ -530,12 +529,8 @@ section h4:before {
   }
 }
 // film
-.film-container {
-  background-color: $color-gray-darker;
-background: -moz-linear-gradient(left, $color-gray-darker 0%, #45484d 40%, #45484d 60%, $color-gray-darker 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, $color-gray-darker 0%,#45484d 40%,#45484d 60%,$color-gray-darker 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, $color-gray-darker 0%,#45484d 40%,#45484d 60%,$color-gray-darker 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-gray-darker', endColorstr='$color-gray-darker',GradientType=1 ); /* IE6-9 */
+.iframe-vid {
+  margin: 15px;
 }
 
 // contact
