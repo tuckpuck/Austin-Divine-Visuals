@@ -23,7 +23,10 @@
 
 /***** below media queries *****/
 /*Extra small devices (portrait phones, below 576px)*/
-@media (max-width: 575px) {
+@media (max-width: 575px) {}
+
+/*Small devices (landscape phones, below 768px)*/
+@media (max-width: 767px) {
   .nav-item {
     border: none !important;
     margin: auto;
@@ -39,9 +42,6 @@
     height: 11vh;
   }
 }
-
-/*Small devices (landscape phones, below 768px)*/
-@media (max-width: 767px) {}
 
 /*Medium devices (tablets, below 992px)*/
 @media (max-width: 991px) {
