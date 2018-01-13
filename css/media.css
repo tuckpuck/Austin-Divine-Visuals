@@ -31,6 +31,11 @@
     border: none !important;
     margin: auto;
   }
+  .nav-item:hover {
+    letter-spacing: 0.08rem;
+    margin: auto;
+    padding: auto;
+  }
   .nav-link {
     padding: .3rem !important;
   }
@@ -41,6 +46,7 @@
   .navbar {
     height: 11vh;
   }
+
 }
 
 /*Medium devices (tablets, below 992px)*/
