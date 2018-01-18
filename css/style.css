@@ -87,6 +87,15 @@ a.effect-underline:hover:after {
   font-size: 1.4rem;
   line-height: 2.4; }
 
+.emboldly-footer {
+  color: #0c0f13 !important;
+  position: absolute;
+  right: 10px;
+  transition: 1s color; }
+  .emboldly-footer:hover {
+    color: #777 !important;
+    text-decoration: none; }
+
 /* index */
 .homejumbo {
   background-image: url("../img/explorewithme.jpg");
@@ -414,7 +423,8 @@ section h4:before {
   line-height: 1.8; }
 
 .contact-picture {
-  height: 38rem; }
+  height: 34rem;
+  border-radius: 10px; }
 
 .box {
   position: relative;
