@@ -201,6 +201,16 @@ a.effect-underline:hover:after {
     background-color: #004c71 !important;
     border: none; }
 
+.btn-primary-light {
+  background-color: #006ea4;
+  border-color: #006ea4; }
+  .btn-primary-light:hover {
+    background-color: #0083c3;
+    border: none; }
+  .btn-primary-light:active {
+    background-color: #006ea4 !important;
+    border: none; }
+
 .img-thumbnail {
   padding: 0;
   border: none; }
