@@ -85,8 +85,11 @@
         <h4 class="display-4 text-dark pic-effect-text">Film</h4>
       </a>
       </div>
+
       <div class="home-img mt-2 photo-effect photo-button" id="img-3" alt="">
-        <a href="./contact.html"><h4 class="display-4 text-light pic-effect-text">Contact</h4></a>
+        <a href="./contact.html">
+          <h4 class="display-4 text-light pic-effect-text">Contact</h4>
+        </a>
       </div>
     </div>
 
@@ -116,6 +119,14 @@
       $("#yt-video-name").text('"' + title + '"');
       $("#youtube_video").attr("src", "https://youtube.com/embed/" + id + "?controls=1&modestbranding=0&showinfo=0&rel=0");
     });
+  </script>
+
+  <script>
+  //makes home images go to the link inside them
+  $(".home-img").click(function() {
+    window.location = $(this).find("a").attr("href");
+     return false;
+});
   </script>
 
 </body>

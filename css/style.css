@@ -163,6 +163,8 @@ a.effect-underline:hover:after {
   -webkit-box-shadow: 0 0 1.8rem 0.3rem rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 1.8rem 0.3rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 1.8rem 0.3rem rgba(0, 0, 0, 0.5); }
+  .home-img:hover {
+    cursor: pointer; }
 
 .home-img h4 {
   position: relative;
