@@ -300,6 +300,20 @@ border-color: $primary-color;
   }
 }
 
+.btn-primary-light {
+background-color: $primary-color;
+border-color: $primary-color;
+  &:hover {
+    background-color: lighten($primary-color, 6%);
+    border: none;
+  }
+  &:active {
+    background-color: $primary-color !important;
+    border: none;
+  }
+}
+
+
 .img-thumbnail {
   padding: 0;
   border: none;
