@@ -337,8 +337,18 @@ a.effect-underline:hover:after {
   background-size: cover;
   background-position: 50% 50%; }
 
+.photo-icon {
+  font-size: 100px;
+  color: black; }
+
+.drone-icon {
+  margin: 16px 0px; }
+
 .text-light {
   color: #e6e6e6 !important; }
+
+.text-black {
+  color: black !important; }
 
 .photo-button {
   background-color: #000;
