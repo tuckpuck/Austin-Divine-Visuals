@@ -469,8 +469,21 @@ bottom: 0rem;
   background-position: 50% 50%;
 }
 
+.photo-icon {
+  font-size: 100px;
+  color: black;
+}
+
+.drone-icon {
+  margin: 16px 0px;
+}
+
 .text-light {
   color: $text-color !important;
+}
+
+.text-black {
+  color: black !important;
 }
 
 //photo effect
