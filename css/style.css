@@ -81,7 +81,7 @@ a.effect-underline:hover:after {
 .footer {
   background-image: url(../img/pattern/micro_carbon.png);
   height: 7vh;
-  color: #e6e6e6;
+  color: #aaa;
   border-radius: 0;
   line-height: inherit;
   font-size: 1.4rem;
