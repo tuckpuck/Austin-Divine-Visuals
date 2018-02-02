@@ -214,17 +214,6 @@ a.effect-underline:hover:after {
   color: #fff;
 }
 
-.home-info {
-background-image: url(../img/pattern/celebration.png);
-
-
-background-color: $color-gray-darker;
-background: -moz-linear-gradient(left, $color-gray-darker 0%, #45484d 40%, #45484d 60%, $color-gray-darker 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, $color-gray-darker 0%,#45484d 40%,#45484d 60%,$color-gray-darker 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, $color-gray-darker 0%,#45484d 40%,#45484d 60%,$color-gray-darker 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-gray-darker', endColorstr='$color-gray-darker',GradientType=1 ); /* IE6-9 */
-}
-
 .latest-title {
   margin-bottom: 3rem;
   margin-top: 1rem;
@@ -441,10 +430,14 @@ bottom: 0rem;
 // photo page
 .background {
   background-color: $color-gray-darker;
-  background: -moz-linear-gradient(left, $color-gray-darker 0%, #45484d 40%, #45484d 60%, $color-gray-darker 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, $color-gray-darker 0%,#45484d 40%,#45484d 60%,$color-gray-darker 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, $color-gray-darker 0%,#45484d 40%,#45484d 60%,$color-gray-darker 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(left, $color-gray-darker 0%, #4d4d56 40%, #4d4d56 60%, $color-gray-darker 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, $color-gray-darker 0%,#4d4d56 40%,#4d4d56 60%,$color-gray-darker 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, $color-gray-darker 0%,#4d4d56 40%,#4d4d56 60%,$color-gray-darker 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-gray-darker', endColorstr='$color-gray-darker',GradientType=1 ); /* IE6-9 */
+}
+
+.background-radial {
+  background: radial-gradient(#4d4d56 30%, $color-gray-darker 100%);
 }
 
 .carousel-item {
