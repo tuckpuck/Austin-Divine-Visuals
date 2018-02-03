@@ -200,7 +200,14 @@ a.effect-underline:hover:after {
   padding: 9rem 0;
   border-radius: 0;
   margin-bottom: 0;
-  @include base-shadow;
+}
+
+.bottom-shadow {
+    @include base-shadow;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: black;
+    z-index: 200;
 }
 
 #home-heading {
@@ -213,7 +220,6 @@ a.effect-underline:hover:after {
   text-align: center;
   color: #fff;
 }
-
 .latest-title {
   margin-bottom: 3rem;
   margin-top: 1rem;
@@ -357,6 +363,7 @@ border-color: $primary-color;
     right: 0;
     bottom: 0;
     left: 0;
+      border-radius: .3rem;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: top, right, bottom, left;
@@ -438,6 +445,8 @@ bottom: 0rem;
 
 .background-radial {
   background: radial-gradient(#4d4d56 30%, $color-gray-darker 100%);
+  z-index: 1;
+  // background: url(../img/pattern/celebration.png);
 }
 
 .carousel-item {
