@@ -420,6 +420,9 @@ section h4:before {
 .iframe-vid {
   margin: 16px; }
 
+.film-content {
+  min-height: 92vh; }
+
 form {
   max-width: 600px;
   text-align: center;
