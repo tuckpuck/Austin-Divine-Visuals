@@ -162,6 +162,7 @@ a.effect-underline:hover:after {
 
 .home-img {
   width: 100%;
+  border: 1px solid black;
   height: 20rem;
   background-size: cover; }
   .home-img:hover {
