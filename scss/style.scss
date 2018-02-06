@@ -446,7 +446,6 @@ bottom: 0rem;
 .background-radial {
   background: radial-gradient(#4d4d56 30%, $color-gray-darker 100%);
   z-index: 1;
-  // background: url(../img/pattern/celebration.png);
 }
 
 .carousel-item {
@@ -607,13 +606,11 @@ form {
   }
 
   #input-submit {
-     color: white;
-     background: $red;
-     cursor: pointer;
+    color: white;
+    background: url(../img/pattern/celebration.png);
+    background-position: middle;
+    cursor: pointer;
 
-    &:hover {
-       box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6);
-    }
   }
 
   textarea {
