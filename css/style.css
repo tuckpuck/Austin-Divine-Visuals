@@ -442,10 +442,9 @@ form {
       box-shadow: 0 0px 2px #d75745 !important; }
   form #input-submit {
     color: white;
-    background: #D75745;
+    background: url(../img/pattern/celebration.png);
+    background-position: middle;
     cursor: pointer; }
-    form #input-submit:hover {
-      box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6); }
   form textarea {
     height: 126px; }
 
