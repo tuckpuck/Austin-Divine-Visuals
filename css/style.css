@@ -186,7 +186,9 @@ a.effect-underline:hover:after {
 #img-3 {
   background: url("../img/denver2.JPG");
   background-position: 50% 55%;
-  background-size: cover; }
+  background-size: cover;
+  border-top: 1px solid black;
+  border-bottom: none !important; }
 
 .btn {
   font-size: 1.9rem;
@@ -334,6 +336,9 @@ a.effect-underline:hover:after {
   background-image: url(../img/kid1.jpg);
   background-size: cover;
   background-position: 50% 50%; }
+
+.icon-under-text {
+  color: #EFE5D3; }
 
 .photo-icon {
   font-size: 100px;
