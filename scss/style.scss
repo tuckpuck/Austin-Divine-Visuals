@@ -7,7 +7,7 @@ $color-gray-darker: #333;
 $color-gray-dark: #777;
 $color-gray-light-2: #aaa;
 $color-gray-light-1: #f7f7f7;
-$text-color: rgba(230, 230, 230, .7);
+$text-color: rgba(230, 230, 230, .9);
 $red: #D75745;
 $font-family-sans-serif: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
 // mixins
@@ -477,7 +477,7 @@ bottom: 0rem;
 }
 
 .icon-under-text {
-  color: $color-gray-light-1;
+  color: $primary-light;
 }
 
 .photo-icon {
