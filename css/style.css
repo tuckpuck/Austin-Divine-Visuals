@@ -160,11 +160,17 @@ a.effect-underline:hover:after {
 #yt-video-name {
   font-size: 1.6rem; }
 
+.video-latest {
+  margin-bottom: 15px; }
+
 .home-img {
   width: 100%;
   border: 1px solid black;
   height: 20rem;
-  background-size: cover; }
+  background-size: cover;
+  -webkit-box-shadow: 0 0 1.8rem 0.3rem rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 1.8rem 0.3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1.8rem 0.3rem rgba(0, 0, 0, 0.5); }
   .home-img:hover {
     cursor: pointer; }
 
@@ -310,9 +316,10 @@ a.effect-underline:hover:after {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-gray-darker', endColorstr='$color-gray-darker',GradientType=1 );
   /* IE6-9 */ }
 
-.background-radial {
-  background: radial-gradient(#4d4d56 30%, #333 100%);
-  z-index: 1; }
+.background-blurred-1 {
+  background-image: url("../img/blurred-background-7.jpg");
+  background-repeat: no-repeat;
+  background-color: #575663; }
 
 .carousel-item {
   height: 60vh !important; }
