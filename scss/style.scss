@@ -290,6 +290,8 @@ height: 100%;
   background: url("../img/denver2.JPG");
   background-position: 50% 55%;
   background-size: cover;
+  border-top: 1px solid black;
+  border-bottom: none !important;
 }
 
 .btn {
@@ -472,6 +474,10 @@ bottom: 0rem;
   background-image: url(../img/kid1.jpg);
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.icon-under-text {
+  color: #EFE5D3;
 }
 
 .photo-icon {
