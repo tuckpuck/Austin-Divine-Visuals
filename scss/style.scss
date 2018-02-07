@@ -258,11 +258,16 @@ height: 100%;
   font-size: 1.6rem;
 }
 
+.video-latest {
+  margin-bottom: 15px;
+}
+
 .home-img {
   width: 100%;
   border: 1px solid black;
   height: 20rem;
   background-size: cover;
+  @include base-shadow;
   &:hover {
     cursor: pointer;
   }
@@ -446,8 +451,14 @@ bottom: 0rem;
 }
 
 .background-radial {
-  background: radial-gradient(#4d4d56 30%, $color-gray-darker 100%);
-  z-index: 1;
+  // background: radial-gradient(#4d4d56 30%, $color-gray-darker 100%);
+  // z-index: 1;
+}
+
+.background-blurred-1 {
+  background-image: url("../img/blurred-background-7.jpg");
+  background-repeat: no-repeat;
+  background-color: #575663;
 }
 
 .carousel-item {
