@@ -7,6 +7,7 @@ $color-gray-darker: #333;
 $color-gray-dark: #777;
 $color-gray-light-2: #aaa;
 $color-gray-light-1: #f7f7f7;
+// $text-color: #333;
 $text-color: rgba(230, 230, 230, .9);
 $red: #D75745;
 $font-family-sans-serif: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
@@ -95,7 +96,10 @@ a:hover {
 
 .navbar {
   height: 9vh;
-  background: radial-gradient(lighten($color-gray-darker, 1%), darken($color-gray-darker, 1%), darken($color-gray-darker, 6%));
+  background: radial-gradient(lighten($color-gray-darker, 1%), darken($color-gray-darker, 1%), darken($color-gray-darker, 4%));
+  // background-image: url(../img/blurred-background-13.jpg);
+  // background-position: 50% 0%;
+  // background-size: cover;
 }
 
 .navbar-toggler {
@@ -206,7 +210,7 @@ a.effect-underline:hover:after {
     @include base-shadow;
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: black;
+    background-color: $color-gray-darker;
     z-index: 200;
 }
 
@@ -455,11 +459,31 @@ bottom: 0rem;
   // z-index: 1;
 }
 
-.background-blurred-1 {
+.background-blurred{
+&-1 {
+  background-image: url("../img/blurred-background-1.jpg");
+  background-repeat: no-repeat;
+  background-color: #575663;
+}
+&-7 {
   background-image: url("../img/blurred-background-7.jpg");
   background-repeat: no-repeat;
   background-color: #575663;
 }
+&-9 {
+  background-image: url("../img/blurred-background-9.jpg");
+  background-repeat: no-repeat;
+  background-color: #575663;
+}
+&-13 {
+  background-image: url("../img/blurred-background-13.jpg");
+  background-repeat: no-repeat;
+  background-color: #575663;
+}
+}
+
+
+
 
 .carousel-item {
   height: 60vh !important;
