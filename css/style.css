@@ -5,7 +5,7 @@ body {
   font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
 .main-area {
-  height: 84vh; }
+  height: 87vh; }
 
 a {
   color: rgba(230, 230, 230, 0.9) !important; }
@@ -14,7 +14,7 @@ a:hover {
   color: rgba(230, 230, 230, 0.9); }
 
 .navbar {
-  height: 9vh;
+  height: 8vh;
   background: radial-gradient(#363636, #303030, #292929); }
 
 .navbar-toggler {
@@ -99,7 +99,7 @@ a.effect-underline:hover:after {
 /* index */
 .homejumbo {
   background-image: url("../img/explorewithme.jpg");
-  height: 91vh;
+  height: 92vh;
   background-size: cover;
   background-position: center;
   padding: 9rem 0;

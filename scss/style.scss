@@ -83,7 +83,7 @@ body {
 }
 
 .main-area {
-  height: 84vh;
+  height: 87vh;
 }
 
 a {
@@ -95,7 +95,7 @@ a:hover {
 }
 
 .navbar {
-  height: 9vh;
+  height: 8vh;
   background: radial-gradient(lighten($color-gray-darker, 1%), darken($color-gray-darker, 1%), darken($color-gray-darker, 4%));
   // background-image: url(../img/blurred-background-13.jpg);
   // background-position: 50% 0%;
@@ -198,7 +198,7 @@ a.effect-underline:hover:after {
 /* index */
 .homejumbo {
   background-image: url("../img/explorewithme.jpg");
-  height: 91vh;
+  height: 92vh;
   background-size: cover;
   background-position: center;
   padding: 9rem 0;
