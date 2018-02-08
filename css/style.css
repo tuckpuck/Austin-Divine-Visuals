@@ -15,7 +15,7 @@ a:hover {
 
 .navbar {
   height: 9vh;
-  background: radial-gradient(#363636, #303030, #242424); }
+  background: radial-gradient(#363636, #303030, #292929); }
 
 .navbar-toggler {
   padding: .25rem .75rem;
@@ -112,7 +112,7 @@ a.effect-underline:hover:after {
   box-shadow: 0 0 1.8rem 0.3rem rgba(0, 0, 0, 0.5);
   margin-top: 0px;
   margin-bottom: 0px;
-  background-color: black;
+  background-color: #333;
   z-index: 200; }
 
 #home-heading {
@@ -317,7 +317,19 @@ a.effect-underline:hover:after {
   /* IE6-9 */ }
 
 .background-blurred-1 {
+  background-image: url("../img/blurred-background-1.jpg");
+  background-repeat: no-repeat;
+  background-color: #575663; }
+.background-blurred-7 {
   background-image: url("../img/blurred-background-7.jpg");
+  background-repeat: no-repeat;
+  background-color: #575663; }
+.background-blurred-9 {
+  background-image: url("../img/blurred-background-9.jpg");
+  background-repeat: no-repeat;
+  background-color: #575663; }
+.background-blurred-13 {
+  background-image: url("../img/blurred-background-13.jpg");
   background-repeat: no-repeat;
   background-color: #575663; }
 
