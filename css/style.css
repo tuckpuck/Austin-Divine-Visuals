@@ -314,6 +314,11 @@ a.effect-underline:hover:after {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-gray-darker', endColorstr='$color-gray-darker',GradientType=1 );
   /* IE6-9 */ }
 
+.grow {
+  transition: all .3s ease-in-out; }
+  .grow:hover {
+    transform: scale(1.1); }
+
 .background-blurred-1 {
   background-image: url("../img/blurred-background-1.jpg");
   background-repeat: no-repeat;
@@ -354,15 +359,15 @@ a.effect-underline:hover:after {
   background-size: cover;
   background-position: 50% 50%; }
 
+.icon-container {
+  height: 32vh; }
+
 .icon-under-text {
   color: #81C6E8; }
 
 .photo-icon {
   font-size: 100px;
   color: black; }
-
-.drone-icon {
-  margin: 16px 0px; }
 
 .text-light {
   color: rgba(230, 230, 230, 0.9) !important; }

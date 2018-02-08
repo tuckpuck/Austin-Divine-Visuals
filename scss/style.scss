@@ -452,6 +452,12 @@ bottom: 0rem;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-gray-darker', endColorstr='$color-gray-darker',GradientType=1 ); /* IE6-9 */
 }
 
+.grow { transition: all .3s ease-in-out;
+   &:hover {
+     transform: scale(1.1);
+   }
+ }
+
 .background-radial {
   // background: radial-gradient(#4d4d56 30%, $color-gray-darker 100%);
   // z-index: 1;
@@ -509,6 +515,10 @@ bottom: 0rem;
   background-position: 50% 50%;
 }
 
+.icon-container {
+  height: 32vh;
+}
+
 .icon-under-text {
   color: $primary-light;
 }
@@ -516,10 +526,6 @@ bottom: 0rem;
 .photo-icon {
   font-size: 100px;
   color: black;
-}
-
-.drone-icon {
-  margin: 16px 0px;
 }
 
 .text-light {
