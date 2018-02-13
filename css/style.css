@@ -322,6 +322,7 @@ a.effect-underline:hover:after {
 .background-blurred-1 {
   background-image: url("../img/blurred-background-1.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-color: #575663; }
 .background-blurred-7 {
   background-image: url("../img/blurred-background-7.jpg");
@@ -445,7 +446,7 @@ section h4:before {
     border-right-width: 1.2rem; }
 
 .iframe-vid {
-  margin: 16px; }
+  margin: 30gapx; }
 
 .film-content {
   min-height: 92vh; }
