@@ -96,7 +96,9 @@ a:hover {
 
 .navbar {
   height: 8vh;
-  background: radial-gradient(lighten($color-gray-darker, 1%), darken($color-gray-darker, 1%), darken($color-gray-darker, 4%));
+  // background: radial-gradient(lighten($color-gray-darker, 1%), darken($color-gray-darker, 1%), darken($color-gray-darker, 4%));
+  background-image: url(../img/pattern/micro_carbon.png);
+
   // background-image: url(../img/blurred-background-13.jpg);
   // background-position: 50% 0%;
   // background-size: cover;
@@ -705,16 +707,24 @@ form {
 
 .contact-text {
   font-size: 1.6rem;
+  text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
 }
 
 .contact-text-placer {
-  margin-top: 6rem;
+  margin-top: 8.5rem;
 line-height: 1.8;
 }
 
 .contact-picture {
-  height: 34rem;
-  border-radius: 10px;
+  height: 25rem;
+  border-radius: 5px;
+  &-placer {
+    margin-bottom: -10rem;
+  }
+}
+
+.contact-bottom-row {
+  margin-top: 6rem;
 }
 
 .box {

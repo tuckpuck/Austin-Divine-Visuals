@@ -15,7 +15,7 @@ a:hover {
 
 .navbar {
   height: 8vh;
-  background: radial-gradient(#363636, #303030, #292929); }
+  background-image: url(../img/pattern/micro_carbon.png); }
 
 .navbar-toggler {
   padding: .25rem .75rem;
@@ -507,15 +507,21 @@ form {
   background-color: #333; }
 
 .contact-text {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3); }
 
 .contact-text-placer {
-  margin-top: 6rem;
+  margin-top: 8.5rem;
   line-height: 1.8; }
 
 .contact-picture {
-  height: 34rem;
-  border-radius: 10px; }
+  height: 25rem;
+  border-radius: 5px; }
+  .contact-picture-placer {
+    margin-bottom: -10rem; }
+
+.contact-bottom-row {
+  margin-top: 6rem; }
 
 .box {
   position: relative;
