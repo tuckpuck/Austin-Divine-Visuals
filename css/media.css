@@ -27,6 +27,9 @@
   .iframe-vid {
     margin: 10px 0px;
   }
+  .emboldly-footer{
+    display: none;
+  }
 }
 
 /*Small devices (landscape phones, below 768px)*/
