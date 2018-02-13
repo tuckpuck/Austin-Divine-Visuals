@@ -467,6 +467,7 @@ bottom: 0rem;
 &-1 {
   background-image: url("../img/blurred-background-1.jpg");
   background-repeat: no-repeat;
+  background-size:cover;
   background-color: #575663;
 }
 &-7 {
@@ -621,7 +622,7 @@ section h4:before {
 }
 // film
 .iframe-vid {
-  margin: 16px;
+  margin: 30px;
 }
 
 .film-content {
