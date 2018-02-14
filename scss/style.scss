@@ -237,6 +237,12 @@ padding-bottom: 56.25%;
 padding-top: 3rem; height: 0; overflow: hidden;
 }
 
+.film-stage {
+  background: url("../img/snowcapped.jpg");
+  background-size: cover;
+  height: 80vh;
+}
+
 #player {
   @include less-shadow;
 }

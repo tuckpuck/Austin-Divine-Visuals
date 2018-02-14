@@ -136,6 +136,11 @@ a.effect-underline:hover:after {
   height: 0;
   overflow: hidden; }
 
+.film-stage {
+  background: url("../img/snowcapped.jpg");
+  background-size: cover;
+  height: 80vh; }
+
 #player {
   -webkit-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
