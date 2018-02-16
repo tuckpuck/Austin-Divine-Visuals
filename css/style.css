@@ -347,7 +347,7 @@ a.effect-underline:hover:after {
   box-shadow: inset 0 0 10px -2px #000000; }
 
 .carousel-item {
-  height: 92vh !important; }
+  height: 60vh !important; }
 
 #carousel-1 {
   background-image: url(../img/lady.jpeg);
