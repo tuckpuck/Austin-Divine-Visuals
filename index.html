@@ -45,44 +45,44 @@
   <div class="homejumbo jumbotron text-center">
     <div class="mt-2 p-2">
       <a class="btn btn-primary btn-lg buttoneffect homebutton" href="#" role="button">browse my work</a>
-      </div>
+    </div>
   </div>
   <hr class="black-accent-line">
 
   <div class="container-fluid background-blurred-7 text-center video-stage">
     <div class="row py-5 mr-1">
-    <div class="py-5 col-lg-6 offset-lg-1">
-      <h2 class="block text-light video-latest">Latest Video:</h2>
+      <div class="py-5 col-lg-6 offset-lg-1">
+        <h2 class="block text-light video-latest">Latest Video:</h2>
 
-      <div class="video-container">
-        <iframe id="youtube_video" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+        <div class="video-container">
+          <iframe id="youtube_video" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="yt-video-name" class="text-light mt-4"></div>
       </div>
-      <div id="yt-video-name" class="text-light mt-4"></div>
-    </div>
-    <div class="col-lg-3 offset-lg-1 text-light video-text comp-display">
-      <div class="composition">
-                  <img src="./img/oceanview.jpg" alt="" class="composition__photo composition__photo--p1">
-                  <img src="./img/beachlife.jpg" alt="" class="composition__photo composition__photo--p2">
-                  <img src="./img/kid2.jpg" alt="" class="composition__photo composition__photo--p3">
-                  <img src="./img/lady.jpeg" alt="" class="composition__photo composition__photo--p4">
-                </div>
-    </div>
+      <div class="col-lg-3 offset-lg-1 text-light video-text comp-display">
+        <div class="composition">
+          <img src="./img/oceanview.jpg" alt="" class="composition__photo composition__photo--p1">
+          <img src="./img/beachlife.jpg" alt="" class="composition__photo composition__photo--p2">
+          <img src="./img/kid2.jpg" alt="" class="composition__photo composition__photo--p3">
+          <img src="./img/lady.jpeg" alt="" class="composition__photo composition__photo--p4">
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="container-fluid">
     <div class="row text-center stage">
-      <div class="home-img mb-2 photo-effect photo-button" id="img-1" alt="">
-        <a href="./photo.html">
-        <h4 class="display-4 text-light pic-effect-text">Photo</h4>
+
+      <div class="home-img mb-2 photo-effect photo-button" id="img-2" alt="">
+        <a href="./film.html">
+          <h4 class="display-4 text-dark pic-effect-text">Film</h4>
         </a>
       </div>
 
-
-      <div class="home-img my-2 photo-effect photo-button" id="img-2" alt="">
-        <a href="./film.html">
-        <h4 class="display-4 text-dark pic-effect-text">Film</h4>
-      </a>
+      <div class="home-img my-2 photo-effect photo-button" id="img-1" alt="">
+        <a href="./photo.html">
+          <h4 class="display-4 text-light pic-effect-text">Photo</h4>
+        </a>
       </div>
 
       <div class="home-img mt-2 photo-effect photo-button" id="img-3" alt="">
@@ -122,11 +122,11 @@
   </script>
 
   <script>
-  //makes home images go to the link inside them
-  $(".home-img").click(function() {
-    window.location = $(this).find("a").attr("href");
-     return false;
-});
+    //makes home images go to the link inside them
+    $(".home-img").click(function() {
+      window.location = $(this).find("a").attr("href");
+      return false;
+    });
   </script>
 
 </body>
