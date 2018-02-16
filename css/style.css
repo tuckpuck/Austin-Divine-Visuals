@@ -104,12 +104,12 @@ a.effect-underline:hover:after {
   background-position: center;
   padding: 9rem 0;
   border-radius: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  -moz-box-shadow: inset 0 0 10px -2px #000000;
+  -webkit-box-shadow: inset 0 0 10px -2px #000000;
+  box-shadow: inset 0 0 10px -2px #000000; }
 
 .black-accent-line {
-  -webkit-box-shadow: 0 0 1.8rem 0.3rem rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 1.8rem 0.3rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 1.8rem 0.3rem rgba(0, 0, 0, 0.5);
   margin-top: 0px;
   margin-bottom: 0px;
   background-color: #333;
@@ -135,21 +135,6 @@ a.effect-underline:hover:after {
   padding-top: 3rem;
   height: 0;
   overflow: hidden; }
-
-.film-stage {
-  background: url("../img/snowcapped.jpg");
-  background-size: cover;
-  background-position: center bottom;
-  height: 60vh;
-  display: block;
-  position: relative; }
-  .film-stage-text {
-    font-size: 80px;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
 
 #player {
   -webkit-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
@@ -182,9 +167,9 @@ a.effect-underline:hover:after {
   width: 100%;
   height: 20rem;
   background-size: cover;
-  -webkit-box-shadow: 0 0 1.8rem 0.3rem rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 1.8rem 0.3rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 1.8rem 0.3rem rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: 0 0 1.3rem 0.2rem rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 1.3rem 0.2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1.3rem 0.2rem rgba(0, 0, 0, 0.5); }
   .home-img:hover {
     cursor: pointer; }
 
@@ -352,6 +337,11 @@ a.effect-underline:hover:after {
   background-repeat: no-repeat;
   background-color: #575663; }
 
+.carousel {
+  -moz-box-shadow: inset 0 0 10px -2px #000000;
+  -webkit-box-shadow: inset 0 0 10px -2px #000000;
+  box-shadow: inset 0 0 10px -2px #000000; }
+
 .carousel-item {
   height: 60vh !important; }
 
@@ -460,11 +450,29 @@ section h4:before {
     border-top-width: 1.2rem;
     border-right-width: 1.2rem; }
 
-.iframe-vid {
-  margin: 30px; }
+.film-stage {
+  background: url("../img/snowcapped.jpg");
+  background-size: cover;
+  background-position: 50% 70%;
+  -moz-box-shadow: inset 0 0 10px -2px #000000;
+  -webkit-box-shadow: inset 0 0 10px -2px #000000;
+  box-shadow: inset 0 0 10px -2px #000000;
+  height: 60vh;
+  display: block;
+  position: relative; }
+  .film-stage-text {
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .film-content {
   min-height: 92vh; }
+
+.iframe-vid {
+  margin: 30px; }
 
 form {
   max-width: 600px;
