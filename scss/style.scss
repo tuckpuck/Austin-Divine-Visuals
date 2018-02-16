@@ -508,17 +508,46 @@ bottom: 0rem;
 }
 }
 
+.photo-stage {
+  height: 60vh !important;
+  background-image: url(../img/lady.jpeg);
+  background-size: cover;
+  background-position: 30% 35%;
+  position: relative;
+    @include inset-shadow;
+  &-text {
+  font-size: 80px;
+  font-family: 'Spectral SC', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  color: $color-gray-light-1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 0 rgba($color-gray-mid-dark, 0.4);
+}
+}
+
 .carousel {
     @include inset-shadow;
 }
 
 .carousel-item {
   height: 60vh !important;
+  &-text {
+  font-size: 80px;
+  font-family: 'Spectral SC', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  color: $color-gray-light-1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 0 rgba($color-gray-mid-dark, 0.4);
+}
 }
 #carousel-1 {
   background-image: url(../img/lady.jpeg);
   background-size: cover;
-  background-position: 50% 35%;
+  background-position: 30% 35%;
 }
 
 #carousel-2 {
@@ -655,6 +684,7 @@ section h4:before {
     font-size: 80px;
     color: $color-gray-light-1;
     position: absolute;
+    font-family:'Spectral SC', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
