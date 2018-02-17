@@ -323,6 +323,14 @@ a.effect-underline:hover:after {
   .grow:hover {
     transform: scale(1.1); }
 
+.flickr-wrapper {
+  margin-top: 25px;
+  margin-top: 25px; }
+
+.flickr-image img {
+  margin: 25px;
+  display: inline-block; }
+
 .background-blurred-1 {
   background-image: url("../img/blurred-background-1.jpg");
   background-repeat: no-repeat;
