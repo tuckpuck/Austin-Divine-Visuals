@@ -2,7 +2,6 @@
 var myUrl = 'https://api.flickr.com/services/rest/?api_key=a74d8c55e6c6a6af7628ac7825dfacde&method=flickr.people.getPhotos&user_id=147634988@N06&format=json&per_page=500&content_type=1&extras=url_z,url_q,description'
 var proxy = 'https://cors-anywhere.herokuapp.com/';
 var finalURL = proxy + myUrl;
-console.log(finalURL);
 
 $.ajax({
   beforeSend: function(request) {
@@ -10,11 +9,13 @@ $.ajax({
   },
   url: finalURL,
   success: function(data) {
-    console.log(data);
     var dataString = JSON.stringify(data);
-    var jsonParsed = jQuery.parseJSON(dataString);
-    console.log(typeof(jsonParsed));
-    addImages(jsonParsed);
+    dataString = dataString.replace('jsonFlickrApi(','');
+    dataString = dataString.replace(')','');
+    var jsonInitialParse = jQuery.parseJSON(dataString);
+    var jsonTrueParse = jQuery.parseJSON(jsonInitialParse);
+    console.log(jsonTrueParse.photos.photo);
+    addImages(jsonTrueParse.photos.photo);
   }
 });
 
@@ -53,14 +54,14 @@ Get your Flickr Id from: http://idgettr.com/ and replace it with the flickrId va
 ---------------------------------------*/
 function addImages(data) {
   console.log(data);
-  $.each(data.items, function(i, item) {
+  $.each(data, function(i, item) {
+    console.log(item);
     var flickrItem = document.createElement('a');
     flickrItem.className = 'flickr-image';
     flickrItem.href = item.link;
     flickrItem.target = '_blank';
     flickrItem.img = document.createElement('img');
-    flickrItem.img.alt = item.title;
-    flickrItem.img.src = item.media.m.replace(/_m\.jpg/, '_q.jpg');
+    flickrItem.img.src = item.url_z;
     flickrItem.appendChild(flickrItem.img);
     $('.gallery').append(flickrItem);
     console.log(flickrItem);
