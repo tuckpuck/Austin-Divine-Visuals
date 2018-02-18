@@ -328,8 +328,7 @@ a.effect-underline:hover:after {
   margin-top: 25px; }
 
 .flickr-image img {
-  margin: 25px;
-  display: inline-block; }
+  margin: 80px auto; }
 
 .background-blurred-1 {
   background-image: url("../img/blurred-background-1.jpg");

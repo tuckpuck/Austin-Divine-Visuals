@@ -1,5 +1,5 @@
 // var myUrl = 'https://api.flickr.com/services/feeds/photos_public.gne?id=147634988@N06&format=json&nojsoncallback=1'
-var myUrl = 'https://api.flickr.com/services/rest/?api_key=a74d8c55e6c6a6af7628ac7825dfacde&method=flickr.people.getPhotos&user_id=147634988@N06&format=json&per_page=500&content_type=1&extras=url_z,url_q,description'
+var myUrl = 'https://api.flickr.com/services/rest/?api_key=a74d8c55e6c6a6af7628ac7825dfacde&method=flickr.people.getPhotos&user_id=147634988@N06&format=json&per_page=500&content_type=1&extras=url_c,url_h,url_o'
 var proxy = 'https://cors-anywhere.herokuapp.com/';
 var finalURL = proxy + myUrl;
 
@@ -29,7 +29,8 @@ function addImages(data) {
     flickrItem.href = item.link;
     flickrItem.target = '_blank';
     flickrItem.img = document.createElement('img');
-    flickrItem.img.src = item.url_z;
+    flickrItem.img.src = item.url_h;
+    flickrItem.img.className = 'img-fluid';
     flickrItem.appendChild(flickrItem.img);
     $('.gallery').append(flickrItem);
     console.log(flickrItem);
