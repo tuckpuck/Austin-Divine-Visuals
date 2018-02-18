@@ -19,39 +19,7 @@ $.ajax({
   }
 });
 
-/*
-Get your Flickr Id from: http://idgettr.com/ and replace it with the flickrId variable on the next line. That way you have access to the images that are associated with your account.
-*/
 
-
-
-/*-------------------------------------
-                  FEEDS
----------------------------------------*/
-/********* PERSONAL *********/
-
-// $.ajaxSetup({
-//   headers: {
-//     'x-requested-with':'XMLHttpRequest',
-//     'Access-Control-Allow-Origin':'*'
-//   }
-// });
-//
-// var flickrURL = 'https://api.flickr.com/services/rest/?api_key=a74d8c55e6c6a6af7628ac7825dfacde&method=flickr.people.getPhotos&user_id=147634988@N06&format=json&per_page=500&content_type=1&extras=url_z,url_q,description';
-// var proxy = 'https://cors-anywhere.herokuapp.com/';
-// var finalURL = proxy + flickrURL;
-// console.log(finalURL);
-// //
-// //
-// //
-// $.getJSON(finalURL,function(data){
-//   console.log(data);
-//   addImages(data);
-// });
-
-/*-------------------------------------
-       ADD IMAGES TO THE GALLERY
----------------------------------------*/
 function addImages(data) {
   console.log(data);
   $.each(data, function(i, item) {
