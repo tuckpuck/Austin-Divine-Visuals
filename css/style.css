@@ -7,8 +7,11 @@ body {
 .main-area {
   height: 87vh; }
 
-.row {
+.norowmargin {
   margin: auto 0px; }
+
+.noxpadding {
+  padding: 0px auto; }
 
 a {
   color: rgba(230, 230, 230, 0.9) !important; }
