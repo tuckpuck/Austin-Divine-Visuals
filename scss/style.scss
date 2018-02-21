@@ -112,8 +112,12 @@ body {
   height: 87vh;
 }
 
-.row {
+.norowmargin {
   margin: auto 0px;
+}
+
+.noxpadding {
+  padding: 0px auto;
 }
 
 a {
