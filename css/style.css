@@ -7,6 +7,9 @@ body {
 .main-area {
   height: 87vh; }
 
+.row {
+  margin: auto 0px; }
+
 a {
   color: rgba(230, 230, 230, 0.9) !important; }
 
@@ -329,6 +332,10 @@ a.effect-underline:hover:after {
 
 .flickr-image img {
   margin: 80px auto; }
+
+.background-radial {
+  background: radial-gradient(#4d4d56 30%, #333 100%);
+  z-index: 1; }
 
 .background-blurred-1 {
   background-image: url("../img/blurred-background-1.jpg");

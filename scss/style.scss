@@ -100,6 +100,10 @@ body {
   height: 87vh;
 }
 
+.row {
+  margin: auto 0px;
+}
+
 a {
   color: $text-color !important;
 }
@@ -107,6 +111,7 @@ a {
 a:hover {
   color: $text-color;
 }
+
 
 .navbar {
   height: 8vh;
@@ -492,8 +497,8 @@ bottom: 0rem;
 }
 
 .background-radial {
-  // background: radial-gradient(#4d4d56 30%, $color-gray-darker 100%);
-  // z-index: 1;
+  background: radial-gradient(#4d4d56 30%, $color-gray-darker 100%);
+  z-index: 1;
 }
 
 .background-blurred{
