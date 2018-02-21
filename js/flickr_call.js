@@ -29,7 +29,7 @@ function addImages(data) {
     flickrItem.href = item.link;
     flickrItem.target = '_blank';
     flickrItem.img = document.createElement('img');
-    flickrItem.img.src = item.url_h;
+    flickrItem.img.src = item.url_c;
     flickrItem.img.className = 'img-fluid';
     flickrItem.appendChild(flickrItem.img);
     $('.gallery').append(flickrItem);
