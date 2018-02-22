@@ -23,14 +23,9 @@ callFlickrApi();
 
 function addImages(data) {
   $.each(data, function(i, item) {
-    var flickrItem = document.createElement('a');
-    flickrItem.className = 'flickr-image';
-    flickrItem.href = item.link;
-    flickrItem.target = '_blank';
-    flickrItem.img = document.createElement('img');
-    flickrItem.img.src = item.url_c;
-    flickrItem.img.className = 'img-fluid';
-    flickrItem.appendChild(flickrItem.img);
+    var flickrItem = document.createElement('img');
+    flickrItem.src = item.url_c;
+    flickrItem.className = 'img-fluid flickr-image';
     $('.gallery').append(flickrItem);
   });
 }

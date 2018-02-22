@@ -522,14 +522,12 @@ bottom: 0rem;
 }
 
 .flickr-image {
-  img{
     margin: 60px auto;
     @include less-shadow;
     transition: .6s all;
       &:hover {
     transform: scale(1.01);
   }
-}
 }
 
 .background-radial {
@@ -903,14 +901,20 @@ line-height: 1.8;
 }
 
 .sticky-footer-icon {
+  border-radius: 100%;
   color: black;
+  fill: black;
   float: right;
   height:30px;
   width: 30px;
-  fill: black;
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
   &:hover{
-      fill: #d96e26;
-      background: black;
+      fill: $primary-color;
+      webkit-transform: scale(1.25);
+      transform: scale(1.25);
   }
 }
 
