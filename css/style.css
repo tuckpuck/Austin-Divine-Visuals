@@ -102,6 +102,9 @@ a.effect-underline:hover:after {
     color: #777 !important;
     text-decoration: none; }
 
+.fixed-bottom {
+  bottom: 15px; }
+
 .sticky-footer {
   position: absolute;
   bottom: 0;
@@ -350,10 +353,10 @@ a.effect-underline:hover:after {
   box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
   transition: .6s all; }
   .flickr-image img:hover {
-    transform: scale(0.98); }
+    transform: scale(1.01); }
 
 .background-radial {
-  background: radial-gradient(#4d4d56 30%, #333 100%);
+  background: radial-gradient(#4d4d5d 30%, #333 100%);
   z-index: 1; }
 
 .background-blurred-1 {
@@ -662,6 +665,16 @@ form {
   transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
   transition: background-color 0.5s, transform 0.5s ease-out;
   transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out; }
+
+.sticky-footer-icon {
+  color: black;
+  float: right;
+  height: 30px;
+  width: 30px;
+  fill: black; }
+  .sticky-footer-icon:hover {
+    fill: #d96e26;
+    background: black; }
 
 .icon-1 {
   color: #d94a26;

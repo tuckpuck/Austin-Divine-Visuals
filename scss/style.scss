@@ -233,6 +233,10 @@ a.effect-underline:hover:after {
   }
 }
 
+.fixed-bottom {
+  bottom: 15px;
+}
+
 .sticky-footer {
   position: absolute;
   bottom: 0;
@@ -523,15 +527,13 @@ bottom: 0rem;
     @include less-shadow;
     transition: .6s all;
       &:hover {
-    // -webkit-box-reflect: right 10px;
-    // transform: translateX(-50%);
-    transform: scale(.98);
+    transform: scale(1.01);
   }
 }
 }
 
 .background-radial {
-  background: radial-gradient(#4d4d5 30%, $color-gray-darker 100%);
+  background: radial-gradient(#4d4d5d 30%, $color-gray-darker 100%);
   z-index: 1;
 }
 
@@ -898,6 +900,18 @@ line-height: 1.8;
   transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
   transition: background-color 0.5s, transform 0.5s ease-out;
   transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.sticky-footer-icon {
+  color: black;
+  float: right;
+  height:30px;
+  width: 30px;
+  fill: black;
+  &:hover{
+      fill: #d96e26;
+      background: black;
+  }
 }
 
 .icon-1 {
