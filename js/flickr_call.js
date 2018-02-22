@@ -1,8 +1,8 @@
-// var myUrl = 'https://api.flickr.com/services/feeds/photos_public.gne?id=147634988@N06&format=json&nojsoncallback=1'
-var myUrl = 'https://api.flickr.com/services/rest/?api_key=a74d8c55e6c6a6af7628ac7825dfacde&method=flickr.people.getPhotos&user_id=147634988@N06&format=json&per_page=500&content_type=1&extras=url_c,url_h,url_o'
+
+function callFlickrApi(pageNum) {
+var myUrl = 'https://api.flickr.com/services/rest/?api_key=a74d8c55e6c6a6af7628ac7825dfacde&method=flickr.people.getPhotos&user_id=147634988@N06&format=json&per_page=10&content_type=1&extras=url_c,url_h,url_o&page='
 var proxy = 'https://cors-anywhere.herokuapp.com/';
 var finalURL = proxy + myUrl;
-
 $.ajax({
   beforeSend: function(request) {
     request.setRequestHeader('X-Requested-With','XMLHttpRequest');
@@ -14,16 +14,15 @@ $.ajax({
     dataString = dataString.replace(')','');
     var jsonInitialParse = jQuery.parseJSON(dataString);
     var jsonTrueParse = jQuery.parseJSON(jsonInitialParse);
-    console.log(jsonTrueParse.photos.photo);
     addImages(jsonTrueParse.photos.photo);
+    morePhotos();
   }
 });
-
+}
+callFlickrApi();
 
 function addImages(data) {
-  console.log(data);
   $.each(data, function(i, item) {
-    console.log(item);
     var flickrItem = document.createElement('a');
     flickrItem.className = 'flickr-image';
     flickrItem.href = item.link;
@@ -33,6 +32,17 @@ function addImages(data) {
     flickrItem.img.className = 'img-fluid';
     flickrItem.appendChild(flickrItem.img);
     $('.gallery').append(flickrItem);
-    console.log(flickrItem);
+  });
+}
+
+function morePhotos(nextPage) {
+  var button = document.createElement('button');
+  button.className="more-photos";
+  $('.gallery').append(button);
+  console.log(nextPage);
+  $('.more-photos').html('More Photos');
+  $('.more-photos').on('click', function(event){
+    console.log("hello");
+    callFlickrApi();
   });
 }
