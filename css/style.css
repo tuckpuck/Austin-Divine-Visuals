@@ -679,8 +679,8 @@ form {
   transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out; }
   .sticky-footer-icon:hover {
     fill: #006ea4;
-    webkit-transform: scale(1.25);
-    transform: scale(1.25); }
+    webkit-transform: scale(1.07);
+    transform: scale(1.07); }
 
 .icon-1 {
   color: #d94a26;
