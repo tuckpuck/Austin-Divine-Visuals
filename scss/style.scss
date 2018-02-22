@@ -913,8 +913,8 @@ line-height: 1.8;
   transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
   &:hover{
       fill: $primary-color;
-      webkit-transform: scale(1.25);
-      transform: scale(1.25);
+      webkit-transform: scale(1.07);
+      transform: scale(1.07);
   }
 }
 
