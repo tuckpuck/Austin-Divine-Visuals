@@ -7,6 +7,9 @@ body {
 .main-area {
   height: 87vh; }
 
+.vh-25 {
+  min-height: 75vh; }
+
 .norowmargin {
   margin: auto 0px; }
 
