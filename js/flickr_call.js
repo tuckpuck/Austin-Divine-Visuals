@@ -1,8 +1,8 @@
 
-function callFlickrApi(pageNum) {
+function callFlickrApi(pageNumber) {
 var myUrl = 'https://api.flickr.com/services/rest/?api_key=a74d8c55e6c6a6af7628ac7825dfacde&method=flickr.people.getPhotos&user_id=147634988@N06&format=json&per_page=10&content_type=1&extras=url_c,url_h,url_o&page='
 var proxy = 'https://cors-anywhere.herokuapp.com/';
-var finalURL = proxy + myUrl;
+var finalURL = proxy + myUrl + pageNumber;
 $.ajax({
   beforeSend: function(request) {
     request.setRequestHeader('X-Requested-With','XMLHttpRequest');
@@ -21,6 +21,8 @@ $.ajax({
 }
 callFlickrApi();
 
+var pageCount = 1;
+
 function addImages(data) {
   $.each(data, function(i, item) {
     var flickrItem = document.createElement('img');
@@ -30,14 +32,14 @@ function addImages(data) {
   });
 }
 
-function morePhotos(nextPage) {
+function morePhotos() {
   var button = document.createElement('button');
   button.className="more-photos";
   $('.gallery').append(button);
-  console.log(nextPage);
   $('.more-photos').html('More Photos');
   $('.more-photos').on('click', function(event){
-    console.log("hello");
-    callFlickrApi();
+    $('.more-photos').remove();
+    pageCount++;
+    callFlickrApi(pageCount);
   });
 }
