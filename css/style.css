@@ -669,7 +669,7 @@ form {
   transition: background-color 0.5s, transform 0.5s ease-out;
   transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out; }
 
-.sticky-footer-icon {
+.sticky-footer-icon-instagram {
   border-radius: 100%;
   color: black;
   fill: black;
@@ -680,8 +680,24 @@ form {
   transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
   transition: background-color 0.5s, transform 0.5s ease-out;
   transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out; }
-  .sticky-footer-icon:hover {
+  .sticky-footer-icon-instagram:hover {
     fill: #006ea4;
+    webkit-transform: scale(1.07);
+    transform: scale(1.07); }
+
+.sticky-footer-icon-youtube {
+  border-radius: 100%;
+  color: #d9264a;
+  fill: #d9264a;
+  float: right;
+  height: 35px;
+  width: 35px;
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out; }
+  .sticky-footer-icon-youtube:hover {
+    fill: #c32243;
     webkit-transform: scale(1.07);
     transform: scale(1.07); }
 

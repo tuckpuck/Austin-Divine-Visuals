@@ -903,7 +903,7 @@ line-height: 1.8;
   transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
-.sticky-footer-icon {
+.sticky-footer-icon-instagram {
   border-radius: 100%;
   color: black;
   fill: black;
@@ -916,6 +916,24 @@ line-height: 1.8;
   transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
   &:hover{
       fill: $primary-color;
+      webkit-transform: scale(1.07);
+      transform: scale(1.07);
+  }
+}
+
+.sticky-footer-icon-youtube {
+  border-radius: 100%;
+  color: #d9264a;
+  fill: #d9264a;
+  float: right;
+  height:35px;
+  width: 35px;
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  &:hover{
+      fill: darken(#d9264a, 5%);
       webkit-transform: scale(1.07);
       transform: scale(1.07);
   }
