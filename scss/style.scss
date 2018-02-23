@@ -263,13 +263,6 @@ a.effect-underline:hover:after {
   @include inset-shadow;
 }
 
-.black-accent-line {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    background-color: $color-gray-mid-dark;
-    z-index: 200;
-}
-
 #home-heading {
   position: relative;
   min-height: 20rem;
