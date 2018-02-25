@@ -516,9 +516,9 @@ section h4:before {
     border-right-width: 1.2rem; }
 
 .film-stage {
-  background: url("../img/snowcapped.jpg");
+  background: url("../img/egyptian.jpg");
   background-size: cover;
-  background-position: 50% 70%;
+  background-position: 50% 35%;
   -moz-box-shadow: inset 0 0 14px -2px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 0 14px -2px rgba(0, 0, 0, 0.6);
   box-shadow: inset 0 0 14px -2px rgba(0, 0, 0, 0.6);
