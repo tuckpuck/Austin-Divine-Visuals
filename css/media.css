@@ -82,6 +82,13 @@
   .main-area {
     height: auto;
   }
+  .contact-text-placer {
+    margin: 20px auto;
+  }
+  .contact-picture {
+    width: 70%;
+    height: auto;
+  }
 }
 
 /*Large devices (desktops, below 1200px)*/
