@@ -128,7 +128,8 @@ a.effect-underline:hover:after {
 
 /* index */
 .homejumbo {
-  background-image: url("../img/explorewithme.jpg");
+  background-image: url("../img/explorewithme-websize.jpg");
+  background-color: #2D2D2F;
   height: 92vh;
   background-size: cover;
   background-position: center;
