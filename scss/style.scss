@@ -228,7 +228,7 @@ a.effect-underline:hover:after {
 .emboldly-footer {
   color: $secondary-color !important;
   position: absolute;
-  right: 25px;
+  left: 25px;
   transition: 1s color;
   &:hover {
     color:$color-gray-dark !important;
