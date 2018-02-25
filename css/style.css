@@ -5,7 +5,7 @@ body {
   font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
 .main-area {
-  height: 87vh; }
+  height: 85vh; }
 
 .vh-25 {
   min-height: 75vh; }
@@ -69,12 +69,15 @@ a.effect-underline:hover:after {
 .nav-link {
   letter-spacing: 0.08rem;
   color: rgba(230, 230, 230, 0.9);
-  padding: 2.3rem 0rem;
   font-size: 1.6rem; }
 
 .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: border 0.5s, background-color 0.4s, margin 0.4s;
-  text-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.3); }
+  text-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.3);
+  height: 8vh; }
   .nav-item:hover {
     letter-spacing: none;
     background-color: #004262;
