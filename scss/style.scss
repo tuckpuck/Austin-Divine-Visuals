@@ -284,11 +284,10 @@ a.effect-underline:hover:after {
 position: relative;
 padding-bottom: 56.25%;
 padding-top: 3rem; height: 0; overflow: hidden;
-transition: .5s all;
-}
-
-.video-container:hover {
-  transform: scale(1.02);
+transition: .3s all ease-in-out;
+    &:hover {
+        transform: scale(1.005);
+    }
 }
 
 #player {
