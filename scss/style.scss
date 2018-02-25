@@ -109,7 +109,7 @@ body {
 }
 
 .main-area {
-  height: 87vh;
+  height: 85vh;
 }
 
 .vh-25{
@@ -191,14 +191,17 @@ a.effect-underline:hover:after {
 .nav-link {
   letter-spacing: 0.08rem;
   color: $text-color;
-  padding: 2.3rem 0rem;
   font-size: 1.6rem;
+
 }
 
 .nav-item {
+  display: flex;
+align-items: center;
+justify-content: center;
   transition: border 0.5s, background-color 0.4s, margin 0.4s;
   text-shadow: .5rem .5rem .3rem rgba(0, 0, 0, 0.3);
-
+  height: 8vh;
 
   &:hover {
     letter-spacing: none;
