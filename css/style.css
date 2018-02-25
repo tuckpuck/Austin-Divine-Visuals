@@ -99,7 +99,7 @@ a.effect-underline:hover:after {
 .emboldly-footer {
   color: #2D2D2F !important;
   position: absolute;
-  right: 25px;
+  left: 25px;
   transition: 1s color; }
   .emboldly-footer:hover {
     color: #777 !important;
