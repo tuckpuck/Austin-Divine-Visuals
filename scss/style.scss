@@ -136,6 +136,7 @@ a:hover {
   height: 8vh;
   // background: radial-gradient(lighten($color-gray-darker, 1%), darken($color-gray-darker, 1%), darken($color-gray-darker, 4%));
   background-image: url(../img/pattern/micro_carbon.png);
+  background-color: $color-gray-darker;
 
   // background-image: url(../img/blurred-background-13.jpg);
   // background-position: 50% 0%;
@@ -219,6 +220,7 @@ a.effect-underline:hover:after {
   background-image: url(../img/pattern/micro_carbon.png);
   height: 7vh;
   color: $color-gray-light-2;
+  background-color: $color-gray-darker;
   border-radius: 0;
   line-height: inherit;
   font-size: 1.4rem;
@@ -558,8 +560,9 @@ bottom: 0rem;
 .photo-stage {
   height: 60vh !important;
   background-image: url(../img/lady.jpeg);
+    background-color: $secondary-color;
   background-size: cover;
-  background-position: 30% 35%;
+  background-position: 30% 34%;
   position: relative;
     @include inset-shadow;
   &-text {
@@ -720,9 +723,10 @@ section h4:before {
 }
 // film
 .film-stage {
-  background: url("../img/egyptian.jpg");
+  background: url("../img/kathmandu.jpg");
   background-size: cover;
-  background-position: 50% 35%;
+  background-position: 50% 34%;
+  background-color: $secondary-color;
   @include inset-shadow;
   height: 60vh;
   display: block;
