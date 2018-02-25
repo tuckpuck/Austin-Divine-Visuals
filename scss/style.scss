@@ -260,7 +260,8 @@ justify-content: center;
 
 /* index */
 .homejumbo {
-  background-image: url("../img/explorewithme.jpg");
+  background-image: url("../img/explorewithme-websize.jpg");
+  background-color: $secondary-color;
   height: 92vh;
   background-size: cover;
   background-position: center;
