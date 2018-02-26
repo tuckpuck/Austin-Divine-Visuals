@@ -215,15 +215,14 @@ a.effect-underline:hover:after {
   background-size: cover; }
 
 #img-2 {
-  background: url("../img/filmstrip.png"), url("../img/boats2.jpg");
+  background: url("../img/filmstrip.png"), url("../img/egyptian.jpg");
   background-position: center;
   background-size: contain; }
 
 #img-3 {
-  background: url("../img/denver2.JPG");
-  background-position: 50% 55%;
-  background-size: cover;
-  border-bottom: none !important; }
+  background: url("../img/denver-websize.jpg");
+  background-position: 50% 61%;
+  background-size: cover; }
 
 .btn {
   font-size: 1.9rem;
@@ -404,7 +403,7 @@ a.effect-underline:hover:after {
 
 .photo-stage {
   height: 60vh !important;
-  background-image: url(../img/lady.jpeg);
+  background-image: url(../img/lady-websize.jpg);
   background-color: #2D2D2F;
   background-size: cover;
   background-position: 30% 34%;

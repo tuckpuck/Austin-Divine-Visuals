@@ -348,16 +348,16 @@ height: 100%;
 }
 
 #img-2 {
-  background: url("../img/filmstrip.png"), url("../img/boats2.jpg");
+  background: url("../img/filmstrip.png"), url("../img/egyptian.jpg");
   background-position: center;
   background-size: contain;
 }
 
 #img-3 {
-  background: url("../img/denver2.JPG");
-  background-position: 50% 55%;
+  background: url("../img/denver-websize.jpg");
+  background-position: 50% 61%;
   background-size: cover;
-  border-bottom: none !important;
+  // border-bottom: none !important;
 }
 
 .btn {
@@ -575,7 +575,7 @@ bottom: 0rem;
 
 .photo-stage {
   height: 60vh !important;
-  background-image: url(../img/lady.jpeg);
+  background-image: url(../img/lady-websize.jpg);
     background-color: $secondary-color;
   background-size: cover;
   background-position: 30% 34%;

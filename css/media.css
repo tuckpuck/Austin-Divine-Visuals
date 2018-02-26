@@ -112,6 +112,12 @@
   .box {
     margin: auto auto;
   }
+  .flickr-image {
+      margin: 30px auto;
+    }
+    .more-photos {
+    margin-bottom: 3rem;
+  }
 }
 
 /*Large devices (desktops, below 1200px)*/
