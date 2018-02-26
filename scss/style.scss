@@ -535,9 +535,11 @@ bottom: 0rem;
 .more-photos {
   margin-bottom: 6rem;
   cursor: pointer;
+  font-size: 1.6rem;
   transition: .6s all ease;
+  @include tiny-shadow;
   &:hover {
-    @include tiny-shadow;
+    @include less-shadow;
   }
 }
 
@@ -840,8 +842,9 @@ form {
 }
 
 .contact-text {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+  font-family: 'Merriweather', sans-serif;
 }
 
 .contact-text-placer {

@@ -15,6 +15,7 @@ $.ajax({
     var jsonInitialParse = jQuery.parseJSON(dataString);
     var jsonTrueParse = jQuery.parseJSON(jsonInitialParse);
     addImages(jsonTrueParse.photos.photo);
+    $('.more-photos').remove();
     morePhotos();
   }
 });
@@ -34,13 +35,13 @@ function addImages(data) {
 
 function morePhotos() {
   var button = document.createElement('button');
-  button.className="more-photos btn btn-primary-light btn-lg";
+  button.className="more-photos btn btn-primary-light";
     $('.gallery').append('<br/>');
   $('.gallery').append(button);
-  $('.more-photos').html('More Photos <i class="ion-plus-round"></i>');
+  $('.more-photos').html('More Photos');
   $('.more-photos').on('click', function(event){
-    $('.more-photos').remove();
     pageCount++;
     callFlickrApi(pageCount);
+    $('.more-photos').html("Loading...");
   });
 }
