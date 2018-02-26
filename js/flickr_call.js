@@ -37,7 +37,7 @@ function morePhotos() {
   button.className="more-photos btn btn-primary-light btn-lg";
     $('.gallery').append('<br/>');
   $('.gallery').append(button);
-  $('.more-photos').html('More Photos');
+  $('.more-photos').html('More Photos <i class="ion-plus-round"></i>');
   $('.more-photos').on('click', function(event){
     $('.more-photos').remove();
     pageCount++;
