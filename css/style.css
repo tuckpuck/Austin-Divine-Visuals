@@ -162,7 +162,10 @@ a.effect-underline:hover:after {
   overflow: hidden;
   transition: .3s all ease-in-out; }
   .video-container:hover {
-    transform: scale(1.005); }
+    transform: scale(1.005);
+    -webkit-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2); }
 
 #player {
   -webkit-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
@@ -356,12 +359,21 @@ a.effect-underline:hover:after {
   -webkit-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
-  transition: .6s all; }
+  transition: .6s all ease; }
   .flickr-image:hover {
-    transform: scale(1.01); }
+    transform: scale(1.01);
+    -webkit-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2); }
 
 .more-photos {
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  cursor: pointer;
+  transition: .6s all ease; }
+  .more-photos:hover {
+    -webkit-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2); }
 
 .background-radial {
   background: radial-gradient(#4d4d5d 30%, #333 100%);
@@ -621,7 +633,12 @@ form {
 
 .contact-picture {
   height: 30rem;
-  border-radius: 15px; }
+  border-radius: 15px;
+  transition: .3s all ease; }
+  .contact-picture:hover {
+    -webkit-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2); }
   .contact-picture-placer {
     margin-bottom: -10rem; }
 
