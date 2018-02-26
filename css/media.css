@@ -76,6 +76,10 @@
   .flickr-image img {
     margin: 40px auto;
   }
+  .soc a {
+    height: 4rem !important;
+    width: 4rem !important;
+  }
 }
 
 /*Medium devices (tablets, below 992px)*/
@@ -94,8 +98,19 @@
     margin: 20px auto;
   }
   .contact-picture {
-    width: 70%;
+    width: 50%;
     height: auto;
+  }
+  .soc {
+    margin-top: 0;
+    padding: 0;
+  }
+  .soc a {
+    height: 6rem;
+    width: 6rem;
+  }
+  .box {
+    margin: auto auto;
   }
 }
 
