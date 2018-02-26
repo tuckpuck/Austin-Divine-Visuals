@@ -34,7 +34,7 @@ function addImages(data) {
 
 function morePhotos() {
   var button = document.createElement('button');
-  button.className="more-photos";
+  button.className="more-photos btn btn-primary-light btn-lg";
     $('.gallery').append('<br/>');
   $('.gallery').append(button);
   $('.more-photos').html('More Photos');

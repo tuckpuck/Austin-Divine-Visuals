@@ -360,6 +360,9 @@ a.effect-underline:hover:after {
   .flickr-image:hover {
     transform: scale(1.01); }
 
+.more-photos {
+  margin-bottom: 6rem; }
+
 .background-radial {
   background: radial-gradient(#4d4d5d 30%, #333 100%);
   z-index: 1; }
