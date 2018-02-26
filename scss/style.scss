@@ -760,7 +760,7 @@ section h4:before {
 form {
    max-width: 600px;
    text-align: center;
-   margin: 20px auto;
+   margin: -.5rem auto 20px;
 
   input, textarea {
      border:0; outline:0;
@@ -844,7 +844,7 @@ margin-right: -40px;
 
 .contact-picture {
   height: 30rem;
-  border-radius: 5px;
+  border-radius: 15px;
   &-placer {
     margin-bottom: -10rem;
   }
@@ -853,6 +853,7 @@ margin-right: -40px;
 .box {
   position: relative;
   text-align: center;
+  margin-left: -35px;
 }
 
 .contact-bottom-row {
