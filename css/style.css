@@ -215,13 +215,13 @@ a.effect-underline:hover:after {
   background-size: cover; }
 
 #img-2 {
-  background: url("../img/filmstrip.png"), url("../img/egyptian.jpg");
+  background: url("../img/filmstrip.png"), url("../img/snowcapped-websize.jpg");
   background-position: center;
   background-size: contain; }
 
 #img-3 {
   background: url("../img/denver-websize.jpg");
-  background-position: 50% 61%;
+  background-position: 50% 41%;
   background-size: cover; }
 
 .btn {
