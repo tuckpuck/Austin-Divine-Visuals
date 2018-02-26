@@ -88,6 +88,9 @@
   .comp-display {
     display: none;
   }
+  .video-section {
+    padding-right: 0px !important;
+  }
   .video-stage {
     padding: 2rem 0;
   }
