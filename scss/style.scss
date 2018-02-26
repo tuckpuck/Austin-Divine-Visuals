@@ -520,7 +520,6 @@ bottom: 0rem;
 
 .flickr-wrapper {
   margin-top: 25px;
-  margin-top: 25px;
 }
 
 .flickr-image {
@@ -545,7 +544,13 @@ bottom: 0rem;
 }
 
 .background-radial {
-  background: radial-gradient(#4d4d5d 30%, $color-gray-darker 100%);
+  background: radial-gradient(#4d4d5d 0%, $color-gray-darker 100%);
+  background-color: #333;
+  z-index: 1;
+}
+
+.background-radial-dark {
+  background: radial-gradient($color-gray-darker 30%, $secondary-color 100%);
   background-color: #333;
   z-index: 1;
 }
@@ -844,8 +849,9 @@ form {
 
 .contact-text {
   font-size: 1.7rem;
-  text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
   font-family: 'Merriweather', sans-serif;
+  color: $secondary-color;
 }
 
 .contact-text-placer {

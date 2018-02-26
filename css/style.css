@@ -350,7 +350,6 @@ a.effect-underline:hover:after {
     transform: scale(1.1); }
 
 .flickr-wrapper {
-  margin-top: 25px;
   margin-top: 25px; }
 
 .flickr-image {
@@ -379,7 +378,12 @@ a.effect-underline:hover:after {
     box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5); }
 
 .background-radial {
-  background: radial-gradient(#4d4d5d 30%, #333 100%);
+  background: radial-gradient(#4d4d5d 0%, #333 100%);
+  background-color: #333;
+  z-index: 1; }
+
+.background-radial-dark {
+  background: radial-gradient(#333 30%, #2D2D2F 100%);
   background-color: #333;
   z-index: 1; }
 
@@ -627,8 +631,9 @@ form {
 
 .contact-text {
   font-size: 1.7rem;
-  text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
-  font-family: 'Merriweather', sans-serif; }
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  font-family: 'Merriweather', sans-serif;
+  color: #2D2D2F; }
 
 .contact-text-placer {
   margin-top: 8.5rem;
