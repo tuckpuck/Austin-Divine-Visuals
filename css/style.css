@@ -114,7 +114,7 @@ a.effect-underline:hover:after {
     text-decoration: none; }
 
 .fixed-bottom {
-  bottom: 15px; }
+  bottom: 12px; }
 
 .sticky-footer {
   position: absolute;
@@ -377,6 +377,7 @@ a.effect-underline:hover:after {
 
 .background-radial {
   background: radial-gradient(#4d4d5d 30%, #333 100%);
+  background-color: #333;
   z-index: 1; }
 
 .background-blurred-1 {
