@@ -81,7 +81,6 @@ $font-family-sans-serif: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFo
   box-shadow: 0 0 1.3rem .2rem rgba(0,0,0,0.5);
 }
 
-
 @mixin less-shadow {
   -webkit-box-shadow: 0 0 .8rem .1rem rgba(0,0,0,0.5);
   -moz-box-shadow: 0 0 .8rem .1rem rgba(0,0,0,0.5);
@@ -293,6 +292,7 @@ padding-top: 3rem; height: 0; overflow: hidden;
 transition: .3s all ease-in-out;
     &:hover {
         transform: scale(1.005);
+          @include tiny-shadow;
     }
 }
 
@@ -527,14 +527,20 @@ bottom: 0rem;
 .flickr-image {
     margin: 60px auto;
     @include less-shadow;
-    transition: .6s all;
+    transition: .6s all ease;
       &:hover {
     transform: scale(1.01);
+    @include tiny-shadow;
   }
 }
 
 .more-photos {
   margin-bottom: 6rem;
+  cursor: pointer;
+  transition: .6s all ease;
+  &:hover {
+    @include tiny-shadow;
+  }
 }
 
 .background-radial {
@@ -849,6 +855,10 @@ margin-right: -40px;
 .contact-picture {
   height: 30rem;
   border-radius: 15px;
+  transition: .3s all ease;
+  &:hover {
+    @include tiny-shadow;
+  }
   &-placer {
     margin-bottom: -10rem;
   }
