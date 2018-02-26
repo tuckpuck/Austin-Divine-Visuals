@@ -369,11 +369,15 @@ a.effect-underline:hover:after {
 .more-photos {
   margin-bottom: 6rem;
   cursor: pointer;
-  transition: .6s all ease; }
+  font-size: 1.6rem;
+  transition: .6s all ease;
+  -webkit-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2); }
   .more-photos:hover {
-    -webkit-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2); }
+    -webkit-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5); }
 
 .background-radial {
   background: radial-gradient(#4d4d5d 30%, #333 100%);
@@ -623,8 +627,9 @@ form {
   background-color: #333; }
 
 .contact-text {
-  font-size: 1.6rem;
-  text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3); }
+  font-size: 1.7rem;
+  text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+  font-family: 'Merriweather', sans-serif; }
 
 .contact-text-placer {
   margin-top: 8.5rem;
