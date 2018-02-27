@@ -83,6 +83,9 @@
   #img-3 {
     background-position: 50% 48%;
   }
+  .sticky-footer-icon-instagram, .sticky-footer-icon-youtube {
+    display: none;
+  }
 }
 
 /*Medium devices (tablets, below 992px)*/
