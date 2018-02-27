@@ -8,7 +8,7 @@ $color-gray-mid-dark: #555;
 $color-gray-dark: #777;
 $color-gray-light-2: #aaa;
 $color-gray-light-1: #f7f7f7;
-// $text-color: #333;
+$text-color: #333;
 $text-color: rgba(230, 230, 230, .9);
 $red: #D75745;
 $font-family-sans-serif: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
@@ -135,9 +135,6 @@ a:hover {
   height: 8vh;
   background-image: url(../img/pattern/micro_carbon.png);
   background-color: $color-gray-darker;
-  // background-image: url(../img/blurred-background-13.jpg);
-  // background-position: 50% 0%;
-  // background-size: cover;
 }
 
 .navbar-toggler {
@@ -358,7 +355,6 @@ height: 100%;
   background: url("../img/oceanboat.jpg");
   background-position: 50% 95%;
   background-size: cover;
-  // border-bottom: none !important;
 }
 
 .btn {
@@ -783,6 +779,7 @@ form {
      border:0; outline:0;
      padding: 1em;
      border-radius: 8px;
+     background-color: whitesmoke;
      display: block;
      width: 100%;
      margin-top: 1em;
