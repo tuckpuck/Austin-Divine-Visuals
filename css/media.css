@@ -80,6 +80,9 @@
     height: 4rem !important;
     width: 4rem !important;
   }
+  #img-3 {
+    background-position: 50% 48%;
+  }
 }
 
 /*Medium devices (tablets, below 992px)*/
