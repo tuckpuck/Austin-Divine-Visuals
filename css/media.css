@@ -49,6 +49,9 @@
   .emboldly-footer {
     display: none;
   }
+  .homebutton {
+    margin-top: 30rem;
+  }
 }
 
 /*Small devices (landscape phones, below 768px)*/
@@ -61,7 +64,6 @@
   .nav-item:hover {
     letter-spacing: 0.08rem;
     margin: auto;
-    padding: auto;
   }
   .nav-link {
     padding: .3rem !important;
@@ -85,6 +87,9 @@
   }
   .sticky-footer-icon-instagram, .sticky-footer-icon-youtube {
     display: none;
+  }
+  .homejumbo {
+    height: 89vh;
   }
 }
 
