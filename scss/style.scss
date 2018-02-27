@@ -8,7 +8,6 @@ $color-gray-mid-dark: #555;
 $color-gray-dark: #777;
 $color-gray-light-2: #aaa;
 $color-gray-light-1: #f7f7f7;
-$text-color: #333;
 $text-color: rgba(230, 230, 230, .9);
 $red: #D75745;
 $font-family-sans-serif: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
@@ -171,7 +170,7 @@ a.effect-underline:hover:after {
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='whitesmoke' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(230, 230, 230, .9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .navbar-brand {
