@@ -3,6 +3,7 @@ $primary-light: #81C6E8;
 $primary-color: #006ea4;
 $primary-dark: #023a55;
 $secondary-color: #2D2D2F;
+$color-gray-darkst: #555;
 $color-gray-darker: #333;
 $color-gray-mid-dark: #555;
 $color-gray-dark: #777;
@@ -539,7 +540,7 @@ bottom: 0rem;
 }
 
 .background-radial {
-  background: radial-gradient(#4d4d5d 0%, $color-gray-darker 100%);
+  background: radial-gradient(#4d4d5d 10%, $color-gray-darker 100%);
   background-color: #333;
   z-index: 1;
 }
@@ -692,7 +693,7 @@ section h4:before {
 .film-stage {
   background: url("../img/kathmandu.jpg");
   background-size: cover;
-  background-position: 50% 34%;
+  background-position: 50% 32%;
   background-color: $secondary-color;
   @include inset-shadow;
   height: 60vh;
@@ -788,16 +789,13 @@ form {
     clear: both;
 }
 
-
-.contact-page {
-  background-color: $color-gray-darker;
-}
-
 .contact-text {
   font-size: 1.7rem;
   text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
-  font-family: 'Merriweather', sans-serif;
-  color: $secondary-color;
+  font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+
+  color: $text-color;
+
 }
 
 .contact-text-placer {
