@@ -378,7 +378,7 @@ a.effect-underline:hover:after {
     box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5); }
 
 .background-radial {
-  background: radial-gradient(#4d4d5d 0%, #333 100%);
+  background: radial-gradient(#4d4d5d 10%, #333 100%);
   background-color: #333;
   z-index: 1; }
 
@@ -505,7 +505,7 @@ section h4:before {
 .film-stage {
   background: url("../img/kathmandu.jpg");
   background-size: cover;
-  background-position: 50% 34%;
+  background-position: 50% 32%;
   background-color: #2D2D2F;
   -moz-box-shadow: inset 0 0 14px -2px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 0 14px -2px rgba(0, 0, 0, 0.6);
@@ -582,14 +582,11 @@ form {
 .cf:after {
   clear: both; }
 
-.contact-page {
-  background-color: #333; }
-
 .contact-text {
   font-size: 1.7rem;
   text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
-  font-family: 'Merriweather', sans-serif;
-  color: #2D2D2F; }
+  font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+  color: rgba(230, 230, 230, 0.9); }
 
 .contact-text-placer {
   margin-top: 8.5rem;
