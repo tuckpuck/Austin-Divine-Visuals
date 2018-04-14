@@ -285,11 +285,6 @@ justify-content: center;
 position: relative;
 padding-bottom: 56.25%;
 padding-top: 3rem; height: 0; overflow: hidden;
-transition: .3s all ease-in-out;
-    &:hover {
-        transform: scale(1.005);
-          @include tiny-shadow;
-    }
 }
 
 #player {
