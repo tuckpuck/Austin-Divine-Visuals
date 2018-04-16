@@ -62,8 +62,9 @@ a.effect-underline:hover:after {
 .navbar-brand {
   color: rgba(230, 230, 230, 0.9);
   font-weight: 500;
-  font-size: 2.9rem;
-  font-family: 'Spectral SC', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 2.6rem;
+  margin-top: 4px;
+  font-family: 'Abel', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   text-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.3); }
 
 .nav-link {
@@ -176,7 +177,7 @@ a.effect-underline:hover:after {
   height: 100%; }
 
 .video-stage {
-  padding: 6rem 0; }
+  padding: 10rem 0; }
 
 .video-text {
   margin-top: 19rem !important;
