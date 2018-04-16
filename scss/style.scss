@@ -744,7 +744,9 @@ form {
     background: url(../img/pattern/celebration.png);
     background-position: middle;
     cursor: pointer;
-
+    &:hover{
+      background: url(../img/pattern/celebration2.png);
+    }
   }
 
   textarea {
