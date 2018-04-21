@@ -217,7 +217,7 @@ a.effect-underline:hover:after {
 #img-3 {
   background: url("../img/oceanboat.jpg");
   background-position: 50% 95%;
-  background-size: cover; }
+  background-size: 100%; }
 
 .btn {
   font-size: 1.9rem;
