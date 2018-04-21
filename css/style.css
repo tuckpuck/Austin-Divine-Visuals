@@ -64,7 +64,7 @@ a.effect-underline:hover:after {
   font-weight: 500;
   font-size: 2.6rem;
   margin-top: 4px;
-  font-family: 'Abel', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   text-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.3); }
 
 .nav-link {
@@ -259,7 +259,8 @@ a.effect-underline:hover:after {
   background-image: url(../img/pattern/micro_carbon.png); }
 
 .homebutton {
-  margin-top: 40rem; }
+  margin-top: 45rem;
+  font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
 .buttoneffect {
   display: inline-block;
