@@ -73,7 +73,7 @@
 
 <div class="card footer-card text-center">
   <div class="card-footer footer">
-      <span class="footer-text my-auto">© Copyright 2018 · Austin Divine<a class="emboldly-footer" href="http://www.emboldly.com">Emboldly Web</a></span>
+      <span class="footer-text my-auto">© Copyright <span class="currentYear"></span> · Austin Divine<a class="emboldly-footer" href="http://www.emboldly.com">Emboldly Web</a></span>
   </div>
 </div>
 
@@ -134,6 +134,13 @@ $.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtub
 
 });
 </script>
+
+<!-- dynamically set copyright date -->
+  <script>
+    var theDate=new Date().getFullYear();
+    theDate = theDate.toString();
+    $(".currentYear").text(theDate);
+  </script>
 
 </body>
 </html>
