@@ -407,7 +407,12 @@ border-color: $primary-color;
 
 .homebutton {
   margin-top: 45rem;
+  position: relative;
   font-family: $font-family-secondary;
+  display: inline;
+  &-svg{
+    display: inline-block;
+  }
 }
 
 .buttoneffect {
