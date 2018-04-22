@@ -184,10 +184,12 @@ a.effect-underline:hover:after {
   font-size: 1.6rem; }
 
 #yt-video-name {
-  font-size: 1.6rem; }
+  font-size: 1.7rem;
+  font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
 .video-latest {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
 .home-img {
   width: 100%;
