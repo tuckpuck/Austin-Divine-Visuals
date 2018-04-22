@@ -116,7 +116,7 @@ gtag('config', 'GA_TRACKING_ID');
 
 <div class="card footer-card text-center">
   <div class="card-footer footer">
-    <span class="footer-text my-auto">© Copyright 2018 · Austin Divine<a class="emboldly-footer" href="http://www.emboldly.com">Emboldly Web</a></span>
+    <span class="footer-text my-auto">© Copyright <span class="currentYear"></span> · Austin Divine<a class="emboldly-footer" href="http://www.emboldly.com">Emboldly Web</a></span>
   </div>
 </div>
 
@@ -126,6 +126,13 @@ gtag('config', 'GA_TRACKING_ID');
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
+<!-- dynamically set copyright date -->
+  <script>
+    var theDate=new Date().getFullYear();
+    theDate = theDate.toString();
+    $(".currentYear").text(theDate);
+  </script>
 
 </body>
 </html>
