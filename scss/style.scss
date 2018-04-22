@@ -791,10 +791,9 @@ form {
 }
 
 .contact-text {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
-  font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
-
+  font-family: $font-family-secondary;
   color: $text-color;
 
 }
@@ -807,12 +806,9 @@ margin-right: -40px;
 }
 
 .contact-picture {
-  height: 30rem;
+  height: 31rem;
   border-radius: 15px;
   transition: .3s all ease;
-  &:hover {
-    @include tiny-shadow;
-  }
   &-placer {
     margin-bottom: -10rem;
   }
