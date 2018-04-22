@@ -260,7 +260,11 @@ a.effect-underline:hover:after {
 
 .homebutton {
   margin-top: 45rem;
-  font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
+  position: relative;
+  font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  display: inline; }
+  .homebutton-svg {
+    display: inline-block; }
 
 .buttoneffect {
   display: inline-block;
