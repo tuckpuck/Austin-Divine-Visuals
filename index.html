@@ -84,7 +84,7 @@ gtag('config', 'GA_TRACKING_ID');
   <div class="container-fluid background-blurred-7 text-center video-stage">
     <div class="row mr-1">
       <div class="py-5 col-lg-6 offset-lg-1 col-12 video-section">
-        <h2 class="block text-light video-latest">Latest Video:</h2>
+        <!-- <h2 class="block text-light video-latest">Latest Video:</h2> -->
 
         <div class="video-container">
           <iframe id="youtube_video" width="600" height="340" frameborder="0" allowfullscreen></iframe>
@@ -146,7 +146,7 @@ gtag('config', 'GA_TRACKING_ID');
     $.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D' + channelID, function(data) {
       var link = data.items[0].link;
       var id = link.substr(link.indexOf("=") + 1);
-      var title = data.items[0].title;
+      var title = "Latest Video: " + data.items[0].title;
       $("#yt-video-name").text(title);
       $("#youtube_video").attr("src", "https://youtube.com/embed/" + id + "?controls=1&modestbranding=0&showinfo=0&rel=0");
     });
