@@ -193,6 +193,7 @@ a.effect-underline:hover:after {
   letter-spacing: 0.08rem;
   color: $text-color;
   font-size: 1.6rem;
+  font-family: $font-family-secondary;
 }
 
 .nav-item {
@@ -811,8 +812,8 @@ form {
 }
 
 .contact-text-placer {
-  margin-top: 7.5rem;
-line-height: 1.8;
+  margin-top: 8rem;
+line-height: 1.6;
 margin-left: -40px;
 margin-right: -40px;
 }
@@ -833,7 +834,7 @@ margin-right: -40px;
 }
 
 .contact-bottom-row {
-  margin-top: 2.5rem;
+  margin-top: .5rem;
 }
 
 .soc {
@@ -842,7 +843,7 @@ margin-right: -40px;
   list-style: none;
   margin: 0;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 .soc li {
   display: inline-block;
