@@ -503,6 +503,14 @@ border-color: $primary-color;
   }
 }
 
+.photo-link-button {
+  position: absolute;
+right: 32rem;
+top: 27.2rem;
+  display: block;
+  font-family: $font-family-secondary;
+}
+
 .photo-link {
   position: absolute;
 bottom: 0rem;
