@@ -334,6 +334,13 @@ a.effect-underline:hover:after {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+.photo-link-button {
+  position: absolute;
+  right: 32rem;
+  top: 27.2rem;
+  display: block;
+  font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
+
 .photo-link {
   position: absolute;
   bottom: 0rem;
