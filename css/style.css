@@ -315,7 +315,7 @@ a.effect-underline:hover:after {
     outline-offset: 2rem;
     outline: #006ea4; }
     .composition__photo--p1 {
-      left: 5rem;
+      left: 6rem;
       top: 18rem; }
     .composition__photo--p2 {
       left: 13rem;
@@ -336,8 +336,8 @@ a.effect-underline:hover:after {
 
 .photo-link-button {
   position: absolute;
-  right: 32rem;
-  top: 27.2rem;
+  right: 29.1rem;
+  top: 27rem;
   display: block;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
