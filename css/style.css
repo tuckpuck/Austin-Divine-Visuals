@@ -319,7 +319,7 @@ a.effect-underline:hover:after {
       top: 18rem; }
     .composition__photo--p2 {
       left: 13rem;
-      top: 5rem; }
+      top: 4.4rem; }
     .composition__photo--p3 {
       left: -8rem;
       top: 9rem; }
@@ -334,11 +334,22 @@ a.effect-underline:hover:after {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
+.photo-button-container {
+  position: relative; }
+
 .photo-link-button {
   position: absolute;
-  right: 29.1rem;
-  top: 27rem;
-  display: block;
+  top: 27.3rem;
+  left: -8rem;
+  padding: 40px;
+  font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
+
+.video-link-button {
+  position: absolute;
+  /* Opera */
+  top: -4rem;
+  left: 25rem;
+  padding: 40px;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
 .photo-link {
