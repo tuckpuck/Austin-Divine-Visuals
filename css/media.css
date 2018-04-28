@@ -33,9 +33,6 @@
 }
 /*Extra extra large devices (large desktops, above 1500px)*/
 @media (min-width: 1500px) {
-.homebutton {
-  margin-top: 60rem;
-}
 }
 
 /***** below media queries *****/
@@ -48,9 +45,6 @@
   }
   .emboldly-footer {
     display: none;
-  }
-  .homebutton {
-    margin-top: 40rem;
   }
 }
 
