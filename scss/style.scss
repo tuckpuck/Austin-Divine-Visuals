@@ -480,7 +480,7 @@ border-color: $primary-color;
     }
     &--p2 {
       left: 13rem;
-      top: 5rem;
+      top: 4.4rem;
     }
     &--p3 {
       left: -8rem;
@@ -503,11 +503,23 @@ border-color: $primary-color;
   }
 }
 
+.photo-button-container{
+  position: relative;
+}
+
 .photo-link-button {
   position: absolute;
-  right: 29.1rem;
-  top: 27rem;
-  display: block;
+  top: 27.3rem;
+  left: -8rem;
+  padding: 40px;
+  font-family: $font-family-secondary;
+}
+
+.video-link-button {
+  position: absolute; /* Opera */
+  top: -4rem;
+  left: 25rem;
+  padding: 40px;
   font-family: $font-family-secondary;
 }
 
