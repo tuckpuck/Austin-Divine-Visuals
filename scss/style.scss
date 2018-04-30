@@ -295,6 +295,28 @@ padding-bottom: 56.25%;
 padding-top: 3rem; height: 0; overflow: hidden;
 }
 
+.video-home-icon-youtube {
+  display: inline-block;
+  position: absolute;
+  border-radius: 100%;
+  color: darken(#d9264a, 10%);
+  fill: darken(#d9264a, 10%);
+overflow: visible;
+  height:3.5rem;
+  width: 3.5rem;
+  left: 1.9rem;
+  bottom:2.5rem;
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  &:hover{
+      fill: #d9264a;
+      webkit-transform: scale(1.07);
+      transform: scale(1.07);
+  }
+}
+
 #player {
   @include less-shadow;
 }
@@ -317,6 +339,8 @@ height: 100%;
   margin-top: 19rem !important;
   font-size: 1.6rem;
 }
+
+
 
 #yt-video-name {
   font-size: 1.7rem;
