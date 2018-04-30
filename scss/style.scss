@@ -475,7 +475,7 @@ border-color: $primary-color;
     outline: $primary-color;
 
     &--p1 {
-      left: 6rem;
+      left: 5.3rem;
       top: 18rem;
     }
     &--p2 {
@@ -495,7 +495,7 @@ border-color: $primary-color;
         outline: 1.5rem solid $primary-color;
         transform: scale(1.05) translateY(-.5rem);
         box-shadow: 0 2.5rem 4rem rgba(black, .5);
-        z-index: 20;
+        z-index: 1001;
       }
   }
   &:hover &__photo:not(:hover){
@@ -507,20 +507,36 @@ border-color: $primary-color;
   position: relative;
 }
 
-.photo-link-button {
-  position: absolute;
-  top: 22rem;
-  left: -8rem;
-  padding: 39px;
-  font-family: $font-family-secondary;
+.media-button {
+z-index: 21;
 }
 
 .video-link-button {
+  position: absolute;
+  top: 22rem;
+  left: -7.9rem;
+  padding: 39px;
+  font-family: $font-family-secondary;
+
+  transition: all .3s;
+    &:hover {
+    transform:rotate(-4deg);
+      transform-origin: 0% 100%;
+    }
+}
+
+.photo-link-button {
   position: absolute; /* Opera */
-  top: -4.5rem;
+  top: -5rem;
   left: 20.5rem;
   padding: 39px;
   font-family: $font-family-secondary;
+
+  transition: all .3s;
+    &:hover {
+    transform:rotate(-4deg);
+      transform-origin: 100% 100%;
+    }
 }
 
 .photo-link {
