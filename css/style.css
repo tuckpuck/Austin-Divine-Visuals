@@ -339,17 +339,17 @@ a.effect-underline:hover:after {
 
 .photo-link-button {
   position: absolute;
-  top: 27.3rem;
+  top: 22rem;
   left: -8rem;
-  padding: 40px;
+  padding: 39px;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
 .video-link-button {
   position: absolute;
   /* Opera */
-  top: -4rem;
-  left: 25rem;
-  padding: 40px;
+  top: -4.5rem;
+  left: 20.5rem;
+  padding: 39px;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
 .photo-link {
