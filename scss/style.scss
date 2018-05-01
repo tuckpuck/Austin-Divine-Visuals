@@ -336,7 +336,7 @@ height: 100%;
 }
 
 .video-text {
-  margin-top: 19rem !important;
+  margin-top: 17rem !important;
   font-size: 1.6rem;
 }
 
@@ -499,8 +499,8 @@ border-color: $primary-color;
     outline: $primary-color;
 
     &--p1 {
-      left: 5.3rem;
-      top: 18rem;
+      left: 6.4rem;
+      top: 19rem;
     }
     &--p2 {
       left: 13rem;
@@ -508,11 +508,11 @@ border-color: $primary-color;
     }
     &--p3 {
       left: -8rem;
-      top: 9rem;
+      top: 8.4rem;
     }
     &--p4 {
-      left: 0;
-      top: -5rem;
+      left: -1.5rem;
+      top: -6.2rem;
     }
 
       &:hover {
@@ -537,28 +537,28 @@ z-index: 21;
 
 .video-link-button {
   position: absolute;
-  top: 22rem;
+  top: 23rem;
   left: -7.9rem;
   padding: 39px;
   font-family: $font-family-secondary;
 
   transition: all .3s;
     &:hover {
-    transform:rotate(-4deg);
+    transform:rotate(-2deg);
       transform-origin: 0% 100%;
     }
 }
 
 .photo-link-button {
   position: absolute; /* Opera */
-  top: -5rem;
+  top: -6.2rem;
   left: 20.5rem;
   padding: 39px;
   font-family: $font-family-secondary;
 
   transition: all .3s;
     &:hover {
-    transform:rotate(-4deg);
+    transform:rotate(-2deg);
       transform-origin: 100% 100%;
     }
 }

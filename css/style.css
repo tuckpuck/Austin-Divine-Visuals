@@ -205,7 +205,7 @@ a.effect-underline:hover:after {
   padding: 10rem 0; }
 
 .video-text {
-  margin-top: 19rem !important;
+  margin-top: 17rem !important;
   font-size: 1.6rem; }
 
 #yt-video-name {
@@ -335,17 +335,17 @@ a.effect-underline:hover:after {
     outline-offset: 2rem;
     outline: #006ea4; }
     .composition__photo--p1 {
-      left: 5.3rem;
-      top: 18rem; }
+      left: 6.4rem;
+      top: 19rem; }
     .composition__photo--p2 {
       left: 13rem;
       top: 4.4rem; }
     .composition__photo--p3 {
       left: -8rem;
-      top: 9rem; }
+      top: 8.4rem; }
     .composition__photo--p4 {
-      left: 0;
-      top: -5rem; }
+      left: -1.5rem;
+      top: -6.2rem; }
     .composition__photo:hover {
       outline: 1.5rem solid #006ea4;
       transform: scale(1.05) translateY(-0.5rem);
@@ -362,25 +362,25 @@ a.effect-underline:hover:after {
 
 .video-link-button {
   position: absolute;
-  top: 22rem;
+  top: 23rem;
   left: -7.9rem;
   padding: 39px;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   transition: all .3s; }
   .video-link-button:hover {
-    transform: rotate(-4deg);
+    transform: rotate(-2deg);
     transform-origin: 0% 100%; }
 
 .photo-link-button {
   position: absolute;
   /* Opera */
-  top: -5rem;
+  top: -6.2rem;
   left: 20.5rem;
   padding: 39px;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   transition: all .3s; }
   .photo-link-button:hover {
-    transform: rotate(-4deg);
+    transform: rotate(-2deg);
     transform-origin: 100% 100%; }
 
 .photo-link {
@@ -642,7 +642,7 @@ form {
   clear: both; }
 
 .contact-text {
-  font-size: 1.8rem;
+  font-size: 1.95rem;
   text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   color: rgba(230, 230, 230, 0.9); }
