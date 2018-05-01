@@ -170,6 +170,7 @@ a.effect-underline:hover:after {
 .video-home-icon-youtube {
   display: inline-block;
   position: absolute;
+  z-index: 1;
   border-radius: 100%;
   color: #ae1e3b;
   fill: #ae1e3b;
@@ -210,7 +211,9 @@ a.effect-underline:hover:after {
 
 #yt-video-name {
   font-size: 1.7rem;
-  font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
+  font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  z-index: 100;
+  display: inline-block; }
 
 .video-latest {
   margin-bottom: 15px;
