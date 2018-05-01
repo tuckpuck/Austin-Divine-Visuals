@@ -46,6 +46,9 @@
   .emboldly-footer {
     display: none;
   }
+  .video-home-icon-youtube {
+    display: none;
+  }
 }
 
 /*Small devices (landscape phones, below 768px)*/

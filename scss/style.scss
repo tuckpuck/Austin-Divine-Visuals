@@ -298,10 +298,11 @@ padding-top: 3rem; height: 0; overflow: hidden;
 .video-home-icon-youtube {
   display: inline-block;
   position: absolute;
+  z-index: 1;
   border-radius: 100%;
   color: darken(#d9264a, 10%);
   fill: darken(#d9264a, 10%);
-overflow: visible;
+  overflow: visible;
   height:3.5rem;
   width: 3.5rem;
   left: 1.9rem;
@@ -345,6 +346,8 @@ height: 100%;
 #yt-video-name {
   font-size: 1.7rem;
     font-family: $font-family-secondary;
+    z-index: 100;
+    display: inline-block;
 }
 
 .video-latest {
