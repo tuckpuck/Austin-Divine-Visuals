@@ -502,11 +502,11 @@ border-color: $primary-color;
     outline: $primary-color;
 
     &--p1 {
-      left: 6.4rem;
+      left: 6.6rem;
       top: 19rem;
     }
     &--p2 {
-      left: 13rem;
+      left: 13.7rem;
       top: 4.4rem;
     }
     &--p3 {
@@ -514,7 +514,7 @@ border-color: $primary-color;
       top: 8.4rem;
     }
     &--p4 {
-      left: -1.5rem;
+      left: -1rem;
       top: -6.2rem;
     }
 
@@ -526,8 +526,13 @@ border-color: $primary-color;
       }
   }
   &:hover &__photo:not(:hover){
-    transform: scale(.95);
+    transform: scale(.94);
   }
+
+  &:hover div.media-button a {
+    transform: scale(.93);
+}
+
 }
 
 .photo-button-container{
@@ -542,28 +547,22 @@ z-index: 21;
   position: absolute;
   top: 23rem;
   left: -7.9rem;
-  padding: 39px;
+  padding: 37.4px;
+font-size: 2.1rem;
   font-family: $font-family-secondary;
-
   transition: all .3s;
-    &:hover {
-    transform:rotate(-2deg);
-      transform-origin: 0% 100%;
-    }
+
 }
 
 .photo-link-button {
   position: absolute; /* Opera */
   top: -6.2rem;
-  left: 20.5rem;
-  padding: 39px;
+  left: 21rem;
+  padding: 37.4px;
+  font-size: 2.1rem;
   font-family: $font-family-secondary;
-
   transition: all .3s;
-    &:hover {
-    transform:rotate(-2deg);
-      transform-origin: 100% 100%;
-    }
+
 }
 
 .photo-link {

@@ -338,16 +338,16 @@ a.effect-underline:hover:after {
     outline-offset: 2rem;
     outline: #006ea4; }
     .composition__photo--p1 {
-      left: 6.4rem;
+      left: 6.6rem;
       top: 19rem; }
     .composition__photo--p2 {
-      left: 13rem;
+      left: 13.7rem;
       top: 4.4rem; }
     .composition__photo--p3 {
       left: -8rem;
       top: 8.4rem; }
     .composition__photo--p4 {
-      left: -1.5rem;
+      left: -1rem;
       top: -6.2rem; }
     .composition__photo:hover {
       outline: 1.5rem solid #006ea4;
@@ -355,7 +355,9 @@ a.effect-underline:hover:after {
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 1001; }
   .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.95); }
+    transform: scale(0.94); }
+  .composition:hover div.media-button a {
+    transform: scale(0.93); }
 
 .photo-button-container {
   position: relative; }
@@ -367,24 +369,20 @@ a.effect-underline:hover:after {
   position: absolute;
   top: 23rem;
   left: -7.9rem;
-  padding: 39px;
+  padding: 37.4px;
+  font-size: 2.1rem;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   transition: all .3s; }
-  .video-link-button:hover {
-    transform: rotate(-2deg);
-    transform-origin: 0% 100%; }
 
 .photo-link-button {
   position: absolute;
   /* Opera */
   top: -6.2rem;
-  left: 20.5rem;
-  padding: 39px;
+  left: 21rem;
+  padding: 37.4px;
+  font-size: 2.1rem;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   transition: all .3s; }
-  .photo-link-button:hover {
-    transform: rotate(-2deg);
-    transform-origin: 100% 100%; }
 
 .photo-link {
   position: absolute;
