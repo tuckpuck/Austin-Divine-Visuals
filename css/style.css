@@ -334,7 +334,7 @@ a.effect-underline:hover:after {
     border-radius: 2px;
     position: absolute;
     z-index: 10;
-    transition: all .2s;
+    transition: all .2s ease-in-out;
     outline-offset: 2rem;
     outline: #006ea4; }
     .composition__photo--p1 {
@@ -372,7 +372,12 @@ a.effect-underline:hover:after {
   padding: 37.4px;
   font-size: 2.1rem;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  transition: all .3s; }
+  transition: all .2s ease-in-out; }
+  .video-link-button:hover {
+    transform: scale(1.1) !important;
+    color: white !important; }
+  .video-link-button:hover div.homebutton-svg svg {
+    fill: white !important; }
 
 .photo-link-button {
   position: absolute;
@@ -382,7 +387,12 @@ a.effect-underline:hover:after {
   padding: 37.4px;
   font-size: 2.1rem;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  transition: all .3s; }
+  transition: all .2s ease-in-out; }
+  .photo-link-button:hover {
+    transform: scale(1.1) !important;
+    color: white !important; }
+  .photo-link-button:hover div.homebutton-svg svg {
+    fill: white !important; }
 
 .photo-link {
   position: absolute;
