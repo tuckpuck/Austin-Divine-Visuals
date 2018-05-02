@@ -172,8 +172,8 @@ a.effect-underline:hover:after {
   position: absolute;
   z-index: 1;
   border-radius: 100%;
-  color: #ae1e3b;
-  fill: #ae1e3b;
+  color: #d9264a;
+  fill: #d9264a;
   overflow: visible;
   height: 3.5rem;
   width: 3.5rem;
@@ -184,7 +184,7 @@ a.effect-underline:hover:after {
   transition: background-color 0.5s, transform 0.5s ease-out;
   transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out; }
   .video-home-icon-youtube:hover {
-    fill: #d9264a;
+    fill: #ae1e3b;
     webkit-transform: scale(1.07);
     transform: scale(1.07); }
 

@@ -300,8 +300,8 @@ padding-top: 3rem; height: 0; overflow: hidden;
   position: absolute;
   z-index: 1;
   border-radius: 100%;
-  color: darken(#d9264a, 10%);
-  fill: darken(#d9264a, 10%);
+  color: #d9264a;
+  fill: #d9264a;
   overflow: visible;
   height:3.5rem;
   width: 3.5rem;
@@ -312,7 +312,7 @@ padding-top: 3rem; height: 0; overflow: hidden;
   transition: background-color 0.5s, transform 0.5s ease-out;
   transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
   &:hover{
-      fill: #d9264a;
+      fill: darken(#d9264a, 10%);
       webkit-transform: scale(1.07);
       transform: scale(1.07);
   }
