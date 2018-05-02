@@ -497,7 +497,7 @@ border-color: $primary-color;
     border-radius: 2px;
     position: absolute;
     z-index: 10;
-    transition: all .2s;
+    transition: all .2s ease-in-out;
     outline-offset: 2rem;
     outline: $primary-color;
 
@@ -548,10 +548,16 @@ z-index: 21;
   top: 23rem;
   left: -7.9rem;
   padding: 37.4px;
-font-size: 2.1rem;
+  font-size: 2.1rem;
   font-family: $font-family-secondary;
-  transition: all .3s;
-
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scale(1.1) !important;
+    color: white !important;
+  }
+  &:hover div.homebutton-svg svg {
+    fill: white !important;
+  }
 }
 
 .photo-link-button {
@@ -561,8 +567,14 @@ font-size: 2.1rem;
   padding: 37.4px;
   font-size: 2.1rem;
   font-family: $font-family-secondary;
-  transition: all .3s;
-
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scale(1.1) !important;
+    color: white !important;
+  }
+  &:hover div.homebutton-svg svg {
+    fill: white !important;
+  }
 }
 
 .photo-link {
