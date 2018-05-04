@@ -421,6 +421,19 @@ border-color: $primary-color;
   }
 }
 
+.btn-primary-dark {
+  background-color: darken($primary-color, 6%);
+  background-color: darken($primary-color, 6%);
+  &:hover {
+    background-color: $primary-color;
+    border: none;
+  }
+  &:active {
+    border-color: $primary-color;
+    border: none;
+  }
+}
+
 
 .img-thumbnail {
   padding: 0;
@@ -550,9 +563,12 @@ z-index: 21;
   padding: 37.4px;
   font-size: 2.1rem;
   font-family: $font-family-secondary;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
+  background-image: url(../img/blackriver.jpg);
+background-size: contain;
   transition: all .2s ease-in-out;
   &:hover {
-    transform: scale(1.1) !important;
+    transform: scale(1.095) !important;
     color: white !important;
   }
   &:hover div.homebutton-svg svg {
@@ -567,9 +583,12 @@ z-index: 21;
   padding: 37.4px;
   font-size: 2.1rem;
   font-family: $font-family-secondary;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
   transition: all .2s ease-in-out;
+  background-image: url(../img/treedrone.jpg);
+  background-size: contain;
   &:hover {
-    transform: scale(1.1) !important;
+    transform: scale(1.095) !important;
     color: white !important;
   }
   &:hover div.homebutton-svg svg {

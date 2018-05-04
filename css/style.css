@@ -274,6 +274,16 @@ a.effect-underline:hover:after {
     background-color: #006ea4 !important;
     border: none; }
 
+.btn-primary-dark {
+  background-color: #005985;
+  background-color: #005985; }
+  .btn-primary-dark:hover {
+    background-color: #006ea4;
+    border: none; }
+  .btn-primary-dark:active {
+    border-color: #006ea4;
+    border: none; }
+
 .img-thumbnail {
   padding: 0;
   border: none; }
@@ -372,9 +382,12 @@ a.effect-underline:hover:after {
   padding: 37.4px;
   font-size: 2.1rem;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
+  background-image: url(../img/blackriver.jpg);
+  background-size: contain;
   transition: all .2s ease-in-out; }
   .video-link-button:hover {
-    transform: scale(1.1) !important;
+    transform: scale(1.095) !important;
     color: white !important; }
   .video-link-button:hover div.homebutton-svg svg {
     fill: white !important; }
@@ -387,9 +400,12 @@ a.effect-underline:hover:after {
   padding: 37.4px;
   font-size: 2.1rem;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  transition: all .2s ease-in-out; }
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
+  transition: all .2s ease-in-out;
+  background-image: url(../img/treedrone.jpg);
+  background-size: contain; }
   .photo-link-button:hover {
-    transform: scale(1.1) !important;
+    transform: scale(1.095) !important;
     color: white !important; }
   .photo-link-button:hover div.homebutton-svg svg {
     fill: white !important; }
