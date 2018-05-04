@@ -384,8 +384,9 @@ a.effect-underline:hover:after {
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
   background-color: #2D2D2F;
-  background-image: url(../img/blackriver.jpg);
+  background-image: url(../img/blackriver-web-size.jpg);
   background-size: contain;
+  background-position: center;
   transition: all .2s ease-in-out; }
   .video-link-button:hover {
     transform: scale(1.095) !important;
@@ -404,7 +405,7 @@ a.effect-underline:hover:after {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
   transition: all .2s ease-in-out;
   background-color: #2D2D2F;
-  background-image: url(../img/treedrone.jpg);
+  background-image: url(../img/treedrone-web-size.jpg);
   background-size: contain; }
   .photo-link-button:hover {
     transform: scale(1.095) !important;
