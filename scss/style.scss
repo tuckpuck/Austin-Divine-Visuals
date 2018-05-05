@@ -348,6 +348,10 @@ height: 100%;
     font-family: $font-family-secondary;
     z-index: 100;
     display: inline-block;
+    transition: 1s all;
+    &:hover {
+      text-decoration: underline;
+    }
 }
 
 .video-latest {

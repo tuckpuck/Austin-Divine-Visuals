@@ -88,7 +88,9 @@ gtag('config', 'GA_TRACKING_ID');
         <div class="video-container">
           <iframe id="youtube_video" width="600" height="340" frameborder="0" allowfullscreen></iframe>
         </div>
+        <a href="" target="_blank" id="yt-video-link">
         <div id="yt-video-name" class="text-light mt-4"></div>
+        </a>
         <a href="https://www.youtube.com/channel/UCtbZgA54pP_ZrJwPCoFiy0A" target="_blank" class="video-home-icon-youtube" title="YouTube"><svg viewBox="0 0 512 512"><path d="M422.6 193.6c-5.3-45.3-23.3-51.6-59-54 -50.8-3.5-164.3-3.5-215.1 0 -35.7 2.4-53.7 8.7-59 54 -4 33.6-4 91.1 0 124.8 5.3 45.3 23.3 51.6 59 54 50.9 3.5 164.3 3.5 215.1 0 35.7-2.4 53.7-8.7 59-54C426.6 284.8 426.6 227.3 422.6 193.6zM222.2 303.4v-94.6l90.7 47.3L222.2 303.4z"/></svg></a>
       </div>
       <div class="col-lg-3 offset-lg-1 text-light video-text comp-display">
@@ -197,6 +199,8 @@ gtag('config', 'GA_TRACKING_ID');
       var id = link.substr(link.indexOf("=") + 1);
       var title = data.items[0].title;
       $("#yt-video-name").text(title);
+      $("#yt-video-link").attr("href", link);
+      console.log(data.items[0].link);
       $("#youtube_video").attr("src", "https://youtube.com/embed/" + id + "?controls=1&modestbranding=0&showinfo=0&rel=0");
     });
   </script>
