@@ -213,7 +213,10 @@ a.effect-underline:hover:after {
   font-size: 1.7rem;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   z-index: 100;
-  display: inline-block; }
+  display: inline-block;
+  transition: 1s all; }
+  #yt-video-name:hover {
+    text-decoration: underline; }
 
 .video-latest {
   margin-bottom: 15px;
