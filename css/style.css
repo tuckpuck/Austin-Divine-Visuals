@@ -172,6 +172,9 @@ a.effect-underline:hover:after {
   position: absolute;
   z-index: 1;
   border-radius: 100%;
+  background-image: url("../img/waterblue.jpg");
+  background-position: center;
+  background-size: cover;
   color: #d9264a;
   fill: #d9264a;
   overflow: visible;
@@ -354,8 +357,9 @@ a.effect-underline:hover:after {
       left: 6.6rem;
       top: 19rem; }
     .composition__photo--p2 {
-      left: 13.7rem;
-      top: 4.4rem; }
+      left: 14.01rem;
+      top: 4.4rem;
+      z-index: 1000; }
     .composition__photo--p3 {
       left: -8rem;
       top: 8.4rem; }
@@ -387,9 +391,9 @@ a.effect-underline:hover:after {
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
   background-color: #2D2D2F;
-  background-image: url(../img/blackriver-web-size.jpg);
-  background-size: contain;
-  background-position: center;
+  background-image: url(../img/image4.jpeg);
+  background-size: cover;
+  background-position: 100% 20%;
   transition: all .2s ease-in-out; }
   .video-link-button:hover {
     transform: scale(1.095) !important;
