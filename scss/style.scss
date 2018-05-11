@@ -353,7 +353,7 @@ height: 100%;
     padding-top: .5rem;
     &:hover {
       text-decoration: underline;
-    }
+}
 }
 
 .video-latest {
@@ -585,7 +585,8 @@ z-index: 21;
     transform: scale(1.095) !important;
     opacity:1;
     z-index: 1002;
-    background-blend-mode: color-dodge;
+    background-color: fuchsia;
+    background-blend-mode: darken;
   }
   &:active {
     background-image: url(../img/image4.jpeg) !important;

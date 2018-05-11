@@ -403,7 +403,8 @@ a.effect-underline:hover:after {
     transform: scale(1.095) !important;
     opacity: 1;
     z-index: 1002;
-    background-blend-mode: color-dodge; }
+    background-color: fuchsia;
+    background-blend-mode: darken; }
   .video-link-button:active {
     background-image: url(../img/image4.jpeg) !important;
     transform: scale(1.06) !important; }
