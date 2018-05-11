@@ -359,7 +359,7 @@ a.effect-underline:hover:after {
     .composition__photo--p2 {
       left: 14.01rem;
       top: 4.4rem;
-      z-index: 1000; }
+      z-index: 11; }
     .composition__photo--p3 {
       left: -8rem;
       top: 8.4rem; }
@@ -368,11 +368,11 @@ a.effect-underline:hover:after {
       top: -6.2rem; }
     .composition__photo:hover {
       outline: 1.5rem solid #006ea4;
-      transform: scale(1.05) translateY(-0.5rem);
+      transform: scale(1.07) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-      z-index: 1001; }
+      z-index: 999; }
   .composition:hover .composition__photo:not(:hover) {
-    transform: scale(1.01); }
+    transform: scale(1); }
   .composition:hover div.media-button a {
     transform: scale(1); }
 
@@ -395,14 +395,13 @@ a.effect-underline:hover:after {
   background-size: cover;
   background-position: 100% 20%;
   transition: all .2s ease-in-out;
-  opacity: .8; }
+  opacity: .8;
+  color: white !important; }
   .video-link-button:hover {
     transform: scale(1.095) !important;
-    color: white !important;
     opacity: 1;
-    background-position: -300% 20%; }
-  .video-link-button:hover div.homebutton-svg svg {
-    fill: white !important; }
+    z-index: 1002;
+    background-blend-mode: color-dodge; }
   .video-link-button:active {
     background-image: url(../img/image4.jpeg) !important;
     transform: scale(1.06) !important; }
@@ -420,16 +419,20 @@ a.effect-underline:hover:after {
   background-color: #2D2D2F;
   background-image: url(../img/treedrone-web-size.jpg);
   background-size: contain;
-  opacity: .8; }
+  opacity: .8;
+  color: white !important; }
   .photo-link-button:hover {
     transform: scale(1.095) !important;
-    color: white !important;
-    opacity: 1; }
-  .photo-link-button:hover div.homebutton-svg svg {
-    fill: white !important; }
+    opacity: 1;
+    z-index: 1002;
+    background-color: #aaa;
+    background-blend-mode: darken; }
   .photo-link-button:active {
     background-image: url(../img/treedrone-web-size.jpg) !important;
     transform: scale(1.06) !important; }
+
+div.homebutton-svg svg {
+  fill: white !important; }
 
 .photo-link {
   position: absolute;

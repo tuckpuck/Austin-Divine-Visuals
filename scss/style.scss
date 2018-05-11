@@ -526,7 +526,8 @@ border-color: $primary-color;
     &--p2 {
       left: 14.01rem;
       top: 4.4rem;
-      z-index: 1000;
+      z-index: 11;
+
     }
     &--p3 {
       left: -8rem;
@@ -539,13 +540,13 @@ border-color: $primary-color;
 
       &:hover {
         outline: 1.5rem solid $primary-color;
-        transform: scale(1.05) translateY(-.5rem);
+        transform: scale(1.07) translateY(-.5rem);
         box-shadow: 0 2.5rem 4rem rgba(black, .5);
-        z-index: 1001;
+        z-index: 999;
       }
   }
   &:hover &__photo:not(:hover){
-    transform: scale(1.01);
+    transform: scale(1);
   }
 
   &:hover div.media-button a {
@@ -577,14 +578,12 @@ z-index: 21;
   background-position: 100% 20%;
   transition: all .2s ease-in-out;
   opacity:.8;
+  color: white !important;
   &:hover {
     transform: scale(1.095) !important;
-    color: white !important;
     opacity:1;
-    background-position: -300% 20%;
-  }
-  &:hover div.homebutton-svg svg {
-    fill: white !important;
+    z-index: 1002;
+    background-blend-mode: color-dodge;
   }
   &:active {
     background-image: url(../img/image4.jpeg) !important;
@@ -606,18 +605,22 @@ z-index: 21;
   background-image: url(../img/treedrone-web-size.jpg);
   background-size: contain;
   opacity:.8;
+  color: white !important;
   &:hover {
     transform: scale(1.095) !important;
-    color: white !important;
     opacity: 1;
-  }
-  &:hover div.homebutton-svg svg {
-    fill: white !important;
+    z-index: 1002;
+    background-color: $color-gray-light-2;
+    background-blend-mode: darken;
   }
   &:active {
     background-image: url(../img/treedrone-web-size.jpg) !important;
     transform: scale(1.06) !important;
   }
+}
+
+div.homebutton-svg svg {
+  fill: white !important;
 }
 
 .photo-link {
