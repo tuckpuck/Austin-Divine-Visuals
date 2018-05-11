@@ -172,7 +172,7 @@ a.effect-underline:hover:after {
   position: absolute;
   z-index: 1;
   border-radius: 100%;
-  background-image: url("../img/waterblue.jpg");
+  background-color: #2D2D2F;
   background-position: center;
   background-size: cover;
   color: #d9264a;
