@@ -213,16 +213,18 @@ a.effect-underline:hover:after {
   font-size: 1.6rem; }
 
 #yt-video-name {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   z-index: 100;
   display: inline-block;
-  transition: 1s all; }
+  transition: 1s all;
+  padding-top: .5rem; }
   #yt-video-name:hover {
     text-decoration: underline; }
 
 .video-latest {
-  margin-bottom: 15px;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
 .home-img {
@@ -716,7 +718,7 @@ form {
   margin-left: -35px; }
 
 .contact-bottom-row {
-  margin-top: .5rem; }
+  margin-top: 2.5rem; }
 
 .soc {
   display: inline-block;

@@ -345,18 +345,20 @@ height: 100%;
 }
 
 #yt-video-name {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
     font-family: $font-family-secondary;
     z-index: 100;
     display: inline-block;
     transition: 1s all;
+    padding-top: .5rem;
     &:hover {
       text-decoration: underline;
     }
 }
 
 .video-latest {
-  margin-bottom: 15px;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
   font-family: $font-family-secondary;
 }
 
@@ -954,7 +956,7 @@ margin-right: -40px;
 }
 
 .contact-bottom-row {
-  margin-top: .5rem;
+  margin-top: 2.5rem;
 }
 
 .soc {
