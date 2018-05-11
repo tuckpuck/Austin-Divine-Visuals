@@ -6,7 +6,13 @@
 
 /*Medium devices (tablets, between 768px and 991px)*/
 
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-picture {
+    width: 40%;
+    margin-bottom: 3rem;
+    height: auto;
+  }
+}
 
 /*Large devices (desktops, between 992px and 1199px)*/
 
@@ -72,6 +78,11 @@
   .navbar {
     height: 11vh;
   }
+  .contact-picture {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+  }
   .flickr-image img {
     margin: 40px auto;
   }
@@ -108,10 +119,6 @@
   }
   .contact-text-placer {
     margin: 20px auto;
-  }
-  .contact-picture {
-    width: 50%;
-    height: auto;
   }
   .soc {
     margin-top: 0;

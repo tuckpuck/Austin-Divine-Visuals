@@ -372,9 +372,9 @@ a.effect-underline:hover:after {
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 1001; }
   .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.94); }
+    transform: scale(1.01); }
   .composition:hover div.media-button a {
-    transform: scale(0.93); }
+    transform: scale(1); }
 
 .photo-button-container {
   position: relative; }
@@ -394,12 +394,18 @@ a.effect-underline:hover:after {
   background-image: url(../img/image4.jpeg);
   background-size: cover;
   background-position: 100% 20%;
-  transition: all .2s ease-in-out; }
+  transition: all .2s ease-in-out;
+  opacity: .8; }
   .video-link-button:hover {
     transform: scale(1.095) !important;
-    color: white !important; }
+    color: white !important;
+    opacity: 1;
+    background-position: -300% 20%; }
   .video-link-button:hover div.homebutton-svg svg {
     fill: white !important; }
+  .video-link-button:active {
+    background-image: url(../img/image4.jpeg) !important;
+    transform: scale(1.06) !important; }
 
 .photo-link-button {
   position: absolute;
@@ -413,12 +419,17 @@ a.effect-underline:hover:after {
   transition: all .2s ease-in-out;
   background-color: #2D2D2F;
   background-image: url(../img/treedrone-web-size.jpg);
-  background-size: contain; }
+  background-size: contain;
+  opacity: .8; }
   .photo-link-button:hover {
     transform: scale(1.095) !important;
-    color: white !important; }
+    color: white !important;
+    opacity: 1; }
   .photo-link-button:hover div.homebutton-svg svg {
     fill: white !important; }
+  .photo-link-button:active {
+    background-image: url(../img/treedrone-web-size.jpg) !important;
+    transform: scale(1.06) !important; }
 
 .photo-link {
   position: absolute;
@@ -476,8 +487,7 @@ a.effect-underline:hover:after {
   z-index: 1; }
 
 .background-radial-dark {
-  background: radial-gradient(#333 30%, #2D2D2F 100%);
-  background-color: #333;
+  background: radial-gradient(#333 0%, #333 100%);
   z-index: 1; }
 
 .background-blurred-1 {
@@ -508,7 +518,7 @@ a.effect-underline:hover:after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 0 rgba(85, 85, 85, 0.4); }
+    text-shadow: 2px 2px 0 rgba(51, 51, 51, 0.4); }
 
 .icon-container {
   height: 32vh; }
@@ -615,7 +625,7 @@ section h4:before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 0 rgba(85, 85, 85, 0.4); }
+    text-shadow: 2px 2px 0 rgba(51, 51, 51, 0.4); }
 
 .film-content {
   min-height: 92vh; }

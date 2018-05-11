@@ -5,7 +5,7 @@ $primary-dark: #023a55;
 $secondary-color: #2D2D2F;
 $color-gray-darkst: #555;
 $color-gray-darker: #333;
-$color-gray-mid-dark: #555;
+$color-gray-mid-dark: #333;
 $color-gray-dark: #777;
 $color-gray-light-2: #aaa;
 $color-gray-light-1: #f7f7f7;
@@ -344,8 +344,6 @@ height: 100%;
   font-size: 1.6rem;
 }
 
-
-
 #yt-video-name {
   font-size: 1.7rem;
     font-family: $font-family-secondary;
@@ -547,11 +545,11 @@ border-color: $primary-color;
       }
   }
   &:hover &__photo:not(:hover){
-    transform: scale(.94);
+    transform: scale(1.01);
   }
 
   &:hover div.media-button a {
-    transform: scale(.93);
+    transform: scale(1);
 }
 
 }
@@ -573,16 +571,24 @@ z-index: 21;
   font-family: $font-family-secondary;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
   background-color: $secondary-color;
+  // if change bg image, also change the :active to the same
   background-image: url(../img/image4.jpeg);
-background-size: cover;
-background-position: 100% 20%;
+  background-size: cover;
+  background-position: 100% 20%;
   transition: all .2s ease-in-out;
+  opacity:.8;
   &:hover {
     transform: scale(1.095) !important;
     color: white !important;
+    opacity:1;
+    background-position: -300% 20%;
   }
   &:hover div.homebutton-svg svg {
     fill: white !important;
+  }
+  &:active {
+    background-image: url(../img/image4.jpeg) !important;
+    transform: scale(1.06) !important;
   }
 }
 
@@ -596,14 +602,21 @@ background-position: 100% 20%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
   transition: all .2s ease-in-out;
   background-color: $secondary-color;
+  // if change bg image, also change the :active to the same
   background-image: url(../img/treedrone-web-size.jpg);
   background-size: contain;
+  opacity:.8;
   &:hover {
     transform: scale(1.095) !important;
     color: white !important;
+    opacity: 1;
   }
   &:hover div.homebutton-svg svg {
     fill: white !important;
+  }
+  &:active {
+    background-image: url(../img/treedrone-web-size.jpg) !important;
+    transform: scale(1.06) !important;
   }
 }
 
@@ -661,8 +674,8 @@ bottom: 0rem;
 }
 
 .background-radial-dark {
-  background: radial-gradient($color-gray-darker 30%, $secondary-color 100%);
-  background-color: #333;
+  background: radial-gradient($color-gray-mid-dark 0%, $color-gray-darker 100%);
+  // background-color: #333;
   z-index: 1;
 }
 
