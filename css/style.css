@@ -395,7 +395,7 @@ a.effect-underline:hover:after {
   .media-link--video {
     top: 23rem;
     left: -7.9rem;
-    background-image: url(../img/image4.jpeg);
+    background-image: url(../img/image4-ws.jpg);
     background-size: cover;
     background-position: 100% 20%; }
     .media-link--video:hover {
@@ -403,12 +403,12 @@ a.effect-underline:hover:after {
       opacity: 1;
       z-index: 1002; }
     .media-link--video:active {
-      background-image: url(../img/image4.jpeg) !important;
+      background-image: url(../img/image4-ws.jpg) !important;
       transform: scale(1) !important; }
   .media-link--photo {
     top: -6.2rem;
     left: 21rem;
-    background-image: url(../img/treedrone-web-size.jpg);
+    background-image: url(../img/treedrone-ws.jpg);
     background-size: contain; }
     .media-link--photo:hover {
       transform: scale(1.095) !important;
@@ -417,7 +417,7 @@ a.effect-underline:hover:after {
       background-color: #aaa;
       background-blend-mode: darken; }
     .media-link--photo:active {
-      background-image: url(../img/treedrone-web-size.jpg) !important;
+      background-image: url(../img/treedrone-ws.jpg) !important;
       transform: scale(1) !important; }
 
 div.homebutton-svg svg {
