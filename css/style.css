@@ -381,58 +381,44 @@ a.effect-underline:hover:after {
 .photo-button-container {
   position: relative; }
 
-.media-button {
-  z-index: 21; }
-
-.video-link-button {
+.media-link {
   position: absolute;
-  top: 23rem;
-  left: -7.9rem;
+  z-index: 21;
   padding: 37.4px;
   font-size: 2.1rem;
-  font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
-  background-color: #2D2D2F;
-  background-image: url(../img/image4.jpeg);
-  background-size: cover;
-  background-position: 100% 20%;
-  transition: all .2s ease-in-out;
-  opacity: .8;
-  color: white !important; }
-  .video-link-button:hover {
-    transform: scale(1.095) !important;
-    opacity: 1;
-    z-index: 1002;
-    background-color: fuchsia;
-    background-blend-mode: darken; }
-  .video-link-button:active {
-    background-image: url(../img/image4.jpeg) !important;
-    transform: scale(1.06) !important; }
-
-.photo-link-button {
-  position: absolute;
-  /* Opera */
-  top: -6.2rem;
-  left: 21rem;
-  padding: 37.4px;
-  font-size: 2.1rem;
-  font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
   transition: all .2s ease-in-out;
   background-color: #2D2D2F;
-  background-image: url(../img/treedrone-web-size.jpg);
-  background-size: contain;
+  font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   opacity: .8;
   color: white !important; }
-  .photo-link-button:hover {
-    transform: scale(1.095) !important;
-    opacity: 1;
-    z-index: 1002;
-    background-color: #aaa;
-    background-blend-mode: darken; }
-  .photo-link-button:active {
-    background-image: url(../img/treedrone-web-size.jpg) !important;
-    transform: scale(1.06) !important; }
+  .media-link--video {
+    top: 23rem;
+    left: -7.9rem;
+    background-image: url(../img/image4.jpeg);
+    background-size: cover;
+    background-position: 100% 20%; }
+    .media-link--video:hover {
+      transform: scale(1.095) !important;
+      opacity: 1;
+      z-index: 1002; }
+    .media-link--video:active {
+      background-image: url(../img/image4.jpeg) !important;
+      transform: scale(1) !important; }
+  .media-link--photo {
+    top: -6.2rem;
+    left: 21rem;
+    background-image: url(../img/treedrone-web-size.jpg);
+    background-size: contain; }
+    .media-link--photo:hover {
+      transform: scale(1.095) !important;
+      opacity: 1;
+      z-index: 1002;
+      background-color: #aaa;
+      background-blend-mode: darken; }
+    .media-link--photo:active {
+      background-image: url(../img/treedrone-web-size.jpg) !important;
+      transform: scale(1) !important; }
 
 div.homebutton-svg svg {
   fill: white !important; }
