@@ -561,54 +561,40 @@ border-color: $primary-color;
   position: relative;
 }
 
-.media-button {
+.media-link {
+position: absolute;
 z-index: 21;
-}
-
-.video-link-button {
-  position: absolute;
+padding: 37.4px;
+font-size: 2.1rem;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
+transition: all .2s ease-in-out;
+background-color: $secondary-color;
+font-family: $font-family-secondary;
+opacity:.8;
+color: white !important;
+&--video {
   top: 23rem;
   left: -7.9rem;
-  padding: 37.4px;
-  font-size: 2.1rem;
-  font-family: $font-family-secondary;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
-  background-color: $secondary-color;
-  // if change bg image, also change the :active to the same
+  // if change bg image, also change :active
   background-image: url(../img/image4.jpeg);
   background-size: cover;
   background-position: 100% 20%;
-  transition: all .2s ease-in-out;
-  opacity:.8;
-  color: white !important;
   &:hover {
     transform: scale(1.095) !important;
     opacity:1;
     z-index: 1002;
-    background-color: fuchsia;
-    background-blend-mode: darken;
   }
   &:active {
     background-image: url(../img/image4.jpeg) !important;
-    transform: scale(1.06) !important;
+    transform: scale(1) !important;
   }
 }
-
-.photo-link-button {
-  position: absolute; /* Opera */
+&--photo {
   top: -6.2rem;
   left: 21rem;
-  padding: 37.4px;
-  font-size: 2.1rem;
-  font-family: $font-family-secondary;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
-  transition: all .2s ease-in-out;
-  background-color: $secondary-color;
-  // if change bg image, also change the :active to the same
+  // if change bg image, also change :active
   background-image: url(../img/treedrone-web-size.jpg);
   background-size: contain;
-  opacity:.8;
-  color: white !important;
   &:hover {
     transform: scale(1.095) !important;
     opacity: 1;
@@ -618,8 +604,9 @@ z-index: 21;
   }
   &:active {
     background-image: url(../img/treedrone-web-size.jpg) !important;
-    transform: scale(1.06) !important;
+    transform: scale(1) !important;
   }
+}
 }
 
 div.homebutton-svg svg {
