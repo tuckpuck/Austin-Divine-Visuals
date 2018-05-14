@@ -110,13 +110,13 @@ a.effect-underline:hover:after {
   font-size: 1.4rem;
   line-height: 2.4; }
 
-.emboldly-footer {
+.business-link {
   color: #2D2D2F !important;
   position: absolute;
   left: 25px;
   transition: 1s color;
   z-index: 100; }
-  .emboldly-footer:hover {
+  .business-link:hover {
     color: #777 !important;
     text-decoration: none; }
 
