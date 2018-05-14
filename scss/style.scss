@@ -843,6 +843,21 @@ font-family: 'Abel', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "
   margin: 45px 30px;
 }
 
+.visit-youtube {
+  margin-bottom: 4rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  transition: .6s all ease;
+  @include tiny-shadow;
+  &:hover {
+    @include less-shadow;
+  }
+  &-link {
+    color: black !important;
+    text-decoration: none !important;
+  }
+}
+
 // contact
 form {
    max-width: 600px;
