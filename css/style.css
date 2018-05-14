@@ -114,13 +114,15 @@ a.effect-underline:hover:after {
   color: #2D2D2F !important;
   position: absolute;
   left: 25px;
-  transition: 1s color; }
+  transition: 1s color;
+  z-index: 100; }
   .emboldly-footer:hover {
     color: #777 !important;
     text-decoration: none; }
 
 .fixed-bottom {
-  bottom: 12px; }
+  bottom: 12px;
+  z-index: 90; }
 
 .sticky-footer {
   position: absolute;
