@@ -359,17 +359,17 @@ a.effect-underline:hover:after {
     outline: #006ea4; }
     .composition__photo--p1 {
       left: 6.6rem;
-      top: 19rem; }
+      top: 20rem; }
     .composition__photo--p2 {
-      left: 14.01rem;
+      left: 15.01rem;
       top: 4.4rem;
       z-index: 11; }
     .composition__photo--p3 {
       left: -8rem;
       top: 8.4rem; }
     .composition__photo--p4 {
-      left: -1rem;
-      top: -6.2rem; }
+      left: 0rem;
+      top: -7.2rem; }
     .composition__photo:hover {
       outline: 1.5rem solid #006ea4;
       transform: scale(1.07) translateY(-0.5rem);
@@ -395,8 +395,8 @@ a.effect-underline:hover:after {
   opacity: .8;
   color: white !important; }
   .media-link--video {
-    top: 23rem;
-    left: -7.9rem;
+    top: 24rem;
+    left: -8.9rem;
     background-image: url(../img/image4-ws.jpg);
     background-size: cover;
     background-position: 100% 20%; }
@@ -408,8 +408,8 @@ a.effect-underline:hover:after {
       background-image: url(../img/image4-ws.jpg) !important;
       transform: scale(1) !important; }
   .media-link--photo {
-    top: -6.2rem;
-    left: 21rem;
+    top: -7.2rem;
+    left: 23rem;
     background-image: url(../img/treedrone-ws.jpg);
     background-size: contain; }
     .media-link--photo:hover {
