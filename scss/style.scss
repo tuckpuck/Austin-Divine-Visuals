@@ -525,10 +525,10 @@ border-color: $primary-color;
 
     &--p1 {
       left: 6.6rem;
-      top: 19rem;
+      top: 20rem;
     }
     &--p2 {
-      left: 14.01rem;
+      left: 15.01rem;
       top: 4.4rem;
       z-index: 11;
 
@@ -538,8 +538,8 @@ border-color: $primary-color;
       top: 8.4rem;
     }
     &--p4 {
-      left: -1rem;
-      top: -6.2rem;
+      left: 0rem;
+      top: -7.2rem;
     }
 
       &:hover {
@@ -575,8 +575,8 @@ font-family: $font-family-secondary;
 opacity:.8;
 color: white !important;
 &--video {
-  top: 23rem;
-  left: -7.9rem;
+  top: 24rem;
+  left: -8.9rem;
   // if change bg image, also change :active
   background-image: url(../img/image4-ws.jpg);
   background-size: cover;
@@ -592,8 +592,8 @@ color: white !important;
   }
 }
 &--photo {
-  top: -6.2rem;
-  left: 21rem;
+  top: -7.2rem;
+  left: 23rem;
   // if change bg image, also change :active
   background-image: url(../img/treedrone-ws.jpg);
   background-size: contain;
