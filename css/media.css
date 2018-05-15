@@ -116,6 +116,9 @@ padding-left: 8rem;
   .homejumbo {
     height: 89vh;
   }
+  .business-link {
+    display: none;
+  }
 }
 
 /*Medium devices (tablets, below 992px)*/
