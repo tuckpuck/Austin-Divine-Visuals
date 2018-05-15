@@ -376,7 +376,7 @@ a.effect-underline:hover:after {
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 999; }
   .composition:hover .composition__photo:not(:hover) {
-    transform: scale(1); }
+    transform: scale(0.97); }
   .composition:hover div.media-button a {
     transform: scale(1); }
 
@@ -401,7 +401,6 @@ a.effect-underline:hover:after {
     background-size: cover;
     background-position: 100% 20%; }
     .media-link--video:hover {
-      transform: scale(1.095) !important;
       opacity: 1;
       z-index: 1002; }
     .media-link--video:active {
@@ -413,7 +412,6 @@ a.effect-underline:hover:after {
     background-image: url(../img/treedrone-ws.jpg);
     background-size: contain; }
     .media-link--photo:hover {
-      transform: scale(1.095) !important;
       opacity: 1;
       z-index: 1002;
       background-color: #aaa;

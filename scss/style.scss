@@ -550,7 +550,7 @@ border-color: $primary-color;
       }
   }
   &:hover &__photo:not(:hover){
-    transform: scale(1);
+    transform: scale(.97);
   }
 
   &:hover div.media-button a {
@@ -582,7 +582,6 @@ color: white !important;
   background-size: cover;
   background-position: 100% 20%;
   &:hover {
-    transform: scale(1.095) !important;
     opacity:1;
     z-index: 1002;
   }
@@ -598,7 +597,6 @@ color: white !important;
   background-image: url(../img/treedrone-ws.jpg);
   background-size: contain;
   &:hover {
-    transform: scale(1.095) !important;
     opacity: 1;
     z-index: 1002;
     background-color: $color-gray-light-2;
