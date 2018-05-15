@@ -42,8 +42,19 @@
 @media (min-width: 1200px) {
 
 }
-/*Extra extra large devices (large desktops, above 1500px)*/
+/* Extra extra large devices (large desktops, above 1500px)*/
 @media (min-width: 1500px) {
+.video-text{
+margin-top: 23vh !important;
+}
+}
+
+/* Extra extra extra large devices (large desktops, above 1920px)*/
+@media (min-width: 1920px) {
+.video-text{
+margin-top: 22vh !important;
+padding-left: 8rem;
+}
 }
 
 /***** below media queries *****/
