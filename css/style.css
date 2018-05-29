@@ -1011,4 +1011,120 @@ form {
 .icon-30:hover {
   background: #d92626; }
 
+/***** between media queries *****/
+/*Small devices (landscape phones, between 576px and 767px)*/
+/*Medium devices (tablets, between 768px and 991px)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-picture {
+    width: 40%;
+    margin-bottom: 3rem;
+    height: auto; } }
+/*Large devices (desktops, between 992px and 1199px)*/
+/***** above media queries *****/
+/*Small devices (landscape phones, above 576px)*/
+/*Medium devices (tablets, above 768px)*/
+/*Large devices (desktops, above 992px)*/
+/*Extra large devices (large desktops, above 1200px)*/
+/* Extra extra large devices (large desktops, above 1500px)*/
+@media (min-width: 1500px) {
+  .video-text {
+    margin-top: 23vh !important; } }
+/* Extra extra extra large devices (large desktops, above 1920px)*/
+@media (min-width: 1920px) {
+  .video-text {
+    margin-top: 22vh !important;
+    padding-left: 8rem; } }
+/***** below media queries *****/
+/*Extra small devices (portrait phones, below 576px)*/
+@media (max-width: 575px) {
+  .iframe-vid {
+    margin: 10px 0px; }
+
+  .emboldly-footer {
+    display: none; }
+
+  .video-home-icon-youtube {
+    display: none; } }
+/*Small devices (landscape phones, below 768px)*/
+@media (max-width: 767px) {
+  .nav-item {
+    border: none !important;
+    margin: auto; }
+
+  .nav-item:hover {
+    letter-spacing: 0.08rem;
+    margin: auto; }
+
+  .nav-link {
+    padding: .3rem !important; }
+
+  .navbar-nav {
+    align-items: center;
+    flex-direction: row; }
+
+  .navbar {
+    height: 11vh; }
+
+  .contact-picture {
+    width: 80%;
+    max-width: 600px;
+    height: auto; }
+
+  .flickr-image img {
+    margin: 40px auto; }
+
+  .soc a {
+    height: 4rem !important;
+    width: 4rem !important; }
+
+  #img-3 {
+    background-position: 50% 99%;
+    background-size: 140%; }
+
+  .sticky-footer-icon-instagram, .sticky-footer-icon-youtube {
+    display: none; }
+
+  .homejumbo {
+    height: 89vh; }
+
+  .business-link {
+    display: none; } }
+/*Medium devices (tablets, below 992px)*/
+@media (max-width: 991px) {
+  .comp-display {
+    display: none; }
+
+  .video-section {
+    padding-right: 0px !important; }
+
+  .video-stage {
+    padding: 2rem 0; }
+
+  .main-area {
+    height: auto; }
+
+  .contact-text-placer {
+    margin: 20px auto; }
+
+  .soc {
+    margin-top: 0;
+    padding: 0; }
+
+  .soc a {
+    height: 6rem;
+    width: 6rem; }
+
+  .box {
+    margin: auto auto; }
+
+  .flickr-image {
+    margin: 30px auto; }
+
+  .more-photos {
+    margin-bottom: 3rem; } }
+/*Large devices (desktops, below 1200px)*/
+@media (max-width: 1199px) {
+  .homejumbo {
+    background-image: url("../img/explorewithme-ws1400.jpg"); } }
+
 /*# sourceMappingURL=style.css.map */
