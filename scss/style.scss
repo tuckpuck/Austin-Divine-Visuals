@@ -548,6 +548,9 @@ border-color: $primary-color;
         box-shadow: 0 2.5rem 4rem rgba(black, .5);
         z-index: 999;
       }
+      &:active {
+        transform: scale(1) !important;
+      }
   }
   &:hover &__photo:not(:hover){
     transform: scale(.97);
@@ -666,6 +669,12 @@ bottom: 0rem;
   &:hover {
     @include less-shadow;
   }
+}
+
+.loading-text {
+  font-family: $font-family-sans-serif;
+  font-size: 1.6rem;
+  color: $text-color; 
 }
 
 .background-radial {

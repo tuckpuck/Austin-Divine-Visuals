@@ -375,6 +375,8 @@ a.effect-underline:hover:after {
       transform: scale(1.07) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 999; }
+    .composition__photo:active {
+      transform: scale(1) !important; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.97); }
   .composition:hover div.media-button a {
@@ -479,6 +481,11 @@ div.homebutton-svg svg {
     -webkit-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5); }
+
+.loading-text {
+  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+  color: rgba(230, 230, 230, 0.9); }
 
 .background-radial {
   background: radial-gradient(#4d4d5d 5%, #333 100%);
