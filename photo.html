@@ -95,6 +95,9 @@
 <!-- flickr call -->
 <script>
 function callFlickrApi(pageNumber) {
+if(pageNumber == undefined){
+  $('.gallery').html("<p class='loading-text'>Loading photos...</p>");
+}
 var myUrl = 'https://api.flickr.com/services/rest/?api_key=a74d8c55e6c6a6af7628ac7825dfacde&method=flickr.people.getPhotos&user_id=147634988@N06&format=json&per_page=10&content_type=1&extras=url_c,url_h,url_o&page='
 var proxy = 'https://cors-anywhere.herokuapp.com/';
 var finalURL = proxy + myUrl + pageNumber;
@@ -120,6 +123,7 @@ callFlickrApi();
 var pageCount = 1;
 
 function addImages(data) {
+  $('.gallery').html("");
   $.each(data, function(i, item) {
     var flickrItem = document.createElement('img');
     flickrItem.src = item.url_c;
@@ -131,7 +135,7 @@ function addImages(data) {
 function morePhotos() {
   let button = document.createElement('button');
   button.className="more-photos btn btn-primary-light";
-    $('.gallery').append('<br/>');
+  $('.gallery').append('<br/>');
   $('.gallery').append(button);
   $('.more-photos').html('More Photos');
   $('.more-photos').on('click', function(event){
