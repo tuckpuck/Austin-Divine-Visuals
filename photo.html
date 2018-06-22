@@ -96,7 +96,7 @@
 <script>
 function callFlickrApi(pageNumber) {
 if(pageNumber == undefined){
-  $('.gallery').html("<p class='loading-text'>Loading photos...</p>");
+  $('.gallery').html("<p class='loading-text-photo'>Loading photos...</p>");
 }
 var myUrl = 'https://api.flickr.com/services/rest/?api_key=a74d8c55e6c6a6af7628ac7825dfacde&method=flickr.people.getPhotos&user_id=147634988@N06&format=json&per_page=10&content_type=1&extras=url_c,url_h,url_o&page='
 var proxy = 'https://cors-anywhere.herokuapp.com/';
