@@ -671,10 +671,10 @@ bottom: 0rem;
   }
 }
 
-.loading-text {
+.loading-text-photo {
   font-family: $font-family-sans-serif;
   font-size: 1.6rem;
-  color: $text-color; 
+  color: $text-color;
 }
 
 .background-radial {
@@ -872,6 +872,16 @@ font-family: 'Abel', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "
     text-decoration: none !important;
   }
 }
+
+.loading-text-video {
+  font-family: $font-family-sans-serif;
+  font-size: 1.6rem;
+  color: $text-color;
+  padding-top: 1rem;
+  padding-bottom: 100rem;
+}
+
+
 
 // contact
 form {

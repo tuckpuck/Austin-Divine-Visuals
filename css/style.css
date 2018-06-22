@@ -482,7 +482,7 @@ div.homebutton-svg svg {
     -moz-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5); }
 
-.loading-text {
+.loading-text-photo {
   font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.6rem;
   color: rgba(230, 230, 230, 0.9); }
@@ -654,6 +654,13 @@ section h4:before {
   .visit-youtube-link {
     color: black !important;
     text-decoration: none !important; }
+
+.loading-text-video {
+  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+  color: rgba(230, 230, 230, 0.9);
+  padding-top: 1rem;
+  padding-bottom: 100rem; }
 
 form {
   max-width: 600px;
