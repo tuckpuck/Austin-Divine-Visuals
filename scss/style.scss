@@ -569,11 +569,13 @@ z-index: 21;
 padding: 37.4px;
 font-size: 2.1rem;
 box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
-transition: all .2s ease-in-out;
 background-color: $secondary-color;
 font-family: $font-family-secondary;
 opacity:.8;
 color: white !important;
+transition: all .2s ease-in-out;
+outline-offset: 2rem;
+outline: $primary-color;
 &--video {
   top: 24rem;
   left: -8.9rem;
@@ -606,6 +608,12 @@ color: white !important;
     background-image: url(../img/treedrone-ws.jpg) !important;
     transform: scale(1) !important;
   }
+}
+&:hover {
+  outline: 1.5rem solid $primary-color;
+  transform: scale(1.07) translateY(-.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(black, .5);
+  z-index: 999;
 }
 }
 

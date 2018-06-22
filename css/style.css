@@ -389,11 +389,13 @@ a.effect-underline:hover:after {
   padding: 37.4px;
   font-size: 2.1rem;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 1.5rem 4rem;
-  transition: all .2s ease-in-out;
   background-color: #2D2D2F;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   opacity: .8;
-  color: white !important; }
+  color: white !important;
+  transition: all .2s ease-in-out;
+  outline-offset: 2rem;
+  outline: #006ea4; }
   .media-link--video {
     top: 24rem;
     left: -8.9rem;
@@ -419,6 +421,11 @@ a.effect-underline:hover:after {
     .media-link--photo:active {
       background-image: url(../img/treedrone-ws.jpg) !important;
       transform: scale(1) !important; }
+  .media-link:hover {
+    outline: 1.5rem solid #006ea4;
+    transform: scale(1.07) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    z-index: 999; }
 
 div.homebutton-svg svg {
   fill: white !important; }
