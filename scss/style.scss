@@ -83,9 +83,9 @@ $font-family-secondary: 'Abel', -apple-system, system-ui, BlinkMacSystemFont, "S
 }
 
 @mixin less-shadow {
-  -webkit-box-shadow: 0 0 .8rem .1rem rgba(0,0,0,0.5);
-  -moz-box-shadow: 0 0 .8rem .1rem rgba(0,0,0,0.5);
-  box-shadow: 0 0 .8rem .1rem rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 0 1rem .1rem rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 1rem .1rem rgba(0,0,0,0.5);
+  box-shadow: 0 0 1rem .1rem rgba(0,0,0,0.5);
 }
 
 @mixin tiny-shadow {
@@ -650,8 +650,9 @@ bottom: 0rem;
   margin-top: 25px;
 }
 
-.flickr-image {
+.cloud-image {
     margin: 60px auto;
+    max-height: 700px;
     @include less-shadow;
     transition: .6s all ease;
       &:hover {

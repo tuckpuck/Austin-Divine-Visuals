@@ -194,9 +194,9 @@ a.effect-underline:hover:after {
     transform: scale(1.07); }
 
 #player {
-  -webkit-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5); }
 
 .video-container iframe,
 .video-container object,
@@ -457,13 +457,14 @@ div.homebutton-svg svg {
 .flickr-wrapper {
   margin-top: 25px; }
 
-.flickr-image {
+.cloud-image {
   margin: 60px auto;
-  -webkit-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
+  max-height: 700px;
+  -webkit-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
   transition: .6s all ease; }
-  .flickr-image:hover {
+  .cloud-image:hover {
     transform: scale(1.01);
     -webkit-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
@@ -478,9 +479,9 @@ div.homebutton-svg svg {
   -moz-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2); }
   .more-photos:hover {
-    -webkit-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5); }
+    -webkit-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5); }
 
 .loading-text-photo {
   font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
@@ -648,9 +649,9 @@ section h4:before {
   -moz-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2); }
   .visit-youtube:hover {
-    -webkit-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.5); }
+    -webkit-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5); }
   .visit-youtube-link {
     color: black !important;
     text-decoration: none !important; }
@@ -1091,7 +1092,7 @@ form {
     max-width: 600px;
     height: auto; }
 
-  .flickr-image img {
+  .cloud-image img {
     margin: 40px auto; }
 
   .soc a {
@@ -1138,7 +1139,7 @@ form {
   .box {
     margin: auto auto; }
 
-  .flickr-image {
+  .cloud-image {
     margin: 30px auto; }
 
   .more-photos {
