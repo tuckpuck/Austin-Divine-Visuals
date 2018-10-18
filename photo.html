@@ -101,7 +101,7 @@ $.cloudinary.config({
 });
 
 // get json objects of Austin's images tagged test
-var url = $.cloudinary.url('test', {
+var url = $.cloudinary.url('main', {
   format: 'json',
   type: 'list'
 });
@@ -123,7 +123,7 @@ var allPhotoTagObject = $.getJSON(url, function(obj) {
     $.each(data, function(i, item) {
       var flickrItem = document.createElement('img');
       flickrItem.src = item;
-      flickrItem.className = 'img-fluid flickr-image';
+      flickrItem.className = 'img-fluid cloud-image';
       $('.gallery').append(flickrItem);
     });
   }
