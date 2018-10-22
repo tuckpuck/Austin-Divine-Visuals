@@ -195,10 +195,10 @@ var allPhotoTagObject = $.getJSON(url, function(obj) {
     console.log(data);
     $('.gallery').html("");
     $.each(data, function(i, item) {
-      var flickrItem = document.createElement('img');
-      flickrItem.src = item;
-      flickrItem.className = 'img-fluid cloud-image';
-      $('.gallery').append(flickrItem);
+      var cloudPhotoItem = document.createElement('img');
+      cloudPhotoItem.src = item;
+      cloudPhotoItem.className = 'img-fluid cloud-image';
+      $('.gallery').append(cloudPhotoItem);
     });
   }
 });
