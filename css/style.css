@@ -7,8 +7,8 @@ body {
 .main-area {
   height: 85vh; }
 
-.vh-25 {
-  min-height: 75vh; }
+.vh-85 {
+  min-height: 85vh; }
 
 .norowmargin {
   margin: auto 0px; }
@@ -63,7 +63,7 @@ a:hover {
   -webkit-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
-  transition: .6s all ease; }
+  transition: .6s all ease-in-out; }
   .card:hover {
     -webkit-box-shadow: 0 0 1.3rem 0.2rem rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 0 1.3rem 0.2rem rgba(0, 0, 0, 0.5);
