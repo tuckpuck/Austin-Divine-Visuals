@@ -112,8 +112,8 @@ body {
   height: 85vh;
 }
 
-.vh-25{
-  min-height: 75vh;
+.vh-85{
+  min-height: 85vh;
 }
 
 .norowmargin {
@@ -185,7 +185,7 @@ a:hover {
 .card {
   border: none;
   @include less-shadow;
-transition: .6s all ease;
+transition: .6s all ease-in-out;
       &:hover {
     @include mid-shadow;
   }
