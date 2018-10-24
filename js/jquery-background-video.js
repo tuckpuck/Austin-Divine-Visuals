@@ -112,7 +112,7 @@
                     'bottom': '0',
                     'left': '0',
                     'right': '0',
-                    'height': 'auto',
+                    'height': '92vh',
                     'margin': '0',
                     'z-index': '1'
                 });
