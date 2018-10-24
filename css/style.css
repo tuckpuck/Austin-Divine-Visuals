@@ -490,8 +490,8 @@ div.homebutton-svg svg {
   margin-top: 25px; }
 
 .cloud-image {
-  margin: 60px auto;
-  max-height: 700px;
+  margin: 20px 20px;
+  max-height: 400px;
   -webkit-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
