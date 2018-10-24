@@ -130,6 +130,7 @@ a {
 
 a:hover {
   color: $text-color;
+    text-decoration: none;
 }
 
 .navbar {
@@ -183,11 +184,19 @@ a:hover {
 
 .card {
   border: none;
+  @include less-shadow;
+transition: .6s all ease;
+      &:hover {
+    @include mid-shadow;
+  }
 }
 
 .card-body {
-  background-color: #eee;
-  
+  background-color:#2b2b2b;
+}
+
+.card-title {
+font-family: $font-family-sans-serif;
 }
 
 li a.effect-underline {

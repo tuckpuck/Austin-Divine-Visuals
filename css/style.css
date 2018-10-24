@@ -20,7 +20,8 @@ a {
   color: rgba(230, 230, 230, 0.9) !important; }
 
 a:hover {
-  color: rgba(230, 230, 230, 0.9); }
+  color: rgba(230, 230, 230, 0.9);
+  text-decoration: none; }
 
 .navbar {
   height: 8vh;
@@ -58,10 +59,21 @@ a:hover {
   margin: 0; }
 
 .card {
-  border: none; }
+  border: none;
+  -webkit-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
+  transition: .6s all ease; }
+  .card:hover {
+    -webkit-box-shadow: 0 0 1.3rem 0.2rem rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 1.3rem 0.2rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1.3rem 0.2rem rgba(0, 0, 0, 0.5); }
 
 .card-body {
-  background-color: #eee; }
+  background-color: #2b2b2b; }
+
+.card-title {
+  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif; }
 
 li a.effect-underline {
   text-decoration: none;
