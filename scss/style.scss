@@ -143,6 +143,44 @@ a:hover {
     font-size: 2rem;
 }
 
+.demo-video-wrapper {
+  // background-image: url(https://d3k5xyayaartr5.cloudfront.net/_assets/home-video/beach-waves-loop.jpg);
+}
+
+/* Video overlay and content */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  /* Allows right click menu on the video */
+  // background: url("https://d3k5xyayaartr5.cloudfront.net/_assets/pattern-overlays/patterns/black-medium-checks.png") left top repeat;
+  opacity: 0.5;
+}
+
+.video-hero {
+}
+
+.video-hero--content {
+  position: relative;
+  text-align: center;
+  color: #FFF;
+  margin: 150px 0;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.video-hero--content h2 {
+  font-size: 34px;
+  margin: 0 0 10px;
+}
+
+.video-hero--content p {
+  font-size: 20px;
+  margin: 0;
+}
+
 .card {
   border: none;
 }
