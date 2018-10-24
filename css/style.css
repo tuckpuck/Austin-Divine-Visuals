@@ -341,7 +341,7 @@ a.effect-underline:hover:after {
   background-image: url(../img/pattern/micro_carbon.png); }
 
 .homebutton {
-  margin-top: 50vh;
+  margin-top: 40vh;
   position: relative;
   font-family: "Abel", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   display: inline; }
