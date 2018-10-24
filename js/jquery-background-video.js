@@ -107,14 +107,14 @@
             });
             if (el_settings.fullScreen) {
                 $container.css({
-                    'position': 'fixed',
+                    'position': 'relative',
                     'top': '0',
                     'bottom': '0',
                     'left': '0',
                     'right': '0',
                     'height': 'auto',
                     'margin': '0',
-                    'z-index': '-1'
+                    'z-index': '1'
                 });
             }
             // Fade in video by setting the transition duration
@@ -218,3 +218,16 @@
         $('[data-bgvideo]').bgVideo();
     });
 }(jQuery));
+
+$('.jquery-background-video').bgVideo({
+	fullScreen: true, // Sets the video to be fixed to the full window - your <video> and it's container should be direct descendents of the <body> tag
+	fadeIn: 0, // Milliseconds to fade video in/out (0 for no fade)
+	pauseAfter: 120, // Seconds to play before pausing (0 for forever)
+	fadeOnPause: false, // For all (including manual) pauses
+	fadeOnEnd: true, // When we've reached the pauseAfter time
+	showPausePlay: true, // Show pause/play button
+	pausePlayXPos: 'center', // left|right|center
+	pausePlayYPos: 'center', // top|bottom|center
+	pausePlayXOffset: '15px', // pixels or percent from side - ignored if positioned center
+	pausePlayYOffset: '15px' // pixels or percent from top/bottom - ignored if positioned center
+});
