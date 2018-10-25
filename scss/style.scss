@@ -184,6 +184,7 @@ a:hover {
 
 .card {
   border: none;
+  background-color: #1b1b1b; 
   @include less-shadow;
 transition: .6s all ease-in-out;
       &:hover {
