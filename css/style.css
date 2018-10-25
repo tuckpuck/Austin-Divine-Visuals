@@ -679,6 +679,12 @@ section h4:before {
     transform: translate(-50%, -50%);
     text-shadow: 2px 2px 0 rgba(51, 51, 51, 0.4); }
 
+.youtube-embed-container {
+  margin-top: 30px; }
+
+.youtube-embed {
+  margin: 0px 15px 30px 15px; }
+
 .film-content {
   min-height: 92vh; }
 
