@@ -106,57 +106,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-<!-- <script>
-$('#iframe').html("<p class='loading-text-video my-5'>Loading videos...</p>");
-
-var channelID = "UCtbZgA54pP_ZrJwPCoFiy0A";
-$.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D'+channelID, function(data) {
- var link = data.items[0].link;
- var id = link.substr(link.indexOf("=")+1);
- var title = data.items[0].title;
- var videoURLs = [];
- for(let i = 0; i < data.items.length; i++) {
-   var replaced = data.items[i].link.replace("watch?v=","embed/");
-   videoURLs.push(replaced);
- };
-
- const mq = window.matchMedia( "(min-width: 576px)" );
- if (mq.matches) {
-    $('#iframe').html("");
-   // if media query over 500px
-   for(let i = 0; i < 7; i++) {
-   var i_frame = $('<iframe />', {
-     class: 'iframe-vid',
-     width: '720',
-     height: '422',
-     src: videoURLs[i],
-     frameborder: '0',
-     gesture:'media',
-     allow: 'encrypted-media',
-     allowfullscreen: ''
-   });
-   i_frame.appendTo($('#iframe'));
-   }
-} else {
-   $('#iframe').html("");
-  // if media query under 500px
-  for(let i = 0; i < 7; i++) {
-  var i_frame = $('<iframe />', {
-    class: 'iframe-vid',
-    width: '100%',
-    height: '280',
-    src: videoURLs[i],
-    frameborder: '0',
-    gesture:'media',
-    allow: 'encrypted-media',
-    allowfullscreen: ''
-  });
-  i_frame.appendTo($('#iframe'));
-  }
-}
-});
-</script> -->
-
 <!-- dynamically set copyright date -->
   <script>
     var theDate=new Date().getFullYear();
