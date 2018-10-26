@@ -60,12 +60,14 @@ a:hover {
 
 .card {
   border: none;
-  background-color: #1b1b1b;
+  background-color: #333333; }
+
+.card-link {
   -webkit-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
   transition: .6s all ease-in-out; }
-  .card:hover {
+  .card-link:hover {
     -webkit-box-shadow: 0 0 1.3rem 0.2rem rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 0 1.3rem 0.2rem rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 1.3rem 0.2rem rgba(0, 0, 0, 0.5); }
@@ -1180,6 +1182,9 @@ form {
 
   .main-area {
     height: auto; }
+
+  .card-link {
+    margin-bottom: 40px; }
 
   .contact-text-placer {
     margin: 20px auto; }

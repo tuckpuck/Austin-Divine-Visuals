@@ -184,12 +184,15 @@ a:hover {
 
 .card {
   border: none;
-  background-color: #1b1b1b; 
+  background-color: #333333;
+}
+
+.card-link {
   @include less-shadow;
-transition: .6s all ease-in-out;
-      &:hover {
-    @include mid-shadow;
-  }
+  transition: .6s all ease-in-out;
+  &:hover {
+@include mid-shadow;
+}
 }
 
 .card-body {
