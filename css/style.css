@@ -663,7 +663,7 @@ section h4:before {
 .film-stage {
   background: url("../img/cover_thai_palace.jpg");
   background-size: cover;
-  background-position: 50% 15%;
+  background-position: 50% 55%;
   background-color: #2D2D2F;
   -moz-box-shadow: inset 0 0 14px -2px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: inset 0 0 14px -2px rgba(0, 0, 0, 0.6);
@@ -796,7 +796,7 @@ form {
   margin-left: -35px; }
 
 .contact-bottom-row {
-  margin-top: 2.5rem; }
+  margin-top: 1rem; }
 
 .soc {
   display: inline-block;
