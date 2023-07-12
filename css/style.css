@@ -881,10 +881,12 @@ section h4:before {
   -webkit-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
+  background-color: #004c71;
 }
 
 .visit-youtube-link {
   margin-bottom: 4rem;
+  margin-top: .5rem;
   color: black !important;
   text-decoration: none !important;
 }
@@ -902,10 +904,12 @@ section h4:before {
   -webkit-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.5);
+  background-color: #004c71;
 }
 
 .visit-instagram-link {
   margin-bottom: 4rem;
+  margin-top: .5rem;
   color: black !important;
   text-decoration: none !important;
 }
