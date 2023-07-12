@@ -870,8 +870,8 @@ section h4:before {
 
 .visit-youtube {
   cursor: pointer;
+  color: #fff;
   font-size: 1.6rem;
-  transition: .6s all ease;
   -webkit-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
@@ -891,8 +891,8 @@ section h4:before {
 
 .visit-instagram {
   cursor: pointer;
+  color: #fff;
   font-size: 1.6rem;
-  transition: .6s all ease;
   -webkit-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0.6rem 0.1rem rgba(0, 0, 0, 0.2);
