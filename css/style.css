@@ -869,7 +869,6 @@ section h4:before {
 }
 
 .visit-youtube {
-  margin-bottom: 4rem;
   cursor: pointer;
   font-size: 1.6rem;
   transition: .6s all ease;
@@ -885,12 +884,12 @@ section h4:before {
 }
 
 .visit-youtube-link {
+  margin-bottom: 4rem;
   color: black !important;
   text-decoration: none !important;
 }
 
 .visit-instagram {
-  margin-bottom: 4rem;
   cursor: pointer;
   font-size: 1.6rem;
   transition: .6s all ease;
@@ -906,6 +905,7 @@ section h4:before {
 }
 
 .visit-instagram-link {
+  margin-bottom: 4rem;
   color: black !important;
   text-decoration: none !important;
 }
