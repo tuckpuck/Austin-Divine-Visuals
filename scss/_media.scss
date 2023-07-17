@@ -85,13 +85,19 @@ padding-left: 8rem;
 /*Small devices (landscape phones, below 768px)*/
 
 @media (max-width: 767px) {
+  .navbar-toggler {
+    cursor: pointer;
+  }
+
   .nav-item {
     border: none !important;
     margin: auto;
+    padding-bottom: 45px;
   }
   .nav-item:hover {
     letter-spacing: 0.08rem;
     margin: auto;
+    background-color: transparent;
   }
   .nav-link {
     padding: .3rem !important;
@@ -127,9 +133,6 @@ padding-left: 8rem;
   }
   .business-link {
     display: none;
-  }
-  .collapse.show {
-    margin-top: -25px;
   }
 }
 

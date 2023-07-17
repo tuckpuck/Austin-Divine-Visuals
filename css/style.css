@@ -1291,13 +1291,18 @@ form textarea {
 }
 /*Small devices (landscape phones, below 768px)*/
 @media (max-width: 767px) {
+  .navbar-toggler {
+    cursor: pointer;
+  }
   .nav-item {
     border: none !important;
     margin: auto;
+    padding-bottom: 45px;
   }
   .nav-item:hover {
     letter-spacing: 0.08rem;
     margin: auto;
+    background-color: transparent;
   }
   .nav-link {
     padding: 0.3rem !important;
@@ -1333,9 +1338,6 @@ form textarea {
   }
   .business-link {
     display: none;
-  }
-  .collapse.show {
-    margin-top: -25px;
   }
 }
 /*Medium devices (tablets, below 992px)*/
