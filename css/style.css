@@ -119,7 +119,8 @@ a.effect-underline:hover:after {
 }
 
 .navbar-toggler-icon {
-
+  fill: rgba(230, 230, 230, 0.9);
+  stroke: rgba(230, 230, 230, 0.9);
 }
 
 .navbar-brand {
@@ -1332,6 +1333,9 @@ form textarea {
   }
   .business-link {
     display: none;
+  }
+  .collapse.show {
+    margin-top: -25px;
   }
 }
 /*Medium devices (tablets, below 992px)*/

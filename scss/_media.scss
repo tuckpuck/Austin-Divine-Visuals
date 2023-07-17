@@ -128,6 +128,9 @@ padding-left: 8rem;
   .business-link {
     display: none;
   }
+  .collapse.show {
+    margin-top: -25px;
+  }
 }
 
 /*Medium devices (tablets, below 992px)*/
