@@ -21,6 +21,13 @@
 
 }
 
+@media (min-width: 992px) and (max-width: 1260px) {
+.video-section {
+  margin-left: 5.9% !important;
+}
+}
+
+
 /***** above media queries *****/
 
 /*Small devices (landscape phones, above 576px)*/
@@ -129,7 +136,7 @@ padding-left: 8rem;
     display: none;
   }
   .homejumbo {
-    height: 76vh !important;
+    height: 77vh !important;
   }
   .homebutton {
     margin-top: 36vh;
@@ -147,6 +154,7 @@ padding-left: 8rem;
   }
   .video-section {
     padding-right: 0px !important;
+    margin-bottom: 35px;
   }
   .video-stage {
     padding: 2rem 0;

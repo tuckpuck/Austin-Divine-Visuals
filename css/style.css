@@ -1251,6 +1251,11 @@ form textarea {
   }
 }
 /*Large devices (desktops, between 992px and 1199px)*/
+@media (min-width: 992px) and (max-width: 1260px) {
+  .video-section {
+    margin-left: 5.9% !important;
+  }
+}
 /***** above media queries *****/
 /*Small devices (landscape phones, above 576px)*/
 /*Medium devices (tablets, above 768px)*/
@@ -1334,7 +1339,7 @@ form textarea {
     display: none;
   }
   .homejumbo {
-    height: 76vh !important;
+    height: 77vh !important;
   }
   .homebutton {
     margin-top: 36vh;
@@ -1350,6 +1355,7 @@ form textarea {
   }
   .video-section {
     padding-right: 0px !important;
+    margin-bottom: 35px;
   }
   .video-stage {
     padding: 2rem 0;
